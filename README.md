@@ -37,19 +37,19 @@ PISA can also be used to extract proof corpus. We extracted the datasets in our 
    
 3. **Configure Isabelle**
 
-    Go back to home directory first and download isabelle2021
+    Go back to home directory first and download isabelle2021 # --> 2023
     ```shell
     cd ~
-    wget https://isabelle.in.tum.de/dist/Isabelle2022_linux.tar.gz
-    tar -xzf Isabelle2022_linux.tar.gz
-    alias isabelle=~/Isabelle2022/bin/isabelle
+    wget https://isabelle.in.tum.de/dist/Isabelle2023_linux.tar.gz
+    tar -xzf Isabelle2023_linux.tar.gz
+    alias isabelle=~/Isabelle2023/bin/isabelle
     ``` 
     
 4. **Build Isabelle HOL**
    
    To build with 20 parallel processes:
    ```shell
-   isabelle build -b -D Isabelle2022/src/HOL/ -j 20
+   isabelle build -b -D Isabelle2023/src/HOL/ -j 20
    ```
    This takes ~8 hours of CPU time. The actual time depends on the number of CPUs you have. On a 96-core TPU VM it takes about 15 minutes.
 
@@ -59,7 +59,7 @@ PISA can also be used to extract proof corpus. We extracted the datasets in our 
    ```shell
    wget https://www.isa-afp.org/release/afp-current.tar.gz
    tar -xzf afp-current.tar.gz
-   export AFP=afp-{$AFP_DATE}/thys
+   export AFP=afp-{$AFP_DATE}/thys # e.g. aft-2023-10-16
    isabelle build -b -D $AFP -j 20
    ```
    This takes ~150 hours of CPU time. On a 96-core TPU VM it takes ~5 wall-clock hours. We can extract ~93% of all afp theory files.
