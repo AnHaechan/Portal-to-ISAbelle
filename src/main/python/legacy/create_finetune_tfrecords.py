@@ -9,6 +9,10 @@ import tensorflow as tf
 from lm_dataformat import Reader
 from tqdm import tqdm
 
+import os, sys
+cwd = os.getcwd()
+assert cwd.endswith("Portal-to-ISAbelle")
+sys.path.append(cwd)
 from mesh_transformer_utils.tokenization import TokenizerWrapper
 
 
