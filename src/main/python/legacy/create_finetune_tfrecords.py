@@ -83,6 +83,7 @@ def parse_args():
 def get_files(input_dir):
     filetypes = ["jsonl.zst", ".txt", ".xz", ".tar.gz"]
     files = [list(Path(input_dir).glob(f"*{ft}")) for ft in filetypes]
+    print(files)
     # flatten list of list -> list and stringify Paths
     return [str(item) for sublist in files for item in sublist]
 

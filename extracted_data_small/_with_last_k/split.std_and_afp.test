@@ -1,0 +1,5 @@
+/home/qj213/afp-2021-10-22/thys/Depth-First-Search/DFS.thy <PATH_AND_THEOREM_SEP> lemma nexts_set: "y \<in> set (nexts g x) = ((x,y) \<in> set g)"
+/home/qj213/afp-2021-10-22/thys/Depth-First-Search/DFS.thy <PATH_AND_THEOREM_SEP> lemma "dfs2 g xs ys = dfs g xs ys"
+/home/qj213/afp-2021-10-22/thys/Priority_Queue_Braun/Priority_Queue_Braun.thy <PATH_AND_THEOREM_SEP> lemma del_left_mset: "del_left t = (x,t') \<Longrightarrow> t \<noteq> Leaf \<Longrightarrow> x \<in># mset_tree t \<and> mset_tree t' = mset_tree t - {#x#}"
+/home/qj213/afp-2021-10-22/thys/Priority_Queue_Braun/Priority_Queue_Braun.thy <PATH_AND_THEOREM_SEP> lemma size_del_min: assumes "braun t" shows "size(del_min t) = size t - 1"
+/home/qj213/afp-2021-10-22/thys/Priority_Queue_Braun/Sorting_Braun.thy <PATH_AND_THEOREM_SEP> lemma t_list_of_B_log_bound: "braun t \<Longrightarrow> t_list_of_B t \<le> 3 * (nlog2 (size t + 1) + 1) * size t"

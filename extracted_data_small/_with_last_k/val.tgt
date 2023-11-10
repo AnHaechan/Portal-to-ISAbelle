@@ -1,0 +1,18 @@
+by (induct g) auto
+by (induct g xs ys rule: dfs2.induct) (auto simp add: dfs_app)
+by (simp add: del_left_mset_plus)
+proof(cases t rule: del_min.cases)
+case [simp]: (3 ll b lr a r)
+{
+fix y l'
+assume "del_left (Node ll b lr) = (y,l')"
+hence "size(sift_down r y l') = size t - 1"
+using assms
+by(subst size_sift_down) (auto dest: del_left_size del_left_braun)
+}
+thus ?thesis
+by(auto split: prod.split)
+qed (insert assms, auto)
+apply (frule t_list_of_B_bound)
+apply (simp add: height_acomplete acomplete_if_braun size1_size)
+done
