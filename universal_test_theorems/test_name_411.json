@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Pi_Calculus/Strong_Late_Axiomatisation.thy", "lemma validToHnf: fixes P :: pi assumes \"valid P\" shows \"\\<exists>Q. uhnf Q \\<and> valid Q \\<and> Q \\<equiv>\\<^sub>e P \\<and> (depth Q) \\<le> (depth P)\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Pi_Calculus/Strong_Late_Axiomatisation.thy",
+    "lemma validToHnf: fixes P :: pi assumes \"valid P\" shows \"\\<exists>Q. uhnf Q \\<and> valid Q \\<and> Q \\<equiv>\\<^sub>e P \\<and> (depth Q) \\<le> (depth P)\""
+  ]
+]

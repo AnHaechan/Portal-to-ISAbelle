@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Collections/ICF/impl/Trie2.thy", "lemma rev_rev_image: \"rev ` rev ` A = A\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Collections/ICF/impl/Trie2.thy",
+    "lemma rev_rev_image: \"rev ` rev ` A = A\""
+  ]
+]

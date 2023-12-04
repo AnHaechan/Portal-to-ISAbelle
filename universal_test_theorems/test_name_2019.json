@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Knuth_Morris_Pratt/KMP.thy", "lemma border_positions: \"border xs ys \\<Longrightarrow> \\<forall>i<length xs. ys!i = ys!(length ys - length xs + i)\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Knuth_Morris_Pratt/KMP.thy",
+    "lemma border_positions: \"border xs ys \\<Longrightarrow> \\<forall>i<length xs. ys!i = ys!(length ys - length xs + i)\""
+  ]
+]

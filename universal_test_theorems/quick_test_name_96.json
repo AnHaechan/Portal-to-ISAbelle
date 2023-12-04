@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Generic_Deriving/tests/Derive_Encode.thy", "lemma \"encode C = [True, True]\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Generic_Deriving/tests/Derive_Encode.thy",
+    "lemma \"encode C = [True, True]\""
+  ]
+]

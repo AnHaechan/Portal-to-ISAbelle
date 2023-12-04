@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/VerifyThis2019/Parallel_Multiset_Fold.thy", "lemma reachable0[simp]: \"reachable s\\<^sub>0\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/VerifyThis2019/Parallel_Multiset_Fold.thy",
+    "lemma reachable0[simp]: \"reachable s\\<^sub>0\""
+  ]
+]

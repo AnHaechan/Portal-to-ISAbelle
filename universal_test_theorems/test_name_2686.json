@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/JinjaThreads/Framework/FWBisimulation.thy", "lemma shr_activate_cond_action1 [simp]: \"shr (activate_cond_action1 s1 s2 ct) = shr s1\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/JinjaThreads/Framework/FWBisimulation.thy",
+    "lemma shr_activate_cond_action1 [simp]: \"shr (activate_cond_action1 s1 s2 ct) = shr s1\""
+  ]
+]

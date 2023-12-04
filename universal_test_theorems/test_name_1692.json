@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Stable_Matching/Sotomayor.thy", "lemma Pm: \"Preorder (Pm m) \\<and> Total (Pm m)\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Stable_Matching/Sotomayor.thy",
+    "lemma Pm: \"Preorder (Pm m) \\<and> Total (Pm m)\""
+  ]
+]

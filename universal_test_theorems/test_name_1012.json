@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Polynomial_Interpolation/Missing_Unsorted.thy", "lemma unit_mult_right_cancel: \"a dvd 1 \\<Longrightarrow> b * a = c * a \\<longleftrightarrow> b = c\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Polynomial_Interpolation/Missing_Unsorted.thy",
+    "lemma unit_mult_right_cancel: \"a dvd 1 \\<Longrightarrow> b * a = c * a \\<longleftrightarrow> b = c\""
+  ]
+]

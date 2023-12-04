@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Perron_Frobenius/Spectral_Radius_Largest_Jordan_Block.thy", "lemma w: \"w \\<in> carrier_vec n\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Perron_Frobenius/Spectral_Radius_Largest_Jordan_Block.thy",
+    "lemma w: \"w \\<in> carrier_vec n\""
+  ]
+]

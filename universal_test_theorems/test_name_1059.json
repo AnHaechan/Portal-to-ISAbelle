@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Graph_Saturation/MissingRelation.thy", "lemma fst_UNIV[intro]: \"A \\<subseteq> fst ` A \\<times> UNIV\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Graph_Saturation/MissingRelation.thy",
+    "lemma fst_UNIV[intro]: \"A \\<subseteq> fst ` A \\<times> UNIV\""
+  ]
+]

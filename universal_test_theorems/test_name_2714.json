@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/BNF_Operations/Kill.thy", "theorem F2map_id: \"F2map id = id\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/BNF_Operations/Kill.thy",
+    "theorem F2map_id: \"F2map id = id\""
+  ]
+]

@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Coinductive/Coinductive_List.thy", "lemma lfinite_transfer [transfer_rule]: \"(llist_all2 A ===> (=)) lfinite lfinite\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Coinductive/Coinductive_List.thy",
+    "lemma lfinite_transfer [transfer_rule]: \"(llist_all2 A ===> (=)) lfinite lfinite\""
+  ]
+]

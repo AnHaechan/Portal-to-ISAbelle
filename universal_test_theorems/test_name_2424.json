@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Launchbury/AList-Utils-Nominal.thy", "lemma fresh_distinct: assumes \"atom ` S \\<sharp>* \\<Gamma>\" shows \"S \\<inter> domA \\<Gamma> = {}\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Launchbury/AList-Utils-Nominal.thy",
+    "lemma fresh_distinct: assumes \"atom ` S \\<sharp>* \\<Gamma>\" shows \"S \\<inter> domA \\<Gamma> = {}\""
+  ]
+]

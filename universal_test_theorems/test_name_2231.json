@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Complex_Geometry/Moebius.thy", "lemma pole_mk_moebius: assumes \"is_pole (mk_moebius a b c d) z\" and \"c \\<noteq> 0\" and \"a*d - b*c \\<noteq> 0\" shows \"z = of_complex (-d/c)\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Complex_Geometry/Moebius.thy",
+    "lemma pole_mk_moebius: assumes \"is_pole (mk_moebius a b c d) z\" and \"c \\<noteq> 0\" and \"a*d - b*c \\<noteq> 0\" shows \"z = of_complex (-d/c)\""
+  ]
+]

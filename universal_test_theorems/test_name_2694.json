@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/CryptHOL/Negligible.thy", "lemma negligibleI [intro?]: \"(\\<And>c. c > 0 \\<Longrightarrow> f \\<in> o(\\<lambda>x. inverse (x powr c))) \\<Longrightarrow> negligible f\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/CryptHOL/Negligible.thy",
+    "lemma negligibleI [intro?]: \"(\\<And>c. c > 0 \\<Longrightarrow> f \\<in> o(\\<lambda>x. inverse (x powr c))) \\<Longrightarrow> negligible f\""
+  ]
+]

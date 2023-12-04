@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Markov_Models/Continuous_Time_Markov_Chain.thy", "lemma trace_in_shift[simp]: \"trace_in ss t s (smap (\\<lambda>(t, s'). (t + t', s')) \\<omega>) \\<longleftrightarrow> trace_in ss (t - t') s \\<omega>\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Markov_Models/Continuous_Time_Markov_Chain.thy",
+    "lemma trace_in_shift[simp]: \"trace_in ss t s (smap (\\<lambda>(t, s'). (t + t', s')) \\<omega>) \\<longleftrightarrow> trace_in ss (t - t') s \\<omega>\""
+  ]
+]

@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Category/Yoneda.thy", "lemma (in Yoneda) sandwich_funcset: assumes A: \"A \\<in> Ob\" and \"a \\<in> F\\<^bsub>\\<o>\\<^esub> A\" shows \"\\<sigma>(A,a) : Ob \\<rightarrow> ar Set\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Category/Yoneda.thy",
+    "lemma (in Yoneda) sandwich_funcset: assumes A: \"A \\<in> Ob\" and \"a \\<in> F\\<^bsub>\\<o>\\<^esub> A\" shows \"\\<sigma>(A,a) : Ob \\<rightarrow> ar Set\""
+  ]
+]

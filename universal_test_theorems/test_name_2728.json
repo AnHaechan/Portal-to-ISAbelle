@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Graph_Theory/Bidirected_Digraph.thy", "lemma arev_permutes_arcs: \"arev permutes arcs G\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Graph_Theory/Bidirected_Digraph.thy",
+    "lemma arev_permutes_arcs: \"arev permutes arcs G\""
+  ]
+]

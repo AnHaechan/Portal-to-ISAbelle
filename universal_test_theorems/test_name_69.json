@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Attack_Trees/MC.thy", "lemma Suc_less_le: \"x < (y - n) \\<Longrightarrow> x \\<le> (y - (Suc n))\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Attack_Trees/MC.thy",
+    "lemma Suc_less_le: \"x < (y - n) \\<Longrightarrow> x \\<le> (y - (Suc n))\""
+  ]
+]

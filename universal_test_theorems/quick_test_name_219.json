@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Word_Lib/Word_Lemmas.thy", "lemma unat_max_word_pos[simp]: \"0 < unat max_word\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Word_Lib/Word_Lemmas.thy",
+    "lemma unat_max_word_pos[simp]: \"0 < unat max_word\""
+  ]
+]

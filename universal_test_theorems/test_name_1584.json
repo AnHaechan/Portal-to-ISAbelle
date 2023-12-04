@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Refine_Imperative_HOL/Sepref_Basic.thy", "lemma rdom_pure[simp]: \"rdom (pure R) = Range R\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Refine_Imperative_HOL/Sepref_Basic.thy",
+    "lemma rdom_pure[simp]: \"rdom (pure R) = Range R\""
+  ]
+]

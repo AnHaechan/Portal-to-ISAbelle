@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Matrix_Tensor/Matrix_Tensor.thy", "lemma hd_set:assumes \"x \\<in> set (a#M)\" shows \"(x = a) \\<or> (x\\<in>(set M))\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Matrix_Tensor/Matrix_Tensor.thy",
+    "lemma hd_set:assumes \"x \\<in> set (a#M)\" shows \"(x = a) \\<or> (x\\<in>(set M))\""
+  ]
+]

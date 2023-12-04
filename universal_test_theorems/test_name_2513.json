@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/CCS/Strong_Sim_SC.thy", "lemma sumComm: fixes P :: ccs and Q :: ccs assumes \"Id \\<subseteq> Rel\" shows \"P \\<oplus> Q \\<leadsto>[Rel] Q \\<oplus> P\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/CCS/Strong_Sim_SC.thy",
+    "lemma sumComm: fixes P :: ccs and Q :: ccs assumes \"Id \\<subseteq> Rel\" shows \"P \\<oplus> Q \\<leadsto>[Rel] Q \\<oplus> P\""
+  ]
+]

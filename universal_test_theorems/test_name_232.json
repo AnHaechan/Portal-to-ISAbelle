@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Skip_Lists/Skip_List.thy", "lemma steps_empty [simp]: \"steps {} f l up left = 0\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Skip_Lists/Skip_List.thy",
+    "lemma steps_empty [simp]: \"steps {} f l up left = 0\""
+  ]
+]

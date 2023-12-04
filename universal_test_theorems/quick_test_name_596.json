@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Graph_Theory/Vertex_Walk.thy", "lemma vwalk_to_vpath_hd: \"hd (vwalk_to_vpath xs) = hd xs\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Graph_Theory/Vertex_Walk.thy",
+    "lemma vwalk_to_vpath_hd: \"hd (vwalk_to_vpath xs) = hd xs\""
+  ]
+]

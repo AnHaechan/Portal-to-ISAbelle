@@ -57,14 +57,15 @@ PISA can also be used to extract proof corpus. We extracted the datasets in our 
    
    To build with 10 parallel processes:
    ```shell
-   wget https://www.isa-afp.org/release/afp-current.tar.gz // TODO: fix to get apt afp version ; For now, just use the pre-built heap image.
-   tar -xzf afp-current.tar.gz
-   export AFP=afp-{$AFP_DATE}/thys # e.g. aft-2023-10-16
-   isabelle build -b -D $AFP -j 20
+   hg clone ssh://hg@foss.heptapod.net/isa-afp/afp-devel -r Isabelle2021-1 // ssh-keygen and add ssh key to your gitlab account first
+   mv afp-devel afp-2021-10-22
+   export AFP=afp-2021-10-22/thys
+   // "Currently, do not build locally. Use pre-built heap images below." // isabelle build -b -D $AFP -j 20
    ```
    This takes ~150 hours of CPU time. On a 96-core TPU VM it takes ~5 wall-clock hours. We can extract ~93% of all afp theory files.
 
-   We built the heap images for two options:
+   We built the heap images for two options.
+   For Thor reproduction, Use 1. Isabelle2021 with afp-2021-10-22.
    1. Isabelle2021 with afp-2021-10-22 for linux machines (ubuntu). You can download it at:
    https://archive.org/download/isabelle_heaps.tar/isabelle_heaps.tar.gz
    and decompress it as ~/.isabelle.
@@ -73,10 +74,11 @@ PISA can also be used to extract proof corpus. We extracted the datasets in our 
 
    Note: this does not always work on different operating systems.
 
-6. **Extract the test theorems**
+6. **Extract & Rename the test theorems**
    The universal test theorems contains 3000 theorems with their file paths and names. The first 600 of them are packaged as "quick" theorems if you have no patience testing all 3000 out.
    ```shell
    tar -xzf universal_test_theorems.tar.gz
+   python3 fix_path_universal_test_theorems.py
    ```
 
 ## Evaluation setup (if you want to have N (N>50) PISA servers running on your machine)

@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Parity_Game/Strategy.thy", "lemma Ptl_0: \"ltl P $ 0 = lhd (ltl P)\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Parity_Game/Strategy.thy",
+    "lemma Ptl_0: \"ltl P $ 0 = lhd (ltl P)\""
+  ]
+]

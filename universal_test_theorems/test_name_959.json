@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/KAD/Antidomain_Semiring.thy", "lemma fbox_subdist: \"|x] d y + |x] d z \\<le> |x] (d y + d z)\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/KAD/Antidomain_Semiring.thy",
+    "lemma fbox_subdist: \"|x] d y + |x] d z \\<le> |x] (d y + d z)\""
+  ]
+]

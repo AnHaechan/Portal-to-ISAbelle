@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Simpl/ex/Closure.thy", "lemma in_subsetD: \"\\<lbrakk>P \\<subseteq> P'; x \\<in> P\\<rbrakk> \\<Longrightarrow> x \\<in> P'\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Simpl/ex/Closure.thy",
+    "lemma in_subsetD: \"\\<lbrakk>P \\<subseteq> P'; x \\<in> P\\<rbrakk> \\<Longrightarrow> x \\<in> P'\""
+  ]
+]

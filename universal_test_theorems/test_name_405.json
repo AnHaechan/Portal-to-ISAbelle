@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/KBPs/ODList.thy", "lemma msort_set[simp]: \"set (msort xs) = set xs\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/KBPs/ODList.thy",
+    "lemma msort_set[simp]: \"set (msort xs) = set xs\""
+  ]
+]

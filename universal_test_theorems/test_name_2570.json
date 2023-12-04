@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Regular_Algebras/Regular_Algebras.thy", "theorem powerstar: \"x\\<^sup>\\<star> = (x\\<^bsup>n+1\\<^esup>)\\<^sup>\\<star> \\<cdot> x\\<^bsub>0\\<^esub>\\<^bsup>n\\<^esup>\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Regular_Algebras/Regular_Algebras.thy",
+    "theorem powerstar: \"x\\<^sup>\\<star> = (x\\<^bsup>n+1\\<^esup>)\\<^sup>\\<star> \\<cdot> x\\<^bsub>0\\<^esub>\\<^bsup>n\\<^esup>\""
+  ]
+]

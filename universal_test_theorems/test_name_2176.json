@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Ergodic_Theory/Recurrence.thy", "lemma induced_map_stabilizes_recurrent_infty: assumes \"x \\<in> recurrent_subset_infty A\" shows \"((induced_map A)^^n) x \\<in> recurrent_subset_infty A\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Ergodic_Theory/Recurrence.thy",
+    "lemma induced_map_stabilizes_recurrent_infty: assumes \"x \\<in> recurrent_subset_infty A\" shows \"((induced_map A)^^n) x \\<in> recurrent_subset_infty A\""
+  ]
+]

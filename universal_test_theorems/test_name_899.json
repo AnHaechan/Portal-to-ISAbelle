@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/LocalLexing/TheoremD4.thy", "lemma is_derivation_derives: \"derives \\<alpha> \\<beta> \\<Longrightarrow> is_derivation (u@\\<alpha>@v) \\<Longrightarrow> is_derivation (u@\\<beta>@v)\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/LocalLexing/TheoremD4.thy",
+    "lemma is_derivation_derives: \"derives \\<alpha> \\<beta> \\<Longrightarrow> is_derivation (u@\\<alpha>@v) \\<Longrightarrow> is_derivation (u@\\<beta>@v)\""
+  ]
+]

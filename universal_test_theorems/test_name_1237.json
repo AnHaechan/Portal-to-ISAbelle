@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Hoare_Time/Big_StepT.thy", "lemma assign_t_simp: \"(x ::= a,s) \\<Rightarrow> Suc 0 \\<Down> s' \\<longleftrightarrow> (s' = s(x := aval a s))\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Hoare_Time/Big_StepT.thy",
+    "lemma assign_t_simp: \"(x ::= a,s) \\<Rightarrow> Suc 0 \\<Down> s' \\<longleftrightarrow> (s' = s(x := aval a s))\""
+  ]
+]

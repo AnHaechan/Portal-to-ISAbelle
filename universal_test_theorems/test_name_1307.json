@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/ZFC_in_HOL/Kirby.thy", "lemma vcard_add: \"vcard (x + y) = vcard x \\<oplus> vcard y\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/ZFC_in_HOL/Kirby.thy",
+    "lemma vcard_add: \"vcard (x + y) = vcard x \\<oplus> vcard y\""
+  ]
+]

@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/GraphMarkingIBP/DSWMark.thy", "lemma [simp]: \"dmono LinkMark\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/GraphMarkingIBP/DSWMark.thy",
+    "lemma [simp]: \"dmono LinkMark\""
+  ]
+]

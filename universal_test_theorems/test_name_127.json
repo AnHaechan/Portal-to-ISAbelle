@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/JinjaThreads/Framework/FWProgressAux.thy", "lemma active_thread_ex_red: assumes \"t \\<in> active_threads s\" shows \"\\<exists>ta s'. s -t\\<triangleright>ta\\<rightarrow> s'\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/JinjaThreads/Framework/FWProgressAux.thy",
+    "lemma active_thread_ex_red: assumes \"t \\<in> active_threads s\" shows \"\\<exists>ta s'. s -t\\<triangleright>ta\\<rightarrow> s'\""
+  ]
+]

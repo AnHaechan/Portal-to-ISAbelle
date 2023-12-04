@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/UPF_Firewall/FWNormalisation/NormalisationIntegerPortProof.thy", "lemma iD_isD[rule_format]: \"p \\<noteq> [] \\<longrightarrow> x \\<notin> dom (C (list2FWpolicy p)) \\<longrightarrow> C (DenyAll \\<oplus> list2FWpolicy (insertDenies p)) x = C DenyAll x\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/UPF_Firewall/FWNormalisation/NormalisationIntegerPortProof.thy",
+    "lemma iD_isD[rule_format]: \"p \\<noteq> [] \\<longrightarrow> x \\<notin> dom (C (list2FWpolicy p)) \\<longrightarrow> C (DenyAll \\<oplus> list2FWpolicy (insertDenies p)) x = C DenyAll x\""
+  ]
+]

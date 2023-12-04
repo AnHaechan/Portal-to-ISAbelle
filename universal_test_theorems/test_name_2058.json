@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Ordinal/OrdinalDef.thy", "lemma ordinal_order_less_le_not_le: \"((x::ordinal) < y) = (x \\<le> y \\<and> \\<not> y \\<le> x)\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Ordinal/OrdinalDef.thy",
+    "lemma ordinal_order_less_le_not_le: \"((x::ordinal) < y) = (x \\<le> y \\<and> \\<not> y \\<le> x)\""
+  ]
+]

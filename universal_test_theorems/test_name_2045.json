@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Polynomials/MPoly_PM.thy", "lemma poly_subst_extend_indets: \"poly_subst f (extend_indets p) = poly_subst (f \\<circ> Some) p\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Polynomials/MPoly_PM.thy",
+    "lemma poly_subst_extend_indets: \"poly_subst f (extend_indets p) = poly_subst (f \\<circ> Some) p\""
+  ]
+]

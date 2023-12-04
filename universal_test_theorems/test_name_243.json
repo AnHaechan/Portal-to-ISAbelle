@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Topological_Semantics/topo_negation_fixedpoints.thy", "lemma \"Fr_2 \\<F> \\<Longrightarrow> \\<forall>A. Cl(A) \\<longrightarrow> DNE\\<^sup>A \\<^bold>\\<not>\\<^sup>I\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Topological_Semantics/topo_negation_fixedpoints.thy",
+    "lemma \"Fr_2 \\<F> \\<Longrightarrow> \\<forall>A. Cl(A) \\<longrightarrow> DNE\\<^sup>A \\<^bold>\\<not>\\<^sup>I\""
+  ]
+]

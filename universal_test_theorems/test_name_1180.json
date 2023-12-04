@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Quantales/Quantic_Nuclei_Conuclei.thy", "lemma \"nucleus f \\<Longrightarrow> f (x \\<rightarrow> y) = f x \\<rightarrow> f y\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Quantales/Quantic_Nuclei_Conuclei.thy",
+    "lemma \"nucleus f \\<Longrightarrow> f (x \\<rightarrow> y) = f x \\<rightarrow> f y\""
+  ]
+]

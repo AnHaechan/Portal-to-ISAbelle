@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/AWN/Qmsg.thy", "lemma qmsg_simple_labels [simp]: \"simple_labels \\<Gamma>\\<^sub>Q\\<^sub>M\\<^sub>S\\<^sub>G\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/AWN/Qmsg.thy",
+    "lemma qmsg_simple_labels [simp]: \"simple_labels \\<Gamma>\\<^sub>Q\\<^sub>M\\<^sub>S\\<^sub>G\""
+  ]
+]

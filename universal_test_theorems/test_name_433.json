@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Sort_Encodings/T.thy", "lemma wtPB_tPB[simp]: \"TE.wtPB tPB\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Sort_Encodings/T.thy",
+    "lemma wtPB_tPB[simp]: \"TE.wtPB tPB\""
+  ]
+]

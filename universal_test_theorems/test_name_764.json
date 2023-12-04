@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/ADS_Functor/Merkle_Interface.thy", "lemma transp: \"transp bo\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/ADS_Functor/Merkle_Interface.thy",
+    "lemma transp: \"transp bo\""
+  ]
+]

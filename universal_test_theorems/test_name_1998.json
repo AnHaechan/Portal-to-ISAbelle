@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Stream-Fusion/Stream.thy", "lemma stream_cong: \"xs = ys \\<Longrightarrow> stream\\<cdot>xs \\<approx> stream\\<cdot>ys\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Stream-Fusion/Stream.thy",
+    "lemma stream_cong: \"xs = ys \\<Longrightarrow> stream\\<cdot>xs \\<approx> stream\\<cdot>ys\""
+  ]
+]

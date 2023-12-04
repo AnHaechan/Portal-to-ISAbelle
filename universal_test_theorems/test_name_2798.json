@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/CryptHOL/Resumption.thy", "lemma resumption_ord_abort: \"\\<lbrakk> resumption_ord r r'; is_Done r; \\<not> is_Done r' \\<rbrakk> \\<Longrightarrow> result r = None\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/CryptHOL/Resumption.thy",
+    "lemma resumption_ord_abort: \"\\<lbrakk> resumption_ord r r'; is_Done r; \\<not> is_Done r' \\<rbrakk> \\<Longrightarrow> result r = None\""
+  ]
+]

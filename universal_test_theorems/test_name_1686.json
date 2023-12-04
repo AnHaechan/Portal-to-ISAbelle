@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Modal_Logics_for_NTS/Formula.thy", "lemma Act_eqvt [eqvt, simp]: \"p \\<bullet> Act \\<alpha> x = Act (p \\<bullet> \\<alpha>) (p \\<bullet> x)\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Modal_Logics_for_NTS/Formula.thy",
+    "lemma Act_eqvt [eqvt, simp]: \"p \\<bullet> Act \\<alpha> x = Act (p \\<bullet> \\<alpha>) (p \\<bullet> x)\""
+  ]
+]

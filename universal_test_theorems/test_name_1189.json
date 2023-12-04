@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Hybrid_Logic/Hybrid_Logic.thy", "lemma rev_nth_Suc: \\<open>(xs @ [x]) !. Suc v = xs !. v\\<close>"]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Hybrid_Logic/Hybrid_Logic.thy",
+    "lemma rev_nth_Suc: \\<open>(xs @ [x]) !. Suc v = xs !. v\\<close>"
+  ]
+]

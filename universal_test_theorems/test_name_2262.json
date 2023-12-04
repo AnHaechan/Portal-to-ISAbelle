@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Coinductive/Examples/Hamming_Stream.thy", "lemma lmerge_LNil [simp]: \"lmerge LNil ys = LNil\" \"lmerge xs LNil = LNil\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Coinductive/Examples/Hamming_Stream.thy",
+    "lemma lmerge_LNil [simp]: \"lmerge LNil ys = LNil\" \"lmerge xs LNil = LNil\""
+  ]
+]

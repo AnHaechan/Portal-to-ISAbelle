@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Simpl/Language.thy", "lemma wf_com_rel: \"wf com_rel\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Simpl/Language.thy",
+    "lemma wf_com_rel: \"wf com_rel\""
+  ]
+]

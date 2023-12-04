@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/QHLProver/Grover.thy", "lemma psi_l_dim: \"psi_l l \\<in> carrier_vec N\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/QHLProver/Grover.thy",
+    "lemma psi_l_dim: \"psi_l l \\<in> carrier_vec N\""
+  ]
+]

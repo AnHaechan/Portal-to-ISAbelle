@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Featherweight_OCL/basic_types/UML_Void.thy", "lemma \"\\<upsilon>(null::('\\<AA>)Void) = true\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Featherweight_OCL/basic_types/UML_Void.thy",
+    "lemma \"\\<upsilon>(null::('\\<AA>)Void) = true\""
+  ]
+]

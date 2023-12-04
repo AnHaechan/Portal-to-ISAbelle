@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Optics/Lens_Laws.thy", "lemma put_is_create: \"put \\<sigma> v = create v\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Optics/Lens_Laws.thy",
+    "lemma put_is_create: \"put \\<sigma> v = create v\""
+  ]
+]

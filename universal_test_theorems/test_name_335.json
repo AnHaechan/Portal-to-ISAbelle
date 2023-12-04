@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Markov_Models/ex/PCTL.thy", "theorem Sat_sound: \"Sat F \\<noteq> None \\<Longrightarrow> Sat F = Some (svalid F)\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Markov_Models/ex/PCTL.thy",
+    "theorem Sat_sound: \"Sat F \\<noteq> None \\<Longrightarrow> Sat F = Some (svalid F)\""
+  ]
+]

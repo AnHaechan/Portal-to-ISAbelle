@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Root_Balanced_Tree/Root_Balanced_Tree.thy", "lemma bal_eq: \"bal n xs = Balance.bal n xs\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Root_Balanced_Tree/Root_Balanced_Tree.thy",
+    "lemma bal_eq: \"bal n xs = Balance.bal n xs\""
+  ]
+]

@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Universal_Turing_Machine/Recs.thy", "lemma enclen_zero [simp]: \"enclen 0 = 0\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Universal_Turing_Machine/Recs.thy",
+    "lemma enclen_zero [simp]: \"enclen 0 = 0\""
+  ]
+]

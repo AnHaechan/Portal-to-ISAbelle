@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Word_Lib/Word_Lemmas.thy", "lemma ex_mask_1[simp]: \"(\\<exists>x. mask x = 1)\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Word_Lib/Word_Lemmas.thy",
+    "lemma ex_mask_1[simp]: \"(\\<exists>x. mask x = 1)\""
+  ]
+]

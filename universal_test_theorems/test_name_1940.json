@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Buildings/Prelim.thy", "lemma cong_let: \"(let x = y in f x) = f y\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Buildings/Prelim.thy",
+    "lemma cong_let: \"(let x = y in f x) = f y\""
+  ]
+]

@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Word_Lib/Word_Lib.thy", "lemma and_mask_arith: \"w AND mask n = (w * 2^(size w - n)) div 2^(size w - n)\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Word_Lib/Word_Lib.thy",
+    "lemma and_mask_arith: \"w AND mask n = (w * 2^(size w - n)) div 2^(size w - n)\""
+  ]
+]

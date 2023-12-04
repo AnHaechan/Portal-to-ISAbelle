@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/LocalLexing/TheoremD6.thy", "lemma inc_dot_origin[simp]: \"item_origin (inc_dot d x) = item_origin x\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/LocalLexing/TheoremD6.thy",
+    "lemma inc_dot_origin[simp]: \"item_origin (inc_dot d x) = item_origin x\""
+  ]
+]

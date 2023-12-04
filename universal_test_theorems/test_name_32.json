@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/SequentInvertibility/ModalSequents.thy", "lemma mset_extend: shows \"mset (extend S c) = mset S + mset c\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/SequentInvertibility/ModalSequents.thy",
+    "lemma mset_extend: shows \"mset (extend S c) = mset S + mset c\""
+  ]
+]

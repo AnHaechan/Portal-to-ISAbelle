@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Separation_Algebra/Map_Extra.thy", "lemma map_add_eval_left': \"\\<lbrakk> x \\<notin> dom h' ; h \\<bottom> h' \\<rbrakk> \\<Longrightarrow> (h ++ h') x = h x\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Separation_Algebra/Map_Extra.thy",
+    "lemma map_add_eval_left': \"\\<lbrakk> x \\<notin> dom h' ; h \\<bottom> h' \\<rbrakk> \\<Longrightarrow> (h ++ h') x = h x\""
+  ]
+]

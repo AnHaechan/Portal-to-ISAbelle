@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/RefinementReactive/Reactive.thy", "lemma \"symbS o symbS' \\<noteq> symbSS'\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/RefinementReactive/Reactive.thy",
+    "lemma \"symbS o symbS' \\<noteq> symbSS'\""
+  ]
+]

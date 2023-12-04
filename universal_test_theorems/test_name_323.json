@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/HyperCTL/Noninterference.thy", "lemma purge_append: \"purge G (ucl1 @ ucl2) = purge G ucl1 @ purge G ucl2\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/HyperCTL/Noninterference.thy",
+    "lemma purge_append: \"purge G (ucl1 @ ucl2) = purge G ucl1 @ purge G ucl2\""
+  ]
+]

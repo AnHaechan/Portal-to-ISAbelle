@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Automatic_Refinement/Lib/Misc.thy", "lemma filter_upt_take_conv: \"[i\\<leftarrow>[n..<m]. P (take m l ! i) ] = [i\\<leftarrow>[n..<m]. P (l ! i) ]\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Automatic_Refinement/Lib/Misc.thy",
+    "lemma filter_upt_take_conv: \"[i\\<leftarrow>[n..<m]. P (take m l ! i) ] = [i\\<leftarrow>[n..<m]. P (l ! i) ]\""
+  ]
+]

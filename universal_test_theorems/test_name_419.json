@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Network_Security_Policy_Verification/Lib/FiniteListGraph.thy", "lemma delete_edge_length: \"length (edgesL (delete_edge v v' G)) \\<le> length (edgesL G)\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Network_Security_Policy_Verification/Lib/FiniteListGraph.thy",
+    "lemma delete_edge_length: \"length (edgesL (delete_edge v v' G)) \\<le> length (edgesL G)\""
+  ]
+]

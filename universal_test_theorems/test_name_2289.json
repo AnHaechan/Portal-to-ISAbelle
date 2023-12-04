@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/QHLProver/Grover.thy", "lemma psi_lR_is_beta: \"psi_l R = \\<beta>\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/QHLProver/Grover.thy",
+    "lemma psi_lR_is_beta: \"psi_l R = \\<beta>\""
+  ]
+]

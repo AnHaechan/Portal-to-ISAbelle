@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/MonoBoolTranAlgebra/Statements.thy", "lemma wp_mono2: \"p \\<le> q \\<Longrightarrow> wp x p \\<le> wp x q\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/MonoBoolTranAlgebra/Statements.thy",
+    "lemma wp_mono2: \"p \\<le> q \\<Longrightarrow> wp x p \\<le> wp x q\""
+  ]
+]

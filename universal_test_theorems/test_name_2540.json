@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Incompleteness/Coding.thy", "lemma atom_fresh_abst_dbfm [simp]: \"atom i \\<sharp> abst_dbfm i n A\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Incompleteness/Coding.thy",
+    "lemma atom_fresh_abst_dbfm [simp]: \"atom i \\<sharp> abst_dbfm i n A\""
+  ]
+]

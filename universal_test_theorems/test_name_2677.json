@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Possibilistic_Noninterference/Compositionality.thy", "theorem While_Sbis[simp]: assumes \"compatTst tst\" and \"c \\<approx>s d\" shows \"While tst c \\<approx>s While tst d\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Possibilistic_Noninterference/Compositionality.thy",
+    "theorem While_Sbis[simp]: assumes \"compatTst tst\" and \"c \\<approx>s d\" shows \"While tst c \\<approx>s While tst d\""
+  ]
+]

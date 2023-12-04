@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Slicing/While/WCFG.thy", "lemma WCFG_sourcelabel_less_num_nodes: \"prog \\<turnstile> (_ l _) -et\\<rightarrow> n' \\<Longrightarrow> l < #:prog\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Slicing/While/WCFG.thy",
+    "lemma WCFG_sourcelabel_less_num_nodes: \"prog \\<turnstile> (_ l _) -et\\<rightarrow> n' \\<Longrightarrow> l < #:prog\""
+  ]
+]

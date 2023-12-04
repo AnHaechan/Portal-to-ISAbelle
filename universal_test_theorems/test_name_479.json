@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/JinjaThreads/MM/JMM_Spec.thy", "lemma porder_action_order: \"porder_on (actions E) (action_order E)\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/JinjaThreads/MM/JMM_Spec.thy",
+    "lemma porder_action_order: \"porder_on (actions E) (action_order E)\""
+  ]
+]

@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Chandy_Lamport/Co_Snapshot.thy", "lemma cotrace_trace': \"cotrace c t \\<Longrightarrow> \\<exists>c'. trace c (ltake i t) c'\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Chandy_Lamport/Co_Snapshot.thy",
+    "lemma cotrace_trace': \"cotrace c t \\<Longrightarrow> \\<exists>c'. trace c (ltake i t) c'\""
+  ]
+]

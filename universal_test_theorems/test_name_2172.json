@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/KBPs/SPRViewNonDet.thy", "lemma tSplice_envAction: assumes tLen: \"tLength t = tLength t'\" shows \"envAction (tLast (t \\<^bsub>\\<^esub>\\<bowtie>\\<^bsub>a\\<^esub> t')) = envAction (tLast t)\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/KBPs/SPRViewNonDet.thy",
+    "lemma tSplice_envAction: assumes tLen: \"tLength t = tLength t'\" shows \"envAction (tLast (t \\<^bsub>\\<^esub>\\<bowtie>\\<^bsub>a\\<^esub> t')) = envAction (tLast t)\""
+  ]
+]

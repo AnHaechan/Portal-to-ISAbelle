@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Kuratowski_Closure_Complement/KuratowskiClosureComplementTheorem.thy", "lemma Rat_closure: shows \"closure \\<rat> = (UNIV :: real set)\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Kuratowski_Closure_Complement/KuratowskiClosureComplementTheorem.thy",
+    "lemma Rat_closure: shows \"closure \\<rat> = (UNIV :: real set)\""
+  ]
+]

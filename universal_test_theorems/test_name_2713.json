@@ -1,1 +1,6 @@
-[["/home/ywu/afp-2021-02-11/thys/Word_Lib/Norm_Words.thy", "lemma \"f 7 = f (3 :: 2 word)\""]]
+[
+  [
+    "/home/haechan.an/afp-2021-10-22/thys/Word_Lib/Norm_Words.thy",
+    "lemma \"f 7 = f (3 :: 2 word)\""
+  ]
+]
