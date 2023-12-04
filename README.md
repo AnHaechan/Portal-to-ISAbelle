@@ -57,10 +57,10 @@ PISA can also be used to extract proof corpus. We extracted the datasets in our 
    
    To build with 10 parallel processes:
    ```shell
-   hg clone ssh://hg@foss.heptapod.net/isa-afp/afp-devel -r Isabelle2021-1 // ssh-keygen and add ssh key to your gitlab account first
+   hg clone ssh://hg@foss.heptapod.net/isa-afp/afp-devel -r 85055e78c71b25de7d4087c9007a99d29e8252d0 # ssh-keygen and add ssh key to your gitlab account first
    mv afp-devel afp-2021-10-22
    export AFP=afp-2021-10-22/thys
-   // "Currently, do not build locally. Use pre-built heap images below." // isabelle build -b -D $AFP -j 20
+   # isabelle build -b -D $AFP -j 20  # Currently, do not build locally. Use pre-built heap images below.
    ```
    This takes ~150 hours of CPU time. On a 96-core TPU VM it takes ~5 wall-clock hours. We can extract ~93% of all afp theory files.
 
