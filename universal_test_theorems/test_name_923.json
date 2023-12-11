@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/PAC_Checker/PAC_Polynomials.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/PAC_Checker/PAC_Polynomials.thy",
     "lemma add_poly_p_sym: \\<open>add_poly_p (p, q, r) (p', q', r') \\<longleftrightarrow> add_poly_p (q, p, r) (q', p', r')\\<close>"
   ]
 ]

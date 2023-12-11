@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Category3/Adjunction.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Category3/Adjunction.thy",
     "lemma counit_determines_unit: assumes \"unit_counit_adjunction C D F G \\<eta> \\<epsilon>\" and \"unit_counit_adjunction C D F G \\<eta>' \\<epsilon>\" shows \"\\<eta> = \\<eta>'\""
   ]
 ]

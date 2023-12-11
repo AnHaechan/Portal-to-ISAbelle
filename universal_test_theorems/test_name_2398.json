@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/MonoBoolTranAlgebra/Statements.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/MonoBoolTranAlgebra/Statements.thy",
     "lemma (in mbt_algebra) hoare_assume_comp: \"hoare p ([\\<cdot>b] * x) q = hoare (p \\<sqinter> b) x q\""
   ]
 ]

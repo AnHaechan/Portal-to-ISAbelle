@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Order_Lattice_Props/Representations.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Order_Lattice_Props/Representations.thy",
     "lemma at_map_atom_pres2: \"atom (x::'a::atomic_boolean_algebra) \\<Longrightarrow> atom (at_map x)\""
   ]
 ]

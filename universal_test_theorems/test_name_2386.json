@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Auto2_Imperative_HOL/Imperative/BST_Impl.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Auto2_Imperative_HOL/Imperative/BST_Impl.thy",
     "lemma tree_is_empty_rule: \"<btree t b> tree_is_empty b <\\<lambda>r. btree t b * \\<up>(r \\<longleftrightarrow> t = Tip)>\""
   ]
 ]

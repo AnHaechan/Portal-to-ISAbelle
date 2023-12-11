@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Fishburn_Impossibility/Fishburn_Impossibility.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Fishburn_Impossibility/Fishburn_Impossibility.thy",
     "lemma [simp]: \"a \\<notin> scf R6\""
   ]
 ]

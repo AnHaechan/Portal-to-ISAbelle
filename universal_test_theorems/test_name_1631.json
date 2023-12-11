@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/HOL-CSP/Process.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/HOL-CSP/Process.thy",
     "lemma is_process_REP_LUB: assumes chain: \"chain S\" shows \"is_process (\\<Inter> (F ` range S), \\<Inter> (D ` range S))\""
   ]
 ]

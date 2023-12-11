@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/HereditarilyFinite/OrdArith.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/HereditarilyFinite/OrdArith.thy",
     "lemma LstSeq_imp_Seq_succ: \"LstSeq s k y \\<Longrightarrow> Seq s (succ k)\""
   ]
 ]

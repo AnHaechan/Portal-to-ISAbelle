@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/UTP/utp/utp_pred_laws.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/UTP/utp/utp_pred_laws.thy",
     "lemma cond_or_distr: \"((P \\<or> Q) \\<triangleleft> b \\<triangleright> (R \\<or> S)) = ((P \\<triangleleft> b \\<triangleright> R) \\<or> (Q \\<triangleleft> b \\<triangleright> S))\""
   ]
 ]

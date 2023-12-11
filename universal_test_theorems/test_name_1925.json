@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Quaternions/Quaternions.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Quaternions/Quaternions.thy",
     "lemma quat_norm_cnj [simp]: \"norm(cnj q) = norm q\""
   ]
 ]

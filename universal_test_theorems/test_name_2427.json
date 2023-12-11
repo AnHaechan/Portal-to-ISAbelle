@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Relational-Incorrectness-Logic/RelationalIncorrectness.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Relational-Incorrectness-Logic/RelationalIncorrectness.thy",
     "lemma fold_ohearn1: \"ir_valid P c SKIP Q = (\\<forall>t'. ohearn (\\<lambda>t. P t t') c (\\<lambda>t. Q t t'))\""
   ]
 ]

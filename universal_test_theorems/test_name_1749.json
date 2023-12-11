@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/WorkerWrapper/Nats.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/WorkerWrapper/Nats.thy",
     "lemma Nat_case_suc[simp]: \"Nat_case\\<cdot>z\\<cdot>s\\<cdot>(box\\<cdot>(Discr (Suc n))) = s\\<cdot>(box\\<cdot>(Discr n))\""
   ]
 ]

@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Koenigsberg_Friendship/MoreGraph.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Koenigsberg_Friendship/MoreGraph.thy",
     "lemma del_unEdge_valid'[simp]:\"valid_unSimpGraph G\\<Longrightarrow> valid_unSimpGraph (del_unEdge v w u G)\""
   ]
 ]

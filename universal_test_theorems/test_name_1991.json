@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Green/Paths.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Green/Paths.thy",
     "lemma boundary_chain_diff: assumes \"boundary_chain one_chain\" shows \"boundary_chain (one_chain - s)\""
   ]
 ]

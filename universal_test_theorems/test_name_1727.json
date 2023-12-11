@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Syntax_Independent_Logic/Natural_Deduction.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Syntax_Independent_Logic/Natural_Deduction.thy",
     "lemma nprv_dsjIR: \"nprv F \\<psi> \\<Longrightarrow> F \\<subseteq> fmla \\<Longrightarrow> finite F \\<Longrightarrow> \\<phi> \\<in> fmla \\<Longrightarrow> \\<psi> \\<in> fmla \\<Longrightarrow> nprv F (dsj \\<phi> \\<psi>)\""
   ]
 ]

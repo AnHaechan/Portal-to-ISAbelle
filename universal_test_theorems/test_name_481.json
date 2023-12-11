@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Featherweight_OCL/examples/Employee_Model/Design/Design_UML.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Featherweight_OCL/examples/Employee_Model/Design/Design_UML.thy",
     "lemma \" (\\<sigma>\\<^sub>1,\\<sigma>\\<^sub>1') \\<Turnstile> (X\\<^sub>P\\<^sub>e\\<^sub>r\\<^sub>s\\<^sub>o\\<^sub>n2 .oclIsMaintained())\""
   ]
 ]

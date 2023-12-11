@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Incompleteness/SyntaxN.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Incompleteness/SyntaxN.thy",
     "lemma Contrapos2: \"H \\<turnstile> (Neg B) IMP (Neg A) \\<Longrightarrow> H \\<turnstile> A IMP B\""
   ]
 ]

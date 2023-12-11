@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Multirelations/C_Algebras.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Multirelations/C_Algebras.thy",
     "lemma nvs_hom_meet: \"d (((x \\<sqinter> nc) \\<cdot> nc) \\<sqinter> ((y \\<sqinter> nc) \\<cdot> nc)) = d ((x \\<sqinter> nc) \\<cdot> nc) \\<sqinter> d ((y \\<sqinter> nc) \\<cdot> nc)\""
   ]
 ]

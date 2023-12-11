@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Topological_Semantics/topo_strict_implication.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Topological_Semantics/topo_strict_implication.thy",
     "lemma imp_rel: \"\\<forall>a b. a \\<^bold>\\<Rightarrow> b \\<^bold>\\<preceq> a \\<^bold>\\<rightarrow> b\""
   ]
 ]

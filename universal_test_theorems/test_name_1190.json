@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Heard_Of/HOModel.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Heard_Of/HOModel.thy",
     "lemma HOinitConfig_eq: \"HOinitConfig A cfg = (\\<forall>p. initState A p (cfg p))\""
   ]
 ]

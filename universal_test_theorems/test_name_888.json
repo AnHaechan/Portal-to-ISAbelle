@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Syntax_Independent_Logic/Deduction.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Syntax_Independent_Logic/Deduction.thy",
     "lemma prv_softSubst_implies_subst: assumes \"x \\<in> var\" \"t \\<in> trm\" \"\\<phi> \\<in> fmla\" and \"x \\<notin> FvarsT t\" and \"prv (softSubst \\<phi> t x)\" shows \"prv (subst \\<phi> t x)\""
   ]
 ]

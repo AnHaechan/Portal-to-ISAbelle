@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/MSO_Regex_Equivalence/Pi_Regular_Set.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/MSO_Regex_Equivalence/Pi_Regular_Set.thy",
     "lemma conc_pow_comm: shows \"A @@ (A ^^ n) = (A ^^ n) @@ A\""
   ]
 ]

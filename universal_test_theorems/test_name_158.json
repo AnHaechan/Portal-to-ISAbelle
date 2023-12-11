@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/HOL-CSP/Process.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/HOL-CSP/Process.thy",
     "lemma no_Trace_implies_no_Failure: \"s \\<notin> T P \\<Longrightarrow> (s, {}) \\<notin> F P\""
   ]
 ]

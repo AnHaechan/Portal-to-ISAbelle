@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/JinjaThreads/Framework/LTS.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/Framework/LTS.thy",
     "lemma rtranclp_flip [flip_simps]: \"(flip r)^** = flip r^**\""
   ]
 ]

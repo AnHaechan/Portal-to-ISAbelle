@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Graph_Theory/Digraph.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Graph_Theory/Digraph.thy",
     "lemma symmetric_reachable: assumes \"symmetric G\" \"v \\<rightarrow>\\<^sup>*\\<^bsub>G\\<^esub> w\" shows \"w \\<rightarrow>\\<^sup>*\\<^bsub>G\\<^esub> v\""
   ]
 ]

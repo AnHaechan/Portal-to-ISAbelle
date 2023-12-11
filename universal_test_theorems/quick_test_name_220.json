@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Coinductive/Coinductive_List.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Coinductive/Coinductive_List.thy",
     "lemma lnth_lconcat_ltake: assumes \"enat w < llength (lconcat (ltake (enat n) xss))\" shows \"lnth (lconcat (ltake (enat n) xss)) w = lnth (lconcat xss) w\""
   ]
 ]

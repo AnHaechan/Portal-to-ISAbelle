@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/HOL-CSP/Process.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/HOL-CSP/Process.thy",
     "lemma is_process8: \"is_process P \\<Longrightarrow> \\<forall> s X. s \\<notin> DIVERGENCES P \\<or> (s,X) \\<in> FAILURES P\""
   ]
 ]

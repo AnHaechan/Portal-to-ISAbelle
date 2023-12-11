@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Tree_Decomposition/Graph.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Tree_Decomposition/Graph.thy",
     "lemma path_tl: \"path xs \\<Longrightarrow> path (tl xs)\""
   ]
 ]

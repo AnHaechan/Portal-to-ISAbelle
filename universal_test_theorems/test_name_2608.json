@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Category3/SetCategory.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Category3/SetCategory.thy",
     "lemma arr_eqI': assumes \"par f f'\" and \"\\<And>x. \\<guillemotleft>x : unity \\<rightarrow> dom f\\<guillemotright> \\<Longrightarrow> f \\<cdot> x = f' \\<cdot> x\" shows \"f = f'\""
   ]
 ]

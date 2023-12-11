@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/PropResPI/Propositional_Resolution.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/PropResPI/Propositional_Resolution.thy",
     "lemma atoms_formula_simplify: shows \"atoms_formula (simplify S) \\<subseteq> atoms_formula S\""
   ]
 ]

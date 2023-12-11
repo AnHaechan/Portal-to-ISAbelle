@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Lambda_Free_RPOs/Lambda_Free_Util.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Lambda_Free_RPOs/Lambda_Free_Util.thy",
     "lemma hd_in_set: \"length xs \\<noteq> 0 \\<Longrightarrow> hd xs \\<in> set xs\""
   ]
 ]

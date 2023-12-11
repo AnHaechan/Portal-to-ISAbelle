@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Applicative_Lifting/Joinable.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Applicative_Lifting/Joinable.thy",
     "lemma joinable_le_rtscl: \"joinable (R\\<^sup>*) \\<subseteq> (R \\<union> R\\<inverse>)\\<^sup>*\""
   ]
 ]

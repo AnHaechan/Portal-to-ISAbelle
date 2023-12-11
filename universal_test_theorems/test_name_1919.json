@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Incredible_Proof_Machine/Incredible_Trees.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Incredible_Proof_Machine/Incredible_Trees.thy",
     "lemma iNodeOf_tree_at: \"iwf fc t ent \\<Longrightarrow> is \\<in> it_paths t \\<Longrightarrow> iNodeOf (tree_at t is) \\<in> sset nodes\""
   ]
 ]

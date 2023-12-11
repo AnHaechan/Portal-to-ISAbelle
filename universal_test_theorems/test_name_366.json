@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Knot_Theory/Tangle_Algebra.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Knot_Theory/Tangle_Algebra.thy",
     "lemma Nil_left_tensor:\"xs \\<otimes> (basic ([])) = xs\""
   ]
 ]

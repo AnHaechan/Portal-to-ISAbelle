@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Coinductive/Coinductive_Stream.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Coinductive/Coinductive_Stream.thy",
     "lemma smap_stream_of_llist [simp]: shows \"smap f (stream_of_llist xs) = stream_of_llist (lmap f xs)\""
   ]
 ]

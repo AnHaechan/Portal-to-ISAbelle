@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Gromov_Hyperbolicity/Isometries.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Gromov_Hyperbolicity/Isometries.thy",
     "lemma some_geodesic_endpoints [simp]: \"x \\<in> {x--S--y}\" \"y \\<in> {x--S--y}\" \"{x--S--y} \\<noteq> {}\""
   ]
 ]

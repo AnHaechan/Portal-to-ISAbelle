@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/LTL_Master_Theorem/Logical_Characterization/Extra_Equivalence_Relations.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/LTL_Master_Theorem/Logical_Characterization/Extra_Equivalence_Relations.thy",
     "lemma unfolding_monotonic: \"w \\<Turnstile>\\<^sub>n \\<phi>[X]\\<^sub>\\<nu> \\<Longrightarrow> w \\<Turnstile>\\<^sub>n (Unf \\<phi>)[X]\\<^sub>\\<nu>\""
   ]
 ]

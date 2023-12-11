@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/POPLmark-deBruijn/POPLmarkRecord.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/POPLmark-deBruijn/POPLmarkRecord.thy",
     "lemma substrT_setD: \"(a, T) \\<in> set (fs[k \\<mapsto>\\<^sub>\\<tau> U]\\<^sub>r\\<^sub>\\<tau>) \\<Longrightarrow> \\<exists>T'. (a, T') \\<in> set fs \\<and> T = T'[k \\<mapsto>\\<^sub>\\<tau> U]\\<^sub>\\<tau>\""
   ]
 ]

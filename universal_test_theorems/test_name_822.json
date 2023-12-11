@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Separata/Separata.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Separata/Separata.thy",
     "lemma lspasl_andl: \"Gamma \\<and> (A h) \\<and> (B h) \\<longrightarrow> Delta \\<Longrightarrow> Gamma \\<and> ((A and B) h) \\<longrightarrow> Delta\""
   ]
 ]

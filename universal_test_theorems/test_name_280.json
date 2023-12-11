@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Perfect-Number-Thm/Sigma.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Perfect-Number-Thm/Sigma.thy",
     "lemma prodsums_eq_sumprods: fixes p :: nat and m :: nat assumes \"coprime p m\" shows \"\\<Sum>{p ^ f |f. f \\<le> n} * \\<Sum>{b. b dvd m} = \\<Sum>{p ^ f * b |f b. f \\<le> n \\<and> b dvd m}\" (is \"?lhs = ?rhs\")"
   ]
 ]

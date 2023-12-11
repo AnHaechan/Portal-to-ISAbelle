@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Elliptic_Curves_Group_Law/Elliptic_Locale.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Elliptic_Curves_Group_Law/Elliptic_Locale.thy",
     "lemma (in cring) proj_eq_sym: \"proj_eq p p' \\<Longrightarrow> proj_eq p' p\""
   ]
 ]

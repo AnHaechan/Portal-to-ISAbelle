@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/HRB-Slicing/StaticInter/CFG.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/HRB-Slicing/StaticInter/CFG.thy",
     "lemma call_intra_edge_False: assumes \"valid_edge a\" and \"kind a = Q:r\\<hookrightarrow>\\<^bsub>p\\<^esub>fs\" and \"valid_edge a'\" and \"sourcenode a = sourcenode a'\" and \"intra_kind(kind a')\" shows \"kind a' = (\\<lambda>cf. False)\\<^sub>\\<surd>\""
   ]
 ]

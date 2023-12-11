@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/UpDown_Scheme/Grid.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/UpDown_Scheme/Grid.thy",
     "lemma base_empty: assumes p_grid: \"p \\<in> sparsegrid' dm\" shows \"base {} p = p\""
   ]
 ]

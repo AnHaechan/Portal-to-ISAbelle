@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Triangle/Angles.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Triangle/Angles.thy",
     "lemma angle_commute: \"angle a b c = angle c b a\""
   ]
 ]

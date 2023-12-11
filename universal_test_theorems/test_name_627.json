@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Extended_Finite_State_Machines/EFSM.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Extended_Finite_State_Machines/EFSM.thy",
     "lemma obtains_base: \"obtains s r e s' r' [] = (s = s' \\<and> r = r')\""
   ]
 ]

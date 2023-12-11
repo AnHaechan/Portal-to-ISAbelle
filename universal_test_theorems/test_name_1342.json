@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/BDD/General.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/BDD/General.thy",
     "lemma subnode_dag_cons: \"\\<And> p. \\<lbrakk>Dag p low high t; no \\<in> set_of t\\<rbrakk> \\<Longrightarrow> \\<exists> not. Dag no low high not\""
   ]
 ]

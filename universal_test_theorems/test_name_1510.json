@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Simpl/Language.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Simpl/Language.thy",
     "lemma flatten_block [simp]: \"flatten (block init bdy return result) = [block init bdy return result]\""
   ]
 ]

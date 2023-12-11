@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Psi_Calculi/Frame.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Psi_Calculi/Frame.thy",
     "lemma freshBottom[simp]: fixes x :: name shows \"x \\<sharp> \\<bottom>\""
   ]
 ]

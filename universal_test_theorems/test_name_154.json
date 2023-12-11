@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Vickrey_Clarke_Groves/SetUtils.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Vickrey_Clarke_Groves/SetUtils.thy",
     "lemma trivial_same: \"trivial X = (\\<forall>x1 \\<in> X. \\<forall>x2 \\<in> X. x1 = x2)\""
   ]
 ]

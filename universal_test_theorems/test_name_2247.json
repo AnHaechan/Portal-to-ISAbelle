@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Order_Lattice_Props/Closure_Operators.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Order_Lattice_Props/Closure_Operators.thy",
     "lemma clop_idem_var: \"clop f \\<Longrightarrow> f (f x) = f x\""
   ]
 ]

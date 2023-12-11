@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/BirdKMP/Theory_Of_Lists.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/BirdKMP/Theory_Of_Lists.thy",
     "lemma slistmem_scons[simp]: shows \"slistmem x (y :# ys) \\<longleftrightarrow> (x = y \\<and> x \\<noteq> \\<bottom> \\<and> ys \\<noteq> \\<bottom>) \\<or> (slistmem x ys \\<and> y \\<noteq> \\<bottom>)\""
   ]
 ]

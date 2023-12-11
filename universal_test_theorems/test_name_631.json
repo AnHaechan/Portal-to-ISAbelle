@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Fourier/Fourier.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Fourier/Fourier.thy",
     "lemma sqrt_pi_ge1: \"sqrt pi \\<ge> 1\""
   ]
 ]

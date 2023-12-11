@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Inductive_Inference/Standard_Results.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Inductive_Inference/Standard_Results.thy",
     "lemma swap_P2: assumes \"f \\<in> \\<P>\\<^sup>2\" shows \"(\\<lambda>x y. f y x) \\<in> \\<P>\\<^sup>2\""
   ]
 ]

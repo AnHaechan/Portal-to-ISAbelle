@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/JinjaThreads/Common/Heap.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/Common/Heap.thy",
     "lemma addr_loc_type_fun: \"\\<lbrakk> P,h \\<turnstile> a@al : T; P,h \\<turnstile> a@al : T' \\<rbrakk> \\<Longrightarrow> T = T'\""
   ]
 ]

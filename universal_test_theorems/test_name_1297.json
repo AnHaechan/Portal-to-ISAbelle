@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Types_Tableaus_and_Goedels_God/FittingProof.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Types_Tableaus_and_Goedels_God/FittingProof.thy",
     "lemma God_starNecExists_v1: \"\\<lfloor>\\<^bold>\\<box>\\<^bold>\\<exists>\\<^sup>E \\<^bold>\\<down>G*\\<rfloor>\""
   ]
 ]

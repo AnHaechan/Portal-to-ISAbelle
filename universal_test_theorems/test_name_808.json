@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Approximation_Algorithms/Approx_VC_Hoare.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Approximation_Algorithms/Approx_VC_Hoare.thy",
     "lemma invar_step: assumes \"F \\<noteq> {}\" \"invar C F\" shows \"invar (C \\<union> some F) (F - {e' \\<in> F. some F \\<inter> e' \\<noteq> {}})\""
   ]
 ]

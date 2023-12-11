@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Sort_Encodings/M.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Sort_Encodings/M.thy",
     "lemma satPB_Un[simp]: \"satPB \\<xi> (\\<Phi>1 \\<union> \\<Phi>2) \\<longleftrightarrow> satPB \\<xi> \\<Phi>1 \\<and> satPB \\<xi> \\<Phi>2\""
   ]
 ]

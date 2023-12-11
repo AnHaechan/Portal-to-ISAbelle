@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Markov_Models/ex/MDP_RP.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Markov_Models/ex/MDP_RP.thy",
     "lemma image_eq_singleton_iff: \"inj_on f S \\<Longrightarrow> f ` S = {y} \\<longleftrightarrow> (\\<exists>x. S = {x} \\<and> y = f x)\""
   ]
 ]

@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Free-Boolean-Algebra/Free_Boolean_Algebra.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Free-Boolean-Algebra/Free_Boolean_Algebra.thy",
     "lemma formulas_top: \"\\<top> \\<in> formulas S\""
   ]
 ]

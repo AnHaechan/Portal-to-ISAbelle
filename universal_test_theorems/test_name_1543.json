@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Special_Function_Bounds/Sin_Cos_Bounds.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Special_Function_Bounds/Sin_Cos_Bounds.thy",
     "lemma sinpoly_Suc: \"sinpoly (Suc n) = (\\<lambda>x. sinpoly n x + sin_coeff n * x ^ n)\""
   ]
 ]

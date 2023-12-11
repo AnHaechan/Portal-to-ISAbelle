@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Ordered_Resolution_Prover/Abstract_Substitution.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Ordered_Resolution_Prover/Abstract_Substitution.thy",
     "lemma subsumes_trans: \"subsumes C D \\<Longrightarrow> subsumes D E \\<Longrightarrow> subsumes C E\""
   ]
 ]

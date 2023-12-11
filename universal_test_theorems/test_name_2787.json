@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Word_Lib/Word_Next.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Word_Lib/Word_Next.thy",
     "lemma \"word_next (2:: 8 word) = 3\""
   ]
 ]

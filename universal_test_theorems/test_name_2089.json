@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Ordered_Resolution_Prover/Abstract_Substitution.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Ordered_Resolution_Prover/Abstract_Substitution.thy",
     "lemma subst_lit_id_subst[simp]: \"L \\<cdot>l id_subst = L\""
   ]
 ]

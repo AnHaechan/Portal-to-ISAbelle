@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Automated_Stateful_Protocol_Verification/Term_Implication.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Automated_Stateful_Protocol_Verification/Term_Implication.thy",
     "lemma timpl_closure_set_timpls_trancl_eq: \"timpl_closure_set M (c\\<^sup>+) = timpl_closure_set M c\""
   ]
 ]

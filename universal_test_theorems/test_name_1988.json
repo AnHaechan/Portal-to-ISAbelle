@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Ordinal/OrdinalInduct.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Ordinal/OrdinalInduct.thy",
     "lemma oSuc_le_eq_less: \"(oSuc x \\<le> y) = (x < y)\""
   ]
 ]

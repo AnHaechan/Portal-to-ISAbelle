@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Group-Ring-Module/Algebra1.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Group-Ring-Module/Algebra1.thy",
     "lemma (in Order) ord_equiv_sym:\"\\<lbrakk>Order E; ord_equiv D E \\<rbrakk> \\<Longrightarrow> ord_equiv E D\""
   ]
 ]

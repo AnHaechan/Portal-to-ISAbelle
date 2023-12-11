@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Octonions/Octonions.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Octonions/Octonions.thy",
     "lemma octo_of_real_power [simp]: \"octo_of_real (x ^ y) = (octo_of_real x :: octo) ^ y\""
   ]
 ]

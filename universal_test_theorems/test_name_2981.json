@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/CryptHOL/List_Bits.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/CryptHOL/List_Bits.thy",
     "lemma xor_bool_def [iff]: fixes x y :: bool shows \"x \\<oplus> y \\<longleftrightarrow> x \\<noteq> y\""
   ]
 ]

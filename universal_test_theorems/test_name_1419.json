@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Algebraic_Numbers/Algebraic_Numbers.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Algebraic_Numbers/Algebraic_Numbers.thy",
     "lemma algebraic_of_rat: \"algebraic (of_rat x)\""
   ]
 ]

@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Buildings/Simplicial.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Buildings/Simplicial.thy",
     "lemma finite_simplex: \"x\\<in>X \\<Longrightarrow> finite x\""
   ]
 ]

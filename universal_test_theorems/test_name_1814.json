@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Simpl/SmallStep.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Simpl/SmallStep.thy",
     "lemma no_step_final: assumes step: \"\\<Gamma>\\<turnstile>(c,s) \\<rightarrow> (c',s')\" shows \"final (c,s) \\<Longrightarrow> P\""
   ]
 ]

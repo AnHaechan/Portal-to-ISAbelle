@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/PLM/TAO_9_PLM.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/PLM/TAO_9_PLM.thy",
     "lemma oth_class_taut_3_b[PLM]: \"[(\\<phi> \\<^bold>& \\<psi>) \\<^bold>\\<equiv> (\\<psi> \\<^bold>& \\<phi>) in v]\""
   ]
 ]

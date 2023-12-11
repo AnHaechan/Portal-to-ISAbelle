@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Lambda_Free_RPOs/Lambda_Free_Term.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Lambda_Free_RPOs/Lambda_Free_Term.thy",
     "lemma wary_sub: \"sub s t \\<Longrightarrow> wary t \\<Longrightarrow> wary s\""
   ]
 ]

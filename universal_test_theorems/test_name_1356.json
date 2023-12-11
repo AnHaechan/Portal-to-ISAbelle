@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/HOL-CSP/Process.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/HOL-CSP/Process.thy",
     "lemma is_processT2_TR : \"\\<forall>s. s \\<in> T P \\<longrightarrow> front_tickFree s\""
   ]
 ]

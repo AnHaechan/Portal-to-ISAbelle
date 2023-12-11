@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Higher_Order_Terms/Term_Class.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Higher_Order_Terms/Term_Class.thy",
     "lemma strip_comb_size: \"t' \\<in> set (snd (strip_comb t)) \\<Longrightarrow> size t' < size t\""
   ]
 ]

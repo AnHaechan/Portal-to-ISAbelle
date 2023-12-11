@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Knuth_Bendix_Order/Subterm_and_Context.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Knuth_Bendix_Order/Subterm_and_Context.thy",
     "lemma supt_supteq_set_conv: \"{\\<rhd>} = {\\<unrhd>} - Id\""
   ]
 ]

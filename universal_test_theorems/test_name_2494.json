@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Extended_Finite_State_Machines/GExp.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Extended_Finite_State_Machines/GExp.thy",
     "lemma x_in_set_fold_eq: \"x \\<in> set ll \\<Longrightarrow> fold (\\<or>?) (map (\\<lambda>xa. if x = xa then true else false) ll) false = true\""
   ]
 ]

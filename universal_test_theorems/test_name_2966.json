@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/LocalLexing/TheoremD5.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/LocalLexing/TheoremD5.thy",
     "lemma terminals_empty[simp]: \"terminals [] = []\""
   ]
 ]

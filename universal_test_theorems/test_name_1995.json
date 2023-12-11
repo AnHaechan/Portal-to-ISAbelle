@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/HOLCF-Prelude/examples/HLint.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/HOLCF-Prelude/examples/HLint.thy",
     "lemma \"neq\\<cdot>Nothing\\<cdot>x = isJust\\<cdot>x\""
   ]
 ]

@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/PseudoHoops/PseudoWaisbergAlgebra.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/PseudoHoops/PseudoWaisbergAlgebra.thy",
     "lemma P2_a: \"x l\\<rightarrow> y = 1 \\<Longrightarrow> y l\\<rightarrow> x = 1 \\<Longrightarrow> x = y\""
   ]
 ]

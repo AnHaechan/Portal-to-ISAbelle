@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Planarity_Certificates/Planarity/Planar_Subgraph.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Planarity_Certificates/Planarity/Planar_Subgraph.thy",
     "lemma G_scc_of_tail_not_in: \"G.scc_of (tail G a) \\<notin> H.sccs_verts\""
   ]
 ]

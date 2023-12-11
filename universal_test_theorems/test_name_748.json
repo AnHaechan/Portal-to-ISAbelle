@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/LatticeProperties/Conj_Disj.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/LatticeProperties/Conj_Disj.thy",
     "lemma inf_Disj: \"(\\<lambda> (x::'a::complete_distrib_lattice) . inf x y) \\<in> Apply.Disjunctive\""
   ]
 ]

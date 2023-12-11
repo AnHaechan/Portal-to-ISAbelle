@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/JinjaThreads/MM/JMM_Typesafe.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/MM/JMM_Typesafe.thy",
     "lemma tconf_conv_tconf [heap_independent, iff]: \"h.tconf P h = tconf P\""
   ]
 ]

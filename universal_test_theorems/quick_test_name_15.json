@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Partial_Order_Reduction/Extensions/ESet_Extensions.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Partial_Order_Reduction/Extensions/ESet_Extensions.thy",
     "lemma esize_infinite_enat[dest, simp]: \"infinite A \\<Longrightarrow> enat k < esize A\""
   ]
 ]

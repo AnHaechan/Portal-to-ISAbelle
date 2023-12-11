@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Abortable_Linearizable_Modules/Idempotence.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Abortable_Linearizable_Modules/Idempotence.thy",
     "lemma P14_invariant: shows \"invariant (composition) P14\""
   ]
 ]

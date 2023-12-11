@@ -1,6 +1,6 @@
 [
   [
-    "/home/haechan.an/afp-2021-10-22/thys/Statecharts/CarAudioSystem.thy",
+    "/home/haechan.an/afp-2021-02-11/thys/Statecharts/CarAudioSystem.thy",
     "lemma Labels_TunerMode_CTRL: \"Labels TunerMode_CTRL = TunerMode_CTRL_Labels\""
   ]
 ]
