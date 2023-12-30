@@ -171,6 +171,8 @@ class OneStageBody extends ZServer[ZEnv, Any] {
       action: String, 
       new_name: String
     ): String = {
+    println(s"tls {$toplevel_state_name} action {$action} new_name {$new_name}")
+
     if (pisaos.top_level_state_map.contains(toplevel_state_name)) {
       var actual_timeout = 10000
       val old_state: ToplevelState = pisaos.retrieve_tls(toplevel_state_name)
@@ -206,11 +208,11 @@ class OneStageBody extends ZServer[ZEnv, Any] {
       } else {
         actual_step = action
       }
-      // println("Actual step: " + actual_step)
+      println("Actual step: " + actual_step)
 
       val new_state: ToplevelState = pisaos.step(actual_step, old_state, actual_timeout)
-      // println("Application successful")
-      // println("New state: " + pisaos.getStateString(new_state))
+      println("Application successful")
+      println("New state: " + pisaos.getStateString(new_state))
       
       pisaos.register_tls(name = new_name, tls = new_state)
       if (hammered) {
@@ -346,6 +348,7 @@ class OneStageBody extends ZServer[ZEnv, Any] {
           val tls_name: String = isa_command.command.split("<apply to top level state>")(1).trim
           val action: String = isa_command.command.split("<apply to top level state>")(2).trim
           val new_name: String = isa_command.command.split("<apply to top level state>")(3).trim
+
           try {
             println("Start dealing")
             deal_with_apply_to_tls(tls_name, action, new_name)
