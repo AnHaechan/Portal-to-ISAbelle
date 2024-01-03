@@ -1,3 +1,9 @@
+# NOTE for thor_reproduce
+This is for isabelle2021 server for pisa client.
+Replace `pisa_path` in the [thor_reproduce/solvers.bfs_solvers.start_isabelle](https://github.com/AnHaechan/thor_reproduce/blob/main/solvers/bfs_solvers.py#L559C26-L559C26) with the path to this repository.
+Configure isabelle beforeahand by following instructions in the [thor_reproduce](https://github.com/AnHaechan/thor_reproduce).
+Only "scala side" (src/main/scala/pisa) will be used of this branch.
+
 # PISA (Portal to ISAbelle)
 PISA supports automated proof search with the interactive theorem prover [Isabelle](https://isabelle.in.tum.de).
 
@@ -36,43 +42,6 @@ PISA can also be used to extract proof corpus. We extracted the datasets in our 
     ```shell
     sbt compile
     ```
-   
-3. **Configure Isabelle**
-
-    Go back to home directory first and download isabelle2021
-    ```shell
-    cd ~
-    wget https://isabelle.in.tum.de/website-Isabelle2021/dist/Isabelle2021_linux.tar.gz
-    tar -xzf Isabelle2021_linux.tar.gz
-    alias isabelle=~/Isabelle2021/bin/isabelle
-    ``` 
-    
-4. **Build Isabelle HOL**
-   ```shell
-   isabelle build -b -D Isabelle2021/src/HOL
-   ```
-   This takes ~6 hours of CPU time. The actual time depends on the number of CPUs you have. 
-
-5. **Download and build afp**
-   ```shell
-   wget https://www.isa-afp.org/release/afp-2021-10-22.tar.gz
-   tar -xzf afp-2021-10-22.tar.gz
-   export AFP=afp-2021-10-22/thys
-   isabelle build -b -D $AFP
-   ```
-   This takes ~24 hours on 8 CPUs. We can extract ~93% of all afp theory files.
-
-   We built the heap images of Isabelle2021 with afp-2021-10-22 for linux machines (ubuntu). You can download it at:
-   https://archive.org/download/isabelle_heaps.tar/isabelle_heaps.tar.gz
-   and decompress it as ~/.isabelle.
-
-   Note: this does not always work on different operating systems.
-
-6. **Extract the test theorems**
-   The universal test theorems contains 3000 theorems with their file paths and names. The first 600 of them are packaged as "quick" theorems if you have no patience testing all 3000 out.
-   ```shell
-   tar -xzf universal_test_theorems.tar.gz
-   ```
 
 ## Evaluation setup (if you want to have N (N>50) PISA servers running on your machine)
 1. **Create some PISA jars**
@@ -97,48 +66,6 @@ PISA can also be used to extract proof corpus. We extracted the datasets in our 
    ```shell
    python eval_setup/copy_isabelle.py --isabelle $ISABELLE --isabelle-user $ISABELLE_USER --number-of-copies $N --output-path $OUTPUT_PATH
    ```
-
-## Extract PISA dataset
-   ### Archive of formal proofs
-   Generate commands for extracting proofs.
-   Edit line 9 of command_generation/generate_commands_afp.py so that it uses your actually home directory.
-   Run the following command:
-   ```shell
-   python command_generation/generate_commands_afp.py
-   ```
-   and follow the instructions. At the first step it asks you which ports you want to use. We current support ports 8000-8200, 9000, 10000, 11000, 12000. You can also add your favourites by editing src/scala/server/PisaOneStageServers.scala. This dictates how many processes for extraction you wish to run at the same time.
-
-   It should say "A total of X files are due to be generated" with X > 5000.
-   And you should see files called afp_extract_script_${port_number}.sh in the directory.
-
-   To extract the files, run the following commands to install necessary libraries and execute the commands:
-   ```shell
-   pip install grpc
-   pip install func_timeout
-   bash afp_extract_script_${port_number_1}.sh &
-   bash afp_extract_script_${port_number_2}.sh &
-   bash afp_extract_script_${port_number_3}.sh &
-   ...
-   bash afp_extract_script_${port_number_n}.sh &
-   ```
-
-   With a single process, the extraction takes ~5 days. This will extract files to the directory afp_extractions. We have also extracted this dataset, available for download at https://archive.org/download/afp_extractions.tar/afp_extractions.tar.gz.
-
-   To extract state-only source-to-target pairs, run the following command:
-   ```shell
-   python3 src/main/python/prepare_episodic_transitions.py -efd afp_extractions -sd data/state_only --state
-   ```
-
-   To extract proof-only source-to-target pairs, run the following command:
-   ```shell
-   python3 src/main/python/prepare_episodic_transitions.py -efd afp_extractions -sd data/proof_only --proof
-   ```
-
-   To extract proof-and-state source-to-target pairs, run the following command:
-   ```shell
-   python3 src/main/python/prepare_episodic_transitions.py -efd afp_extractions -sd data/proof_and_state --proof --state
-   ```
-   Note that extraction involving proofs will take pretty long and will result in large files. State-only files amount to 8.1G. With proof steps it's even much larger.
 
 # Acknowledgement
 This library is heavily based on [scala-isabelle](https://github.com/dominique-unruh/scala-isabelle), the work of Dominique Unruh. We are very grateful to Dominique for his kind help and guidance.
