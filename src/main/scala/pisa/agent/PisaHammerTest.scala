@@ -58,15 +58,21 @@ object PisaHammerTest {
         str
       }
     ).children.head
-    val theory_path = json_element(0).extract[String].replaceAll("/home/ywu/afp-2021-02-11", "/home/qj213/afp-2021-10-22")
+
+    // theory_path: already has local path, e.g. "/home/haechan.an/afp-2021-02-11/thys/Valuation/Valuation1.thy"
+    val theory_path = json_element(0).extract[String] // .replaceAll("/home/ywu/afp-2021-02-11", "/home/qj213/afp-2021-10-22")
     val thys_index = theory_path.split("/").indexOf("thys")
     val working_directory = {
-      if (theory_path.contains("miniF2F")) "/home/qj213/afp-2021-10-22/thys/Symmetric_Polynomials"
-      else theory_path.split("/").take(thys_index + 2).mkString("/")
+      theory_path.split("/").take(thys_index + 2).mkString("/")
+
+      // No miniF2F
+      //
+      // if (theory_path.contains("miniF2F")) "/home/qj213/afp-2021-10-22/thys/Symmetric_Polynomials"
+      // else theory_path.split("/").take(thys_index + 2).mkString("/")
     }
     val theorem_name = json_element(1).extract[String].replaceAll("\n", " ").replaceAll(" +", " ").trim
     val pisaos = new PisaOS(
-      path_to_isa_bin = "/home/qj213/Isabelle2021",
+      path_to_isa_bin = "/home/haechan.an/Isabelle2021", // "/home/qj213/Isabelle2021",
       path_to_file = theory_path,
       working_directory = working_directory
     )

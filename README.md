@@ -4,6 +4,22 @@ Replace `pisa_path` in the [thor_reproduce/solvers.bfs_solvers.start_isabelle](h
 Configure isabelle beforeahand by following instructions in the [thor_reproduce](https://github.com/AnHaechan/thor_reproduce).
 Only "scala side" (src/main/scala/pisa) will be used of this branch.
 
+Additionally, testing sledgehammer-only on the benchmark is done in this repository.
+```
+python3 command_generation/hammer_command_generator.py
+// For now, use run 3 processes at the same time (in the paper it is mentioned that an Isabelle process has access up to 32 CPU and we have 96 cores in the TPU VM)
+// Don't use heuristics to run hammer-only
+
+chmod +x scripts/eval_hammer_*.sh
+
+./scripts/eval_hammer_0.sh > script0.log 2>&1 &
+./scripts/eval_hammer_1.sh > script1.log 2>&1 &
+./scripts/eval_hammer_2.sh > script2.log 2>&1 &
+wait
+
+python3 gather_hammer_results.py // to read results in `results/hammer_eval/`
+```
+
 # PISA (Portal to ISAbelle)
 PISA supports automated proof search with the interactive theorem prover [Isabelle](https://isabelle.in.tum.de).
 

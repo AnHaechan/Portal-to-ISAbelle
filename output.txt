@@ -1,7 +1,0 @@
-[info] welcome to sbt 1.4.3 (Oracle Corporation Java 11.0.11)
-[info] loading settings for project portal-to-isabelle-build from plugins.sbt ...
-[info] loading project definition from /home/haechan.an/PISA-2021/Portal-to-ISAbelle/project
-[info] loading settings for project portal-to-isabelle from build.sbt ...
-[info] set current project to PISA (in build file:/home/haechan.an/PISA-2021/Portal-to-ISAbelle/)
-[info] running pisa.server.PisaOneStageServer8000 
-Server is running. Press Ctrl-C to stop.
