@@ -2,6 +2,8 @@
 This is for extracting isabelle data from afp.
 Setup according the installation steps below.
 
+TODO: Rebase my commits on top of main branch onto isabelle2021 branch & merge with thor-client-isabelle2021 branch
+
 # PISA (Portal to ISAbelle)
 PISA supports automated proof search with the interactive theorem prover [Isabelle](https://isabelle.in.tum.de).
 
@@ -81,13 +83,6 @@ PISA can also be used to extract proof corpus. We extracted the datasets in our 
    https://archive.org/download/isabelle2022_afp20221206_heaps/isabelle2022heaps.tar.gz and decompress it as ~/.isabelle.
 
    Note: this does not always work on different operating systems.
-
-6. **Extract & Rename the test theorems**
-   The universal test theorems contains 3000 theorems with their file paths and names. The first 600 of them are packaged as "quick" theorems if you have no patience testing all 3000 out.
-   ```shell
-   tar -xzf universal_test_theorems.tar.gz
-   python3 fix_path_universal_test_theorems.py # This will fix the path to theorems & rename the dates from 10-22 to 02-11
-   ```
 
 ## Extract PISA dataset (for fine-tuning)
    ### 1. Get extracted archive of formal proofs
