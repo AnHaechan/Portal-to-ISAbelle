@@ -12,6 +12,8 @@ python3 command_generation/hammer_command_generator.py
 
 chmod +x scripts/eval_hammer_*.sh
 
+mkdir results; mkdir results/hammer_eval
+
 ./scripts/eval_hammer_0.sh > script0.log 2>&1 &
 ./scripts/eval_hammer_1.sh > script1.log 2>&1 &
 ./scripts/eval_hammer_2.sh > script2.log 2>&1 &
