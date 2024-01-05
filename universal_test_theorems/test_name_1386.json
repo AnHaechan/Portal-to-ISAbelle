@@ -1,0 +1,6 @@
+[
+  [
+    "/home/haechan.an/afp-2021-02-11/thys/Kruskal/UGraph.thy",
+    "lemma epath_rev[simp]: \"epath E y (rev p) x = epath E x p y\""
+  ]
+]

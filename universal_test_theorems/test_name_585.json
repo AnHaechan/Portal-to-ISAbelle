@@ -1,0 +1,6 @@
+[
+  [
+    "/home/haechan.an/afp-2021-02-11/thys/Markov_Models/Markov_Decision_Process.thy",
+    "lemma state_cont[simp]: \"state (cont cfg s) = s\""
+  ]
+]

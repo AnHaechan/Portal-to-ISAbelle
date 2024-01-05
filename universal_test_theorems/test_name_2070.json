@@ -1,0 +1,6 @@
+[
+  [
+    "/home/haechan.an/afp-2021-02-11/thys/List_Update/Move_to_Front.thy",
+    "lemma set_step2: \"set(step s r (mf,sws)) = set s\""
+  ]
+]

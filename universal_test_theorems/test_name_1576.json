@@ -1,0 +1,6 @@
+[
+  [
+    "/home/haechan.an/afp-2021-02-11/thys/Planarity_Certificates/l4v/lib/wp/NonDetMonadLemmas.thy",
+    "lemma fail_bindE [simp]: \"fail >>=E f = fail\""
+  ]
+]

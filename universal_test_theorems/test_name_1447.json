@@ -1,0 +1,6 @@
+[
+  [
+    "/home/haechan.an/afp-2021-02-11/thys/SenSocialChoice/FSext.thy",
+    "lemma has_suc_notempty: \"has (Suc n) S \\<Longrightarrow> {} \\<noteq> S\""
+  ]
+]

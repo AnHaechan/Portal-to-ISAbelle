@@ -1,0 +1,6 @@
+[
+  [
+    "/home/haechan.an/afp-2021-02-11/thys/Buchi_Complementation/Complementation_Implement.thy",
+    "lemma [autoref_op_pat]: \"transition A a \\<equiv> OP (transition A a)\""
+  ]
+]

@@ -1,0 +1,6 @@
+[
+  [
+    "/home/haechan.an/afp-2021-02-11/thys/Abstract_Completeness/Abstract_Completeness.thy",
+    "lemma sdrop_fair: \"fair rs \\<Longrightarrow> fair (sdrop m rs)\""
+  ]
+]

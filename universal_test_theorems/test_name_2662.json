@@ -1,0 +1,6 @@
+[
+  [
+    "/home/haechan.an/afp-2021-02-11/thys/Coinductive/Coinductive_List.thy",
+    "lemma lfinite_lnths [simp]: \"lfinite (lnths xs A) \\<longleftrightarrow> lfinite xs \\<or> finite A\""
+  ]
+]

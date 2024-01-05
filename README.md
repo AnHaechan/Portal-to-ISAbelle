@@ -1,34 +1,17 @@
 # NOTE for thor_reproduce
-This is for isabelle2021 server for pisa client.
+This is for isabelle2021 PISA server.
 Replace `pisa_path` in the [thor_reproduce/solvers.bfs_solvers.start_isabelle](https://github.com/AnHaechan/thor_reproduce/blob/main/solvers/bfs_solvers.py#L559C26-L559C26) with the path to this repository.
 Configure isabelle beforeahand by following instructions in the [thor_reproduce](https://github.com/AnHaechan/thor_reproduce).
 Only "scala side" (src/main/scala/pisa) will be used of this branch.
 
 Additionally, testing sledgehammer-only on the benchmark is done in this repository.
-```
-python3 command_generation/hammer_command_generator.py
-// For now, use run 3 processes at the same time (in the paper it is mentioned that an Isabelle process has access up to 32 CPU and we have 96 cores in the TPU VM)
-// Don't use heuristics to run hammer-only
-
-chmod +x scripts/eval_hammer_*.sh
-
-mkdir results; mkdir results/hammer_eval
-
-./scripts/eval_hammer_0.sh > script0.log 2>&1 &
-./scripts/eval_hammer_1.sh > script1.log 2>&1 &
-./scripts/eval_hammer_2.sh > script2.log 2>&1 &
-wait
-
-python3 gather_hammer_results.py // to read results in `results/hammer_eval/`
-```
 
 # PISA (Portal to ISAbelle)
 PISA supports automated proof search with the interactive theorem prover [Isabelle](https://isabelle.in.tum.de).
 
 PISA can also be used to extract proof corpus. We extracted the datasets in our AITP 2021 paper [LISA: Language models of ISAbelle proofs](http://aitp-conference.org/2021/abstract/paper_17.pdf) with it.
 
-
-## Installation
+## Installation (PISA server setup)
 1. **Scala configuration**
    
     Install SDKMAN
@@ -60,6 +43,31 @@ PISA can also be used to extract proof corpus. We extracted the datasets in our 
     ```shell
     sbt compile
     ```
+
+## Extracting test theorems
+The universal test theorems contains 3000 theorems with their file paths and names. The first 600 of them are packaged as "quick" theorems if you have no patience testing all 3000 out.
+```shell
+tar -xzf universal_test_theorems.tar.gz
+python3 fix_path_universal_test_theorems.py
+```
+
+## Running hammer-only test
+```
+python3 command_generation/hammer_command_generator.py
+// For now, use run 3 processes at the same time (in the paper it is mentioned that an Isabelle process has access up to 32 CPU and we have 96 cores in the TPU VM)
+// Don't use heuristics to run hammer-only
+
+chmod +x scripts/eval_hammer_*.sh
+
+mkdir results; mkdir results/hammer_eval
+
+./scripts/eval_hammer_0.sh > script0.log 2>&1 &
+./scripts/eval_hammer_1.sh > script1.log 2>&1 &
+./scripts/eval_hammer_2.sh > script2.log 2>&1 &
+wait
+
+python3 gather_hammer_results.py // to read results in `results/hammer_eval/`
+```
 
 ## Evaluation setup (if you want to have N (N>50) PISA servers running on your machine)
 1. **Create some PISA jars**

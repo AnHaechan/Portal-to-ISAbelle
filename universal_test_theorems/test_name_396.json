@@ -1,0 +1,6 @@
+[
+  [
+    "/home/haechan.an/afp-2021-02-11/thys/JiveDataStoreModel/Isabelle/Subtype.thy",
+    "lemma widen_asm: \"(a::Javatype) \\<le> b \\<Longrightarrow> a \\<le> b\""
+  ]
+]

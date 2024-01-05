@@ -1,0 +1,6 @@
+[
+  [
+    "/home/haechan.an/afp-2021-02-11/thys/Regex_Equivalence/Derivatives_Finite.thy",
+    "lemma ACI_atoms: \"ACI r s \\<Longrightarrow> atoms r = atoms s\""
+  ]
+]

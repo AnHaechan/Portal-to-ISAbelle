@@ -1,0 +1,6 @@
+[
+  [
+    "/home/haechan.an/afp-2021-02-11/thys/Universal_Turing_Machine/Turing.thy",
+    "lemma step_red [simp]: shows \"steps c p (Suc n) = step (steps c p n) p\""
+  ]
+]

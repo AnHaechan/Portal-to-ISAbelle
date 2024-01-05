@@ -1,0 +1,6 @@
+[
+  [
+    "/home/haechan.an/afp-2021-02-11/thys/Launchbury/ValueSimilarity.thy",
+    "lemma similar_bot[simp]: \"\\<bottom> \\<triangleleft>\\<triangleright> \\<bottom>\""
+  ]
+]

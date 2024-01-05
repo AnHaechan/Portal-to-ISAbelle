@@ -1,0 +1,6 @@
+[
+  [
+    "/home/haechan.an/afp-2021-02-11/thys/Locally-Nameless-Sigma/preliminary/FMap.thy",
+    "lemma empty_dom: fixes g assumes \"{} = dom g\" shows \"g = Map.empty\""
+  ]
+]

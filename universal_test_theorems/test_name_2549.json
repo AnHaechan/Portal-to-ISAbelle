@@ -1,0 +1,6 @@
+[
+  [
+    "/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/Basic/Set_Monad.thy",
+    "lemma single_code [code]: \"single a = set [a]\""
+  ]
+]

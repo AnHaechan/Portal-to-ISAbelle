@@ -1,0 +1,6 @@
+[
+  [
+    "/home/haechan.an/afp-2021-02-11/thys/SIFPL/VDM.thy",
+    "lemma Ctxt_validn_valid: \"(\\<forall> n . \\<Turnstile>\\<^sub>n G) \\<Longrightarrow> \\<Turnstile> G\""
+  ]
+]

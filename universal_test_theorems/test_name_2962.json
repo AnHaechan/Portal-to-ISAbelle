@@ -1,0 +1,6 @@
+[
+  [
+    "/home/haechan.an/afp-2021-02-11/thys/Decl_Sem_Fun_PL/ValuesFSetProps.thy",
+    "lemma le_any_nat[simp]: \"v \\<sqsubseteq> VNat n \\<Longrightarrow> v = VNat n\""
+  ]
+]

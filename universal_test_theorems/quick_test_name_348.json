@@ -1,0 +1,6 @@
+[
+  [
+    "/home/haechan.an/afp-2021-02-11/thys/Myhill-Nerode/Closures2.thy",
+    "lemma SUPSEQ_simps [simp]: shows \"SUPSEQ {} = {}\" and \"SUPSEQ {[]} = UNIV\""
+  ]
+]

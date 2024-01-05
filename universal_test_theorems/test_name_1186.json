@@ -1,0 +1,6 @@
+[
+  [
+    "/home/haechan.an/afp-2021-02-11/thys/Tarskis_Geometry/Hyperbolic_Tarski.thy",
+    "lemma east_west_tangents_distinct: \"polar east \\<noteq> polar west\""
+  ]
+]

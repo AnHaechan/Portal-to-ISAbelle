@@ -1,0 +1,6 @@
+[
+  [
+    "/home/haechan.an/afp-2021-02-11/thys/MiniML/Type.thy",
+    "lemma app_subst_Cons: \"$ S (x#l) = ($ S x)#($ S l)\""
+  ]
+]

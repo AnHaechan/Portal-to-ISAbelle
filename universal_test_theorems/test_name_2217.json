@@ -1,0 +1,6 @@
+[
+  [
+    "/home/haechan.an/afp-2021-02-11/thys/SATSolverVerification/Trail.thy",
+    "lemma elementLevelLeqCurrentLevel: shows \"elementLevel a M \\<le> currentLevel M\""
+  ]
+]

@@ -1,0 +1,6 @@
+[
+  [
+    "/home/haechan.an/afp-2021-02-11/thys/LTL/Rewriting.thy",
+    "lemma mk_finally_atoms: \"atoms_ltln (mk_finally \\<phi>) \\<subseteq> atoms_ltln \\<phi>\""
+  ]
+]
