@@ -66,7 +66,7 @@ mkdir results; mkdir results/hammer_eval
 ./scripts/eval_hammer_2.sh > script2.log 2>&1 &
 wait
 
-python3 gather_hammer_results.py // to read results in `results/hammer_eval/`
+python3 scripts/gather_hammer_results.py // to read results in `results/hammer_eval/`
 ```
 
 ## Evaluation setup (if you want to have N (N>50) PISA servers running on your machine)

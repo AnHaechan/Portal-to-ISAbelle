@@ -1,0 +1,2 @@
+/home/haechan.an/afp-2021-02-11/thys/Stone_Algebras/P_Algebras.thy
+lemma dense_closed_top: "dense top"

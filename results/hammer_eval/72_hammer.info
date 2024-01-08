@@ -1,0 +1,2 @@
+/home/haechan.an/afp-2021-02-11/thys/Separation_Algebra/Separation_Algebra_Alt.thy
+lemma add2_comm: "a ++ b = b ++ a"

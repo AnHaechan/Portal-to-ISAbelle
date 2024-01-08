@@ -1,0 +1,2 @@
+/home/haechan.an/afp-2021-02-11/thys/Symmetric_Polynomials/Symmetric_Polynomials.thy
+lemma mpoly_map_vars_eq_0_iff [simp]: "mpoly_map_vars f p = 0 \<longleftrightarrow> p = 0"

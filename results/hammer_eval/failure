@@ -1,0 +1,2106 @@
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/MM/SC_Completion.thy
+lemma sc_completion_shift: assumes sc_c: "sc_completion s vs" and \<tau>Red: "s -\<triangleright>ttas\<rightarrow>* s'" and sc: "ta_seq_consist P vs (lconcat (lmap (\<lambda>(t, ta). llist_of \<lbrace>ta\<rbrace>\<^bsub>o\<^esub>) (llist_of ttas)))" shows "sc_completion s' (mrw_values P vs (concat (map (\<lambda>(t, ta). \<lbrace>ta\<rbrace>\<^bsub>o\<^esub>) ttas)))"
+
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/JVM/JVMExec.thy
+lemma exception_step_def_raw: "exception_step = (\<lambda>P a h (stk, loc, C, M, pc) frs. case match_ex_table P (cname_of h a) pc (ex_table_of P C M) of None \<Rightarrow> (\<lfloor>a\<rfloor>, h, frs) | Some (pc', d) \<Rightarrow> (None, h, (Addr a # drop (size stk - d) stk, loc, C, M, pc') # frs))"
+
+/home/haechan.an/afp-2021-02-11/thys/Tarskis_Geometry/Hyperbolic_Tarski.thy
+lemma is_K2_isometry_z_non_zero: assumes "p \<in> hyp2 \<union> S" and "is_K2_isometry J" shows "z_non_zero (apply_cltn2 p J)"
+
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/Framework/FWProgressAux.thy
+lemma active_thread_ex_red: assumes "t \<in> active_threads s" shows "\<exists>ta s'. s -t\<triangleright>ta\<rightarrow> s'"
+
+/home/haechan.an/afp-2021-02-11/thys/Impossible_Geometry/Impossible_Geometry.thy
+lemma finite_order_radicals: "radicals e \<noteq> {} \<Longrightarrow> finite (radicals e) \<Longrightarrow> order_radicals (radicals e) \<noteq> {} \<and> finite (order_radicals (radicals e))"
+
+/home/haechan.an/afp-2021-02-11/thys/Abstract_Completeness/Abstract_Completeness.thy
+lemma sdrop_fair: "fair rs \<Longrightarrow> fair (sdrop m rs)"
+
+/home/haechan.an/afp-2021-02-11/thys/Incredible_Proof_Machine/Predicate_Formulas.thy
+lemma subst1_Nil[simp]: "subst1 [] f = f"
+
+/home/haechan.an/afp-2021-02-11/thys/Random_Graph_Subgraph_Threshold/Ugraph_Lemmas.thy
+lemma subgraph_isomorphic_post_iso_closed: "\<lbrakk> H \<sqsubseteq> G; G \<simeq> G' \<rbrakk> \<Longrightarrow> H \<sqsubseteq> G'"
+
+/home/haechan.an/afp-2021-02-11/thys/Planarity_Certificates/l4v/lib/OptionMonad.thy
+lemma option_while'_inj_step: "\<lbrakk> C s; B s = Some s'; (Some s, t) \<in> option_while' C B ; (Some s', t') \<in> option_while' C B \<rbrakk> \<Longrightarrow> t = t'"
+
+/home/haechan.an/afp-2021-02-11/thys/Tarskis_Geometry/Hyperbolic_Tarski.thy
+lemma M_perp_sym: assumes "M_perp l m" shows "M_perp m l"
+
+/home/haechan.an/afp-2021-02-11/thys/Constructive_Cryptography/Converter_Rewrite.thy
+lemma eq_resource_on_UNIV_D [simp]: "res = res'" if "UNIV \<turnstile>\<^sub>R res \<sim> res'"
+
+/home/haechan.an/afp-2021-02-11/thys/Mersenne_Primes/Lucas_Lehmer.thy
+lemma lucas_lehmer_mult_neutral [simp]: assumes "fst x < m" "snd x < m" shows "lucas_lehmer_mult m (Suc 0, 0) x = x" and "lucas_lehmer_mult m x (Suc 0, 0) = x"
+
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/MM/JMM_Spec.thy
+lemma porder_action_order: "porder_on (actions E) (action_order E)"
+
+/home/haechan.an/afp-2021-02-11/thys/Differential_Dynamic_Logic/Differential_Axioms.thy
+lemma DIGeq_valid:"valid DIGeqaxiom"
+
+/home/haechan.an/afp-2021-02-11/thys/FocusStreamsCaseStudies/FR_proof.thy
+lemma fr_nGet2a: assumes h1:"FlexRayController (nReturn k) recv (nC k) (nStore k) (nSend k) (nGet k)" and h2:"\<not> (t mod cycleLength (nC k) mem schedule (nC k))" shows "nGet k t = []"
+
+/home/haechan.an/afp-2021-02-11/thys/Higher_Order_Terms/Term.thy
+lemma match_list_comb_list_comb_none_name[simp]: assumes "name \<noteq> name'" shows "match (name $$ ps) (name' $$ vs) = None"
+
+/home/haechan.an/afp-2021-02-11/thys/Gaussian_Integers/Gaussian_Integers.thy
+lemma gauss_cnj_dvd_self_iff: "gauss_cnj z dvd z \<longleftrightarrow> ReZ z = 0 \<or> ImZ z = 0 \<or> \<bar>ReZ z\<bar> = \<bar>ImZ z\<bar>"
+
+/home/haechan.an/afp-2021-02-11/thys/Density_Compiler/Density_Predicates.thy
+lemma is_subprob_densityD[dest]: "is_subprob_density M f \<Longrightarrow> f \<in> borel_measurable M" "is_subprob_density M f \<Longrightarrow> x \<in> space M \<Longrightarrow> f x \<ge> 0" "is_subprob_density M f \<Longrightarrow> space M \<noteq> {}" "is_subprob_density M f \<Longrightarrow> (\<integral>\<^sup>+x. f x \<partial>M) \<le> 1"
+
+/home/haechan.an/afp-2021-02-11/thys/Timed_Automata/DBM_Basics.thy
+lemma dbm_entry_val_mono_2: "dbm_entry_val u None (Some c) b \<Longrightarrow> b \<preceq> b' \<Longrightarrow> dbm_entry_val u None (Some c) b'"
+
+/home/haechan.an/afp-2021-02-11/thys/BNF_Operations/N2M.thy
+lemma G_ctor_o_fold: "ctor_fold_G s o ctor_G = s o map_pre_G id (ctor_fold_G s)"
+
+/home/haechan.an/afp-2021-02-11/thys/Noninterference_Ipurge_Unwinding/IpurgeUnwinding.thy
+lemma fc_traces: assumes A: "future_consistent P D R" and B: "u \<in> range D" and C: "(xs, ys) \<in> R u" shows "(xs \<in> traces P) = (ys \<in> traces P)"
+
+/home/haechan.an/afp-2021-02-11/thys/Automatic_Refinement/Lib/Misc.thy
+lemma rel_restrict_Sigma_sub: "rel_restrict ((A\<times>A)\<^sup>+) R \<subseteq> ((A - R) \<times> (A - R))\<^sup>+"
+
+/home/haechan.an/afp-2021-02-11/thys/Completeness/Sequents.thy
+lemma inDed_mono'[simplified inDed_def]: "set x <= set y ==> inDed x ==> inDed y"
+
+/home/haechan.an/afp-2021-02-11/thys/Farkas/Matrix_Farkas.thy
+lemma lec_rec_constraints_of_mat_vec: "lec_rel ` constraints_of_mat_vec A b \<subseteq> {Leq_Rel}"
+
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/Framework/FWBisimDeadlock.thy
+lemma mbisim_deadlocked'_inv: "s1 \<approx>m s2 \<Longrightarrow> r1.deadlocked' s1 \<longleftrightarrow> r2.deadlocked' s2"
+
+/home/haechan.an/afp-2021-02-11/thys/pGCL/Healthiness.thy
+lemma nearly_healthy_wlp_repeat: assumes h_a: "nearly_healthy (wlp a)" shows "nearly_healthy (wlp (repeat n a))" (is "?X n")
+
+/home/haechan.an/afp-2021-02-11/thys/Key_Agreement_Strong_Adversaries/Refinement.thy
+lemma PO_refinesI: "\<lbrakk> init Tc \<subseteq> R``(init Ta); {R} (trans Ta), (trans Tc) {> R} \<rbrakk> \<Longrightarrow> PO_refines R Ta Tc"
+
+/home/haechan.an/afp-2021-02-11/thys/Jinja/BV/BVNoTypeError.thy
+lemma is_IntgI [intro, simp]: "P,h \<turnstile> v :\<le> Integer \<Longrightarrow> is_Intg v"
+
+/home/haechan.an/afp-2021-02-11/thys/CCS/Weak_Cong_Sim_Pres.thy
+lemma bangPres: fixes P :: ccs and Q :: ccs and Rel :: "(ccs \<times> ccs) set" and Rel' :: "(ccs \<times> ccs) set" assumes "(P, Q) \<in> Rel" and C1: "\<And>R S. (R, S) \<in> Rel \<Longrightarrow> R \<leadsto><Rel'> S" and C2: "Rel \<subseteq> Rel'" shows "!P \<leadsto><bangRel Rel'> !Q"
+
+/home/haechan.an/afp-2021-02-11/thys/OpSets/RGA.thy
+lemma insert_rga_preserves_order: assumes "i = None \<or> (\<exists>i'. i = Some i' \<and> i' \<in> set xs)" and "distinct xs" shows "\<exists>pre suf. xs = pre @ suf \<and> insert_rga xs (e, i) = pre @ e # suf"
+
+/home/haechan.an/afp-2021-02-11/thys/Graph_Theory/Digraph_Component.thy
+lemma (in wf_digraph) subgraph_del_arc: "subgraph (del_arc a) G"
+
+/home/haechan.an/afp-2021-02-11/thys/Planarity_Certificates/Planarity/Graph_Genus.thy
+lemma bij_face_cycle_succ: "bij face_cycle_succ"
+
+/home/haechan.an/afp-2021-02-11/thys/HOL-CSP/Process.thy
+lemma nonTickFree_n_frontTickFree: "\<lbrakk>\<not> tickFree s; front_tickFree s \<rbrakk> \<Longrightarrow> \<exists>t. s = t @ [tick]"
+
+/home/haechan.an/afp-2021-02-11/thys/Affine_Arithmetic/Counterclockwise_2D_Arbitrary.thy
+lemma psi_convex1: assumes "psi c a b" assumes "psi d a b" assumes "0 \<le> u" "0 \<le> v" "u + v = 1" shows "psi (u *\<^sub>R c + v *\<^sub>R d) a b"
+
+/home/haechan.an/afp-2021-02-11/thys/DiscretePricing/Fair_Price.thy
+lemma replace_comp_val_process: assumes "\<forall>n w. prices Mkt x n w = val_process Mkt pf2 n w" and "portfolio pf1" and "portfolio pf2" shows "\<forall>n w. val_process Mkt (qty_replace_comp pf1 x pf2) n w = val_process Mkt pf1 n w"
+
+/home/haechan.an/afp-2021-02-11/thys/Multi_Party_Computation/ETP_RSA_OT.thy
+lemma rsa_bij_betw: assumes "coprime e ((P - 1)*(Q - 1))" and "prime P" and "prime Q" and "P \<noteq> Q" shows "bij_betw (F ((P * Q), e)) (range ((P * Q), e)) (range ((P * Q), e))"
+
+/home/haechan.an/afp-2021-02-11/thys/Extended_Finite_State_Machines/EFSM.thy
+lemma deterministic_alt: "deterministic e = ( \<forall>s r l i. possible_steps e s r l i = {||} \<or> (\<exists>s' t. ffilter (\<lambda>((origin, dest), t). origin = s \<and> (Label t) = l \<and> (length i) = (Arity t) \<and> apply_guards (Guards t) (join_ir i r)) e = {|((s, s'), t)|}) )"
+
+/home/haechan.an/afp-2021-02-11/thys/Stable_Matching/Contracts.thy
+lemma D2_ALL: shows "(\<forall>d. P d) = (\<forall>d\<in>{D1, D2}. P d)"
+
+/home/haechan.an/afp-2021-02-11/thys/Winding_Number_Eval/Cauchy_Index_Theorem.thy
+lemma part_circlepath_half_finite_inter: assumes "st\<noteq>tt" "r\<noteq>0" "c\<noteq>0" shows "finite {t. part_circlepath z0 r st tt t \<bullet> c = d \<and> 0\<le> t \<and> t\<le>1}" (is "finite ?T")
+
+/home/haechan.an/afp-2021-02-11/thys/CryptHOL/Misc_CryptHOL.thy
+lemma map_le_Some1D: "\<lbrakk> m \<subseteq>\<^sub>m m'; m x = Some y \<rbrakk> \<Longrightarrow> m' x = Some y"
+
+/home/haechan.an/afp-2021-02-11/thys/Neumann_Morgenstern_Utility/Lotteries.thy
+lemma mix_pmf_in_lotteries: assumes "p \<in> lotteries_on A" and "q \<in> lotteries_on A" and "a \<in> {0<..<1}" shows "(mix_pmf a p q) \<in> lotteries_on A"
+
+/home/haechan.an/afp-2021-02-11/thys/Aggregation_Algebras/Aggregation_Algebras.thy
+lemma minarc_below_regular: "regular x \<Longrightarrow> minarc x \<le> x"
+
+/home/haechan.an/afp-2021-02-11/thys/Group-Ring-Module/Algebra6.thy
+lemma (in PolynRg) polyn_deg_add5:"\<lbrakk>p \<in> carrier R; q \<in> carrier R; (deg R S X p) \<le> a; (deg R S X q) \<le> a\<rbrakk> \<Longrightarrow> deg R S X (p \<plusminus> q) \<le> a"
+
+/home/haechan.an/afp-2021-02-11/thys/HOL-CSP/Process.thy
+lemma no_Trace_implies_no_Failure: "s \<notin> T P \<Longrightarrow> (s, {}) \<notin> F P"
+
+/home/haechan.an/afp-2021-02-11/thys/pGCL/LoopInduction.thy
+lemma wp_loop_step_unitary: fixes body::"'s prog" assumes hb: "healthy (wp body)" and uP: "unitary P" and uQ: "unitary Q" shows "unitary (\<lambda>s. \<guillemotleft>G\<guillemotright> s * wp body Q s + \<guillemotleft>\<N> G\<guillemotright> s * P s)"
+
+/home/haechan.an/afp-2021-02-11/thys/Finite-Map-Extras/Finite_Map_Extras.thy
+lemma fsubset_antisym: assumes "m \<subseteq>\<^sub>f n" and "n \<subseteq>\<^sub>f m" shows "m = n"
+
+/home/haechan.an/afp-2021-02-11/thys/Group-Ring-Module/Algebra1.thy
+lemma n_in_Nsetn:"(n::nat) \<in> {i. i \<le> n}"
+
+/home/haechan.an/afp-2021-02-11/thys/RSAPSS/Word.thy
+lemma bitand_cancel [simp]: "(b \<and>\<^sub>b b) = b"
+
+/home/haechan.an/afp-2021-02-11/thys/Consensus_Refined/Refinement.thy
+lemma image_vimage_adjoints: "(ob`P \<subseteq> Q) = (P \<subseteq> ob-`Q)"
+
+/home/haechan.an/afp-2021-02-11/thys/Extended_Finite_State_Machines/EFSM.thy
+lemma obtains_base: "obtains s r e s' r' [] = (s = s' \<and> r = r')"
+
+/home/haechan.an/afp-2021-02-11/thys/Randomised_Social_Choice/Order_Predicates.thy
+lemma is_weak_ranking_iff: "is_weak_ranking xs \<longleftrightarrow> distinct xs \<and> disjoint (set xs) \<and> {} \<notin> set xs"
+
+/home/haechan.an/afp-2021-02-11/thys/List-Infinite/CommonSet/SetInterval2.thy
+lemma atLeast_remove: "{n..} - {(n::'a::order)} = {n<..}"
+
+/home/haechan.an/afp-2021-02-11/thys/Factored_Transition_System_Bounding/TopologicalProps.thy
+lemma problem_plan_bound_ge_min_pls: fixes PROB :: "'a problem" and s :: "'a state" and as k assumes "finite PROB" "(s \<in> valid_states PROB)" "(as \<in> valid_plans PROB)" "(problem_plan_bound PROB \<le> k)" shows "(Inf (PLS s as) \<le> problem_plan_bound PROB)"
+
+/home/haechan.an/afp-2021-02-11/thys/Statecharts/CarAudioSystem.thy
+lemma Root_CTRL_AudioPlayer_CTRL_noteq [simp]: "Root_CTRL \<noteq> AudioPlayer_CTRL"
+
+/home/haechan.an/afp-2021-02-11/thys/Group-Ring-Module/Algebra3.thy
+lemma (in Group) ZassenhausTr2_2:"\<lbrakk>G \<guillemotright> H; G \<guillemotright> H1; G \<guillemotright> K; G \<guillemotright> K1; Gp G H \<triangleright> H1; Gp G K \<triangleright> K1\<rbrakk> \<Longrightarrow> H1 \<diamondop>\<^bsub>G\<^esub> (H \<inter> K1) \<subseteq> H1 \<diamondop>\<^bsub>G\<^esub> (H \<inter> K)"
+
+/home/haechan.an/afp-2021-02-11/thys/Noninterference_Ipurge_Unwinding/IpurgeUnwinding.thy
+lemma traces_failures: "xs \<in> traces P \<Longrightarrow> (xs, {}) \<in> failures P"
+
+/home/haechan.an/afp-2021-02-11/thys/Stern_Brocot/Stern_Brocot_Tree.thy
+lemma stern_brocot_fractions_not_repeated: assumes "root (traverse_tree path stern_brocot_iterate) = root (traverse_tree path' stern_brocot_iterate)" shows "path = path'"
+
+/home/haechan.an/afp-2021-02-11/thys/Slicing/StaticIntra/WeakOrderDependence.thy
+lemma (in CFG_wf) wod_backward_slice_valid_node:"n \<in> wod_backward_slice S \<Longrightarrow> valid_node n"
+
+/home/haechan.an/afp-2021-02-11/thys/UPF_Firewall/FWNormalisation/NormalisationIPPProofs.thy
+lemma aux26[simp]: "twoNetsDistinct a b c d \<Longrightarrow> dom (Cp (AllowPortFromTo a b p)) \<inter> dom (Cp (DenyAllFromTo c d)) = {}"
+
+/home/haechan.an/afp-2021-02-11/thys/Statecharts/HA.thy
+lemma Chi_range_disjoint: "\<lbrakk> S \<noteq> T; T \<in> HAStates A; S \<in> HAStates A; U \<in> Chi A S \<rbrakk> \<Longrightarrow> U \<notin> Chi A T"
+
+/home/haechan.an/afp-2021-02-11/thys/Ordered_Resolution_Prover/Abstract_Substitution.thy
+lemma subst_cls_mset_comp_subst[simp]: "CC \<cdot>cm (\<tau> \<odot> \<sigma>) = CC \<cdot>cm \<tau> \<cdot>cm \<sigma>"
+
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/MM/SC_Collections.thy
+lemma sc_oconf_hext: "P,h \<turnstile>sc obj \<surd> \<Longrightarrow> h \<unlhd>sc h' \<Longrightarrow> P,h' \<turnstile>sc obj \<surd>"
+
+/home/haechan.an/afp-2021-02-11/thys/Pi_Calculus/Weak_Late_Step_Sim.thy
+lemma simCasesCont[consumes 1, case_names Bound Input Free]: fixes P :: pi and Q :: pi and Rel :: "(pi \<times> pi) set" and C :: "'a::fs_name" assumes Eqvt: "eqvt Rel" and Bound: "\<And>Q' a x. \<lbrakk>x \<sharp> C; Q \<longmapsto>a<\<nu>x> \<prec> Q'\<rbrakk> \<Longrightarrow> \<exists>P'. P \<Longrightarrow>\<^sub>la<\<nu>x> \<prec> P' \<and> (P', Q') \<in> Rel" and Input: "\<And>Q' a x. \<lbrakk>x \<sharp> C; Q \<longmapsto>a<x> \<prec> Q'\<rbrakk> \<Longrightarrow> \<exists>P''. \<forall>u. \<exists>P'. P \<Longrightarrow>\<^sub>lu in P''\<rightarrow>a<x> \<prec> P' \<and> (P', Q'[x::=u]) \<in> Rel" and Free: "\<And>Q' \<alpha>. Q \<longmapsto> \<alpha> \<prec> Q' \<Longrightarrow> (\<exists>P'. P \<Longrightarrow>\<^sub>l \<alpha> \<prec> P' \<and> (P', Q') \<in> Rel)" shows "P \<leadsto><Rel> Q"
+
+/home/haechan.an/afp-2021-02-11/thys/KBPs/ODList.thy
+lemma msort_set[simp]: "set (msort xs) = set xs"
+
+/home/haechan.an/afp-2021-02-11/thys/Incompleteness/SyntaxN.thy
+lemma Iff_MP2_same: "H \<turnstile> A IFF B \<Longrightarrow> H \<turnstile> B \<Longrightarrow> H \<turnstile> A"
+
+/home/haechan.an/afp-2021-02-11/thys/Complex_Geometry/More_Transcendental.thy
+lemma cos_periodic_nat [simp]: fixes n :: nat shows "cos (x + n * (2 * pi)) = cos x"
+
+/home/haechan.an/afp-2021-02-11/thys/SIFPL/HuntSands.thy
+lemma varDMonotoneInAssertion[rule_format]: "(b, A, s, t) \<in> varD \<Longrightarrow> (\<forall>s t. A s t \<longrightarrow> B s t) \<longrightarrow> (b, B, s, t) \<in> varD"
+
+/home/haechan.an/afp-2021-02-11/thys/Graph_Theory/Kuratowski.thy
+lemma direct_arc_chooses: fixes u v :: 'a shows "direct_arc (u,v) = (u,v) \<or> direct_arc (u,v) = (v,u)"
+
+/home/haechan.an/afp-2021-02-11/thys/Rank_Nullity_Theorem/Mod_Type.thy
+lemma size0: "0 < int CARD ('a)"
+
+/home/haechan.an/afp-2021-02-11/thys/UPF_Firewall/FWNormalisation/NormalisationGenericProofs.thy
+lemma SCSubset[rule_format]: " singleCombinators b \<longrightarrow> set a \<subseteq> set b \<longrightarrow> singleCombinators a"
+
+/home/haechan.an/afp-2021-02-11/thys/Binomial-Queues/PQ_Implementation.thy
+lemma bts_dfs_rev_distinct: "distinct (bts_dfs f ts) \<Longrightarrow> distinct (bts_dfs f (rev ts))"
+
+/home/haechan.an/afp-2021-02-11/thys/Launchbury/AList-Utils.thy
+lemma image_mapCollect[simp]: "g ` {f k v | k \<mapsto> v \<in> m} = { g (f k v) | k \<mapsto> v \<in> m}"
+
+/home/haechan.an/afp-2021-02-11/thys/Nat-Interval-Logic/IL_IntervalOperators.thy
+lemma iT_Div_card: " \<And>I.\<lbrakk> 0 < d; finite I; Max I div d \<le> n\<rbrakk> \<Longrightarrow> card (I \<oslash> d) = (\<Sum>k\<le>n. if I \<inter> [k * d\<dots>,d - Suc 0] = {} then 0 else Suc 0)"
+
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/BV/BVSpecTypeSafe.thy
+lemma AStore_correct: assumes wf: "wf_prog wt P" assumes meth: "P \<turnstile> C sees M:Ts\<rightarrow>T=\<lfloor>(mxs,mxl\<^sub>0,ins,xt)\<rfloor> in C" assumes ins: "ins!pc = AStore" assumes wt: "P,T,mxs,size ins,xt \<turnstile> ins!pc,pc :: \<Phi> C M" assumes conf: "\<Phi> \<turnstile> t: (None, h, (stk,loc,C,M,pc)#frs)\<surd>" assumes no_x: "(tas, \<sigma>) \<in> exec_instr (ins!pc) P t h stk loc C M pc frs" shows "\<Phi> \<turnstile> t: \<sigma> \<surd>"
+
+/home/haechan.an/afp-2021-02-11/thys/Error_Function/Error_Function.thy
+lemma contour_integral_has_field_derivative: assumes A: "open A" "convex A" "a \<in> A" "z \<in> A" assumes integrable: "\<And>z. z \<in> A \<Longrightarrow> f contour_integrable_on linepath a z" assumes holo: "f holomorphic_on A" shows "((\<lambda>z. contour_integral (linepath a z) f) has_field_derivative f z) (at z within B)"
+
+/home/haechan.an/afp-2021-02-11/thys/Group-Ring-Module/Algebra2.thy
+lemma (in Worder) Word_compare:"Worder E \<Longrightarrow> (\<exists>a\<in>carrier D. ord_equiv (Iod D (segment D a)) E) \<or> ord_equiv D E \<or> (\<exists>b\<in>carrier E. ord_equiv D (Iod E (segment E b)))"
+
+/home/haechan.an/afp-2021-02-11/thys/Binomial-Heaps/SkewBinomialHeap.thy
+lemma invar_rev[simp]: "queue_invar (rev q) \<longleftrightarrow> queue_invar q"
+
+/home/haechan.an/afp-2021-02-11/thys/Automatic_Refinement/Lib/Misc.thy
+lemma single_valued_inter2: "single_valued R \<Longrightarrow> single_valued (S\<inter>R)"
+
+/home/haechan.an/afp-2021-02-11/thys/Factored_Transition_System_Bounding/FactoredSystem.thy
+lemma exec_as_proj_valid_2: fixes a assumes "a \<in> PROB" shows "(action_dom (fst a) (snd a) \<subseteq> prob_dom PROB)"
+
+/home/haechan.an/afp-2021-02-11/thys/Taylor_Models/Polynomial_Expression.thy
+lemma degree_npolyhCN[simp]: "isnpolyh (CN c n p) n0 \<Longrightarrow> degree c = 0"
+
+/home/haechan.an/afp-2021-02-11/thys/Automatic_Refinement/Lib/Misc.thy
+lemma wf_max: assumes A: "wf (R\<inverse>)" "R\<noteq>{}" and C: "!!m. m\<in>Range R - Domain R \<Longrightarrow> P" shows "P"
+
+/home/haechan.an/afp-2021-02-11/thys/Regular-Sets/Regexp_Constructions.thy
+lemma Prefixes_empty [simp]: "Prefixes {} = {}"
+
+/home/haechan.an/afp-2021-02-11/thys/Cauchy/CauchysMeanTheorem.thy
+lemma list_sum_mean: fixes xs::"real list" shows "\<Sum>:xs = ((mean xs) * (real (length xs)))"
+
+/home/haechan.an/afp-2021-02-11/thys/SIFUM_Type_Systems/LocallySoundModeUse.thy
+lemma cxt_eval: "\<lbrakk> \<langle>cxt_to_stmt [] c, mds, mem\<rangle> \<leadsto> \<langle>cxt_to_stmt [] c', mds', mem'\<rangle> \<rbrakk> \<Longrightarrow> \<langle>c, mds, mem\<rangle> \<leadsto> \<langle>c', mds', mem'\<rangle>"
+
+/home/haechan.an/afp-2021-02-11/thys/Psi_Calculi/Agent.thy
+lemma substCases[simp]: fixes Cs :: "('c \<times> ('a, 'b, 'c) psi) list" and xvec :: "name list" and Tvec :: "'a list" shows "subs (Cases Cs) xvec Tvec = Cases(caseListSubst Cs xvec Tvec)"
+
+/home/haechan.an/afp-2021-02-11/thys/Echelon_Form/Echelon_Form.thy
+lemma echelon_form_echelon_form_of: fixes A::"'a::{bezout_domain}^'cols::{mod_type}^'rows::{mod_type}" assumes ib: "is_bezout_ext bezout" shows "echelon_form (echelon_form_of A bezout)"
+
+/home/haechan.an/afp-2021-02-11/thys/Order_Lattice_Props/Representations.thy
+lemma at_map_Sup_pres: "at_map \<circ> Sup = Sup \<circ> (`) (at_map::'a::complete_boolean_algebra_alt \<Rightarrow> 'a atoms)"
+
+/home/haechan.an/afp-2021-02-11/thys/Binding_Syntax_Theory/QuasiTerms_Environments_Substitution.thy
+lemma qPsubstAbs_preserves_alphaAbs: assumes "qGoodAbs A \<or> qGoodAbs A'" and "qGoodEnv rho" and "qGoodEnv rho'" and "A $= A'" and "rho &= rho'" shows "(A $[[rho]]) $= (A' $[[rho']])"
+
+/home/haechan.an/afp-2021-02-11/thys/HOL-CSP/Mprefix.thy
+lemma cont2contlub: "cont f \<Longrightarrow> contlub f"
+
+/home/haechan.an/afp-2021-02-11/thys/Hybrid_Multi_Lane_Spatial_Logic/NatInt.thy
+lemma chop_always_possible:"\<forall>i.\<exists> j k. N_Chop(i,j,k)"
+
+/home/haechan.an/afp-2021-02-11/thys/Modal_Logics_for_NTS/Equivalence_Implies_Bisimilarity.thy
+lemma equivalent_iff_not_distinguished: "(P =\<cdot> Q) \<longleftrightarrow> \<not>(\<exists>x. x distinguishes P from Q)"
+
+/home/haechan.an/afp-2021-02-11/thys/Polynomial_Interpolation/Neville_Aitken_Interpolation.thy
+lemma neville_aitken_impl: "xs = map (\<lambda> i. (x i, x i, [:f i:])) [0 ..< Suc k] \<Longrightarrow> neville_aitken_impl_main xs = neville_aitken k"
+
+/home/haechan.an/afp-2021-02-11/thys/Ordered_Resolution_Prover/Lazy_List_Chain.thy
+lemma emb_lset_mono[rotated]: "x \<in> lset xs \<Longrightarrow> emb xs ys \<Longrightarrow> x \<in> lset ys"
+
+/home/haechan.an/afp-2021-02-11/thys/Randomised_Social_Choice/Order_Predicates.thy
+lemma total_preorder_of_weak_ranking: assumes "\<Union>(set xs) = A" assumes "is_weak_ranking xs" shows "total_preorder_on A (of_weak_ranking xs)"
+
+/home/haechan.an/afp-2021-02-11/thys/WebAssembly/Wasm_Properties.thy
+lemma types_preserved_set_global: assumes "\<S>\<bullet>\<C> \<turnstile> [$C v, $Set_global j] : (ts _> ts')" shows "\<S>\<bullet>\<C> \<turnstile> [] : (ts _> ts')" "tg_t (global \<C> ! j) = typeof v"
+
+/home/haechan.an/afp-2021-02-11/thys/MiniML/Type.thy
+lemma eq_free_eq_subst_scheme_list: "(\<forall>n. n\<in>(free_tv A) \<longrightarrow> S1 n = S2 n) \<Longrightarrow> $S1 (A::type_scheme list) = $S2 A"
+
+/home/haechan.an/afp-2021-02-11/thys/Shadow_SC_DOM/monads/ShadowRootMonad.thy
+lemma delete\<^sub>S\<^sub>h\<^sub>a\<^sub>d\<^sub>o\<^sub>w\<^sub>R\<^sub>o\<^sub>o\<^sub>t_M_ok [simp]: assumes "shadow_root_ptr |\<in>| shadow_root_ptr_kinds h" shows "h \<turnstile> ok (delete\<^sub>S\<^sub>h\<^sub>a\<^sub>d\<^sub>o\<^sub>w\<^sub>R\<^sub>o\<^sub>o\<^sub>t_M shadow_root_ptr)"
+
+/home/haechan.an/afp-2021-02-11/thys/Vickrey_Clarke_Groves/SetUtils.thy
+lemma trivial_same: "trivial X = (\<forall>x1 \<in> X. \<forall>x2 \<in> X. x1 = x2)"
+
+/home/haechan.an/afp-2021-02-11/thys/Abstract-Hoare-Logics/Procs/PsHoare.thy
+lemma strengthen_pre: "\<lbrakk> \<forall>z s. P' z s \<longrightarrow> P z s; C\<turnstile> {P}c{Q} \<rbrakk> \<Longrightarrow> C\<turnstile> {P'}c{Q}"
+
+/home/haechan.an/afp-2021-02-11/thys/Lambda_Free_RPOs/Lambda_Free_Util.thy
+lemma prod_list_nonneg: fixes xs :: "('a :: {ordered_semiring_0,linordered_nonzero_semiring}) list" assumes "\<And>x. x \<in> set xs \<Longrightarrow> x \<ge> 0" shows "prod_list xs \<ge> 0"
+
+/home/haechan.an/afp-2021-02-11/thys/LatticeProperties/Conj_Disj.thy
+lemma inf_Disj: "(\<lambda> (x::'a::complete_distrib_lattice) . inf x y) \<in> Apply.Disjunctive"
+
+/home/haechan.an/afp-2021-02-11/thys/Consensus_Refined/Refinement.thy
+lemma PO_refines_implies_Range_init: "PO_refines R Ta Tc \<Longrightarrow> init Tc \<subseteq> Range R"
+
+/home/haechan.an/afp-2021-02-11/thys/Recursion-Theory-I/PRecFun2.thy
+lemma index_of_zero_main: "nat_to_pr index_of_zero = (\<lambda> x. 0)"
+
+/home/haechan.an/afp-2021-02-11/thys/Simplex/Abstract_Linear_Poly.thy
+lemma distinct_vars_list: "distinct (vars_list p)"
+
+/home/haechan.an/afp-2021-02-11/thys/Featherweight_OCL/UML_Logic.thy
+lemma OclOr_idem[simp]: "(X or X) = X"
+
+/home/haechan.an/afp-2021-02-11/thys/MonoBoolTranAlgebra/Mono_Bool_Tran_Algebra.thy
+lemma omega_star: "x \<in> conjunctive \<Longrightarrow> x ^ \<omega> = wpt (x ^ \<omega>) * (x ^ *)"
+
+/home/haechan.an/afp-2021-02-11/thys/Gauss_Jordan/System_Of_Equations.thy
+lemma dim_solution_set_not_zero_imp_infinite_solutions_no_homogeneous: fixes A::"'a::{field, semiring_char_0}^'n::{mod_type}^'rows::{mod_type}" assumes dim_not_0: "vec.dim (solution_set A 0) > 0" and con: "consistent A b" shows "infinite (solution_set A b)"
+
+/home/haechan.an/afp-2021-02-11/thys/Depth-First-Search/DFS.thy
+lemma nexts_set: "y \<in> set (nexts g x) = ((x,y) \<in> set g)"
+
+/home/haechan.an/afp-2021-02-11/thys/Polynomials/Power_Products.thy
+lemma dord_fun_refl: assumes "ord s s" shows "dord_fun ord s s"
+
+/home/haechan.an/afp-2021-02-11/thys/FileRefinement/FileRefinement.thy
+lemma writeSucceedCorrect: "[| nextFreeBlockInvariant cfile1; unallocatedBlocksInvariant cfile1; lastBlockInvariant cfile1; Some cfile2 = cfWrite cfile1 index value |] ==> Some (abstFn cfile2) = afWrite (abstFn cfile1) index value"
+
+/home/haechan.an/afp-2021-02-11/thys/Formula_Derivatives/Abstract_Formula.thy
+lemma satisfies_nFAll: "lformula \<phi> \<Longrightarrow> \<AA> \<Turnstile> nFAll b \<phi> \<longleftrightarrow> \<AA> \<Turnstile> FAll b \<phi>"
+
+/home/haechan.an/afp-2021-02-11/thys/Program-Conflict-Analysis/Normalization.thy
+lemma mon_loc_map_loc[simp]: "mon_loc fg (map LOC w) = mon_ww fg w"
+
+/home/haechan.an/afp-2021-02-11/thys/Density_Compiler/PDF_Values.thy
+lemma count_space_IntVal_prod[simp]: "INTEG \<Otimes>\<^sub>M INTEG = count_space (range IntVal \<times> range IntVal)"
+
+/home/haechan.an/afp-2021-02-11/thys/Neumann_Morgenstern_Utility/Neumann_Morgenstern_Utility_Theorem.thy
+lemma vNM_utilty_implies_continuity: assumes fnt: "finite outcomes" and "outcomes \<noteq> {}" assumes "\<exists>u. ordinal_utility (lotteries_on outcomes) \<R> (\<lambda>x. measure_pmf.expectation x u)" shows "continuous_vnm (lotteries_on outcomes) \<R>"
+
+/home/haechan.an/afp-2021-02-11/thys/Stateful_Protocol_Composition_and_Typing/More_Unification.thy
+lemma subst_idem_comp: "subst_idem r \<Longrightarrow> Unifier s (t \<cdot> r) (u \<cdot> r) \<Longrightarrow> (\<And>q. Unifier q (t \<cdot> r) (u \<cdot> r) \<Longrightarrow> s \<circ>\<^sub>s q = q) \<Longrightarrow> subst_idem (r \<circ>\<^sub>s s)"
+
+/home/haechan.an/afp-2021-02-11/thys/Dirichlet_Series/Dirichlet_Series.thy
+lemma eval_fds_zero [simp]: "eval_fds 0 = (\<lambda>_. 0)"
+
+/home/haechan.an/afp-2021-02-11/thys/WOOT_Strong_Eventual_Consistency/StrongConvergence.thy
+lemma (in dist_execution) new_messages_keep_consistency: assumes "consistent M" assumes "event_at i (Send m)" assumes "set (received_messages i) \<subseteq> M" assumes "i \<notin> I ` insert_messages M" shows "consistent (insert m M)"
+
+/home/haechan.an/afp-2021-02-11/thys/Optics/Scenes.thy
+lemma state_eq_iff: "idem_scene S \<Longrightarrow> x = y \<longleftrightarrow> (x, y) \<in> region S \<and> (x, y) \<in> coregion S"
+
+/home/haechan.an/afp-2021-02-11/thys/Factored_Transition_System_Bounding/FSSublist.thy
+lemma sublist_append_back: fixes l1 l2 shows "subseq l1 (l2 @ l1)"
+
+/home/haechan.an/afp-2021-02-11/thys/AutoFocus-Stream/AF_Stream.thy
+lemma untime_length_filter_eq_untime_length: " untime_length_filter s = untime_length s"
+
+/home/haechan.an/afp-2021-02-11/thys/DiscretePricing/Fair_Price.thy
+lemma (in disc_filtr_prob_space) trading_strategy_adapted: assumes "trading_strategy p" and "support_adapt Mkt p" shows "borel_adapt_stoch_proc F (val_process Mkt p)"
+
+/home/haechan.an/afp-2021-02-11/thys/SIFUM_Type_Systems/TypeSystem.thy
+lemma \<R>\<^sub>2_closed_glob_consistent: "closed_glob_consistent (\<R>\<^sub>2 \<Gamma>')"
+
+/home/haechan.an/afp-2021-02-11/thys/Recursion-Theory-I/RecEnSet.thy
+theorem ce_empty: "{} \<in> ce_sets"
+
+/home/haechan.an/afp-2021-02-11/thys/Abortable_Linearizable_Modules/Idempotence.thy
+lemma P14_invariant: shows "invariant (composition) P14"
+
+/home/haechan.an/afp-2021-02-11/thys/WorkerWrapper/CounterExample.thy
+lemma assumes "wrap oo unwrap = ID" shows "wrap oo strictify\<cdot>unwrap = ID"
+
+/home/haechan.an/afp-2021-02-11/thys/Stone_Algebras/P_Algebras.thy
+lemma dense_closed_top: "dense top"
+
+/home/haechan.an/afp-2021-02-11/thys/Complex_Geometry/Unit_Circle_Preserving_Moebius.thy
+lemma unit_disc_fix_moebius_uminus [simp]: assumes "unit_disc_fix M" shows "unit_disc_fix (-M)"
+
+/home/haechan.an/afp-2021-02-11/thys/Auto2_Imperative_HOL/Imperative/RBTree_Impl.thy
+lemma balance_to_fun [hoare_triple]: "<btree (rbt.Node l B k v r) p> btree_balance p <btree (balance l k v r)>"
+
+/home/haechan.an/afp-2021-02-11/thys/Nested_Multisets_Ordinals/Signed_Syntactic_Ordinal.thy
+lemma minus_zhmset_of_pos_le: "- zhmset_of (hmset_neg M) \<le> M"
+
+/home/haechan.an/afp-2021-02-11/thys/Kuratowski_Closure_Complement/KuratowskiClosureComplementTheorem.thy
+lemma Rat_real_limpt: fixes x :: real shows "x islimpt \<rat>"
+
+/home/haechan.an/afp-2021-02-11/thys/Root_Balanced_Tree/Root_Balanced_Tree.thy
+lemma bal_eq: "bal n xs = Balance.bal n xs"
+
+/home/haechan.an/afp-2021-02-11/thys/Extended_Finite_State_Machines/GExp.thy
+lemma max_input_list_cons: "max_input_list (a # G) = max (max_input a) (max_input_list G)"
+
+/home/haechan.an/afp-2021-02-11/thys/pGCL/StructuredReasoning.thy
+lemma wlp_Seq: assumes ent_a: "P \<tturnstile> wlp a Q" and ent_b: "Q \<tturnstile> wlp b R" and wa: "well_def a" and wb: "well_def b" and u_Q: "unitary Q" and u_R: "unitary R" shows "P \<tturnstile> wlp (a ;; b) R"
+
+/home/haechan.an/afp-2021-02-11/thys/Dirichlet_L/Dirichlet_Characters.thy
+lemma norm_le_1: "norm (\<chi> k) \<le> 1"
+
+/home/haechan.an/afp-2021-02-11/thys/List-Infinite/CommonSet/SetInterval2.thy
+lemma sub_left_strict_mono_on: "strict_mono_on (\<lambda>x. (x::nat) - k) {k..}"
+
+/home/haechan.an/afp-2021-02-11/thys/Stable_Matching/Sotomayor.thy
+lemma match_Field: assumes "match \<mu>" assumes "(m, w) \<in> \<mu>" shows "w \<in> Field (Pm m)" and "m \<in> Field (Pw w)"
+
+/home/haechan.an/afp-2021-02-11/thys/Name_Carrying_Type_Inference/SimplyTyped.thy
+lemma infer_pairE: assumes "infer \<Gamma> (Pair A B) = Some \<tau>" shows "\<exists>T S. \<tau> = TPair T S \<and> infer \<Gamma> A = Some T \<and> infer \<Gamma> B = Some S"
+
+/home/haechan.an/afp-2021-02-11/thys/IEEE_Floating_Point/IEEE_Properties.thy
+lemma is_finite_nonempty: "{a. is_finite a} \<noteq> {}"
+
+/home/haechan.an/afp-2021-02-11/thys/Topological_Semantics/sse_boolean_algebra.thy
+lemma fp_d: "(fp \<phi>\<^sup>d) X = (fp \<phi>)(\<^bold>\<midarrow>X)"
+
+/home/haechan.an/afp-2021-02-11/thys/Separata/Separata.thy
+lemma lspasl_andl: "Gamma \<and> (A h) \<and> (B h) \<longrightarrow> Delta \<Longrightarrow> Gamma \<and> ((A and B) h) \<longrightarrow> Delta"
+
+/home/haechan.an/afp-2021-02-11/thys/Markov_Models/ex/MDP_RP.thy
+lemma fun_ord_trans: "transp ord \<Longrightarrow> transp (fun_ord ord)"
+
+/home/haechan.an/afp-2021-02-11/thys/Random_BSTs/Random_BSTs.thy
+lemma eheight_rbst: assumes "finite A" shows "eheight_rbst (card A) = map_pmf eheight (random_bst A)"
+
+/home/haechan.an/afp-2021-02-11/thys/Monad_Memo_DP/heap_monad/Pair_Memory.thy
+lemma move12_correct1: "map_of1 heap' \<subseteq>\<^sub>m Map.empty" if "State_Monad.run_state (move12 k1) heap = (x, heap')" "P heap"
+
+/home/haechan.an/afp-2021-02-11/thys/Coinductive/Coinductive_List.thy
+lemma ltakeWhile_K_True [simp]: "ltakeWhile (\<lambda>_. True) xs = xs"
+
+/home/haechan.an/afp-2021-02-11/thys/LTL/Disjunctive_Normal_Form.thy
+lemma min_set_min_product_helper: "x \<in> (min_set A) \<otimes>\<^sub>m B \<longleftrightarrow> x \<in> A \<otimes>\<^sub>m B"
+
+/home/haechan.an/afp-2021-02-11/thys/List-Infinite/CommonSet/SetInterval2.thy
+lemma iMin_atLeast: "iMin {n..} = n"
+
+/home/haechan.an/afp-2021-02-11/thys/Ordered_Resolution_Prover/Abstract_Substitution.thy
+lemma subst_cls_mono_mset: "C \<subseteq># D \<Longrightarrow> C \<cdot> \<sigma> \<subseteq># D \<cdot> \<sigma>"
+
+/home/haechan.an/afp-2021-02-11/thys/Ordered_Resolution_Prover/Abstract_Substitution.thy
+lemma subst_cls_mset_single[simp]: "{#C#} \<cdot>cm \<sigma> = {#C \<cdot> \<sigma>#}"
+
+/home/haechan.an/afp-2021-02-11/thys/Auto2_Imperative_HOL/Imperative/RBTree_Impl.thy
+lemma get_color_rule [hoare_triple]: "<btree t p> get_color p <\<lambda>r. btree t p * \<up>(r = rbt.cl t)>"
+
+/home/haechan.an/afp-2021-02-11/thys/Core_SC_DOM/common/monads/DocumentMonad.thy
+lemma get_M_Mdocument_preserved5 [simp]: "cast document_ptr \<noteq> object_ptr \<Longrightarrow> h \<turnstile> put_M\<^sub>O\<^sub>b\<^sub>j\<^sub>e\<^sub>c\<^sub>t object_ptr setter v \<rightarrow>\<^sub>h h' \<Longrightarrow> preserved (get_M\<^sub>D\<^sub>o\<^sub>c\<^sub>u\<^sub>m\<^sub>e\<^sub>n\<^sub>t document_ptr getter) h h'"
+
+/home/haechan.an/afp-2021-02-11/thys/Topology/LList_Topology.thy
+lemma (in trace_top) suff_nhd_base: assumes unhd: "u \<in> nhds t" and H: "\<And>r. \<lbrakk> r \<in> finpref A t; suff A r \<subseteq> u \<rbrakk> \<Longrightarrow> R" shows "R"
+
+/home/haechan.an/afp-2021-02-11/thys/Refine_Monadic/Refine_Basic.thy
+lemma refine2specI: assumes "nofail b \<Longrightarrow> a \<le> SPEC (\<lambda>r. (\<exists>x. inres b x \<and> (r,x)\<in>R) )" shows "a \<le> \<Down>R b"
+
+/home/haechan.an/afp-2021-02-11/thys/Stateful_Protocol_Composition_and_Typing/Messages.thy
+lemma subtermeq_imp_funs_term_subset: "s \<sqsubseteq> t \<Longrightarrow> funs_term s \<subseteq> funs_term t"
+
+/home/haechan.an/afp-2021-02-11/thys/Twelvefold_Way/Twelvefold_Way_Entry9.thy
+lemma card_partitions_of: assumes "F \<in> (A \<rightarrow>\<^sub>E B) // range_permutation A B" assumes "univ (\<lambda>f. f ` A = B) F" shows "card (partitions_of A B F) = card B"
+
+/home/haechan.an/afp-2021-02-11/thys/Extended_Finite_State_Machines/examples/Drinks_Machine.thy
+lemma apply_updates_vend: "apply_updates (Updates vend) (join_ir [] r) r = r"
+
+/home/haechan.an/afp-2021-02-11/thys/Group-Ring-Module/Algebra1.thy
+lemma func_pre:"f \<in> {j. j \<le> (Suc n)} \<rightarrow> A \<Longrightarrow> f \<in> {j. j \<le> n} \<rightarrow> A"
+
+/home/haechan.an/afp-2021-02-11/thys/Category2/SetCat.thy
+lemma HomFtorMapsTo: "\<lbrakk>LSCategory C ; X \<in> obj\<^bsub>C \<^esub>; f \<in> mor\<^bsub>C \<^esub>\<rbrakk> \<Longrightarrow> Hom\<^bsub>C\<^esub>[X,f] maps\<^bsub>SET\<^esub> Hom\<^bsub>C \<^esub>X (dom\<^bsub>C\<^esub> f) to Hom\<^bsub>C \<^esub>X (cod\<^bsub>C\<^esub> f)"
+
+/home/haechan.an/afp-2021-02-11/thys/Poincare_Disc/Poincare_Lines_Ideal_Points.thy
+lemma calc_ideal_point2_on_circline: assumes "(z1, z2) = calc_ideal_point2_cvec A B" "is_real A" "(cmod B)\<^sup>2 > (cmod A)\<^sup>2" shows "A*z1*cnj z1 + B*cnj z1*z2 + cnj B*z1*cnj z2 + A*z2*cnj z2 = 0" (is "?lhs = 0")
+
+/home/haechan.an/afp-2021-02-11/thys/Simplex/Linear_Poly_Maps.thy
+lemma lookup_add_monom: "get_var_coeff lp v + c \<noteq> 0 \<Longrightarrow> fmlookup (add_monom c v lp) v = Some (get_var_coeff lp v + c)" "get_var_coeff lp v + c = 0 \<Longrightarrow> fmlookup (add_monom c v lp) v = None" "x \<noteq> v \<Longrightarrow> fmlookup (add_monom c v lp) x = fmlookup lp x"
+
+/home/haechan.an/afp-2021-02-11/thys/DiscretePricing/CRR_Model.thy
+lemma (in CRR_market) geom_proc_filt_info': fixes f::"bool stream \<Rightarrow> 'b::{t0_space}" assumes "f \<in> borel_measurable (G n)" shows "f w = f (pseudo_proj_False n w)"
+
+/home/haechan.an/afp-2021-02-11/thys/Impossible_Geometry/Impossible_Geometry.thy
+lemma radical_sqrt_simultaneous_quadratic_quadratic: assumes a: "a \<in> radical_sqrt" and b: "b \<in> radical_sqrt" and c: "c \<in> radical_sqrt" and d: "d \<in> radical_sqrt" and e: "e \<in> radical_sqrt" and f: "f \<in> radical_sqrt" and NotEqual: "\<not> (a = d & b = e & c = f)" and eq0: "(x - a)^2 + (y - b)^2 = c" and eq1: "(x - d)^2 + (y - e)^2 = f" shows "x \<in> radical_sqrt & y \<in> radical_sqrt"
+
+/home/haechan.an/afp-2021-02-11/thys/Propositional_Proof_Systems/Sema.thy
+lemma entail_sat: "\<Gamma> \<TTurnstile> \<bottom> \<longleftrightarrow> \<not> sat \<Gamma>"
+
+/home/haechan.an/afp-2021-02-11/thys/SATSolverVerification/SatSolverVerification.thy
+lemma InvariantConsistentAfterBacktrack: fixes F::Formula and M::LiteralTrail assumes "InvariantUniq M" and "InvariantConsistent M" and "decisions M \<noteq> []" and "M' = (prefixBeforeLastDecision M) @ [(opposite (lastDecision M), False)]" shows "InvariantConsistent M'"
+
+/home/haechan.an/afp-2021-02-11/thys/Category/Yoneda.thy
+lemma (in Yoneda) sandwich_funcset: assumes A: "A \<in> Ob" and "a \<in> F\<^bsub>\<o>\<^esub> A" shows "\<sigma>(A,a) : Ob \<rightarrow> ar Set"
+
+/home/haechan.an/afp-2021-02-11/thys/Architectural_Design_Patterns/Blockchain.thy
+lemma bhv_dn_context: assumes "\<not> honest uid" and "\<parallel>uid\<parallel>\<^bsub>t n\<^esub>" and "\<exists>n'<n. \<parallel>uid\<parallel>\<^bsub>t n'\<^esub>" shows "\<exists>nid'. \<parallel>nid'\<parallel>\<^bsub>t \<langle>uid \<leftarrow> t\<rangle>\<^bsub>n\<^esub>\<^esub> \<and> (mining (\<sigma>\<^bsub>uid\<^esub>t n) \<and> (\<exists>b. prefix (bc (\<sigma>\<^bsub>uid\<^esub>t n)) (bc (\<sigma>\<^bsub>nid'\<^esub>t \<langle>uid \<leftarrow> t\<rangle>\<^bsub>n\<^esub>) @ [b])) \<or> \<not> mining (\<sigma>\<^bsub>uid\<^esub>t n) \<and> prefix (bc (\<sigma>\<^bsub>uid\<^esub>t n)) (bc (\<sigma>\<^bsub>nid'\<^esub>t \<langle>uid \<leftarrow> t\<rangle>\<^bsub>n\<^esub>)))"
+
+/home/haechan.an/afp-2021-02-11/thys/Projective_Geometry/Desargues_2D.thy
+lemma rk_ABC\<alpha>\<beta>\<gamma> : assumes "desargues_config_2D A B C A' B' C' P \<alpha> \<beta> \<gamma>" and "rk {A, B, C, A', B', C', P, Q} \<ge> 4" and "rk {Q, A', a} = 2" and "rk {Q, B', b} = 2" and "rk {Q, C', c} = 2" and "rk {P, Q, R} = 2" and "rk {P, R} = 2" and "rk {Q, R} = 2" and "rk {R, A, a} = 2" and "rk {R, B, b} = 2" and "rk {R, C, c} = 2" and "rk {A', P} = 2" and "rk {B', P} = 2" and "rk {C', P} = 2" shows "rk {A, B, C, \<alpha>, \<beta>, \<gamma>} = 3"
+
+/home/haechan.an/afp-2021-02-11/thys/ZFC_in_HOL/ZFC_in_HOL.thy
+lemma smaller_than_small: assumes "small A" "B \<subseteq> A" shows "small B"
+
+/home/haechan.an/afp-2021-02-11/thys/Network_Security_Policy_Verification/attic.thy
+lemma (in wf_graph) path_split_set': assumes "is_path v p v'" and "v'\<in>W" obtains p1 p2 u where "p=p1@p2" and "is_path v p1 u" and "is_path u p2 v'" and "int_vertices p1 \<subseteq> -W" and "u\<in>W"
+
+/home/haechan.an/afp-2021-02-11/thys/LTL_to_DRA/Impl/af_Impl.thy
+lemma af_G_letter_simp_correct: "S \<Turnstile>\<^sub>P af_G_letter \<phi> \<nu> \<longleftrightarrow> S \<Turnstile>\<^sub>P af_G_letter_simp \<phi> \<nu>"
+
+/home/haechan.an/afp-2021-02-11/thys/Akra_Bazzi/Akra_Bazzi_Library.thy
+lemma smallo_1_tendsto_0: "(f \<longlongrightarrow> 0) at_top \<Longrightarrow> f \<in> o(\<lambda>x. 1 :: real)"
+
+/home/haechan.an/afp-2021-02-11/thys/Hermite/Hermite.thy
+lemma Hermite_of_upt_row_preserves_zero_rows_ge: assumes i: "is_zero_row i A" and k: "k \<le> nrows A" and ik: "to_nat i\<ge>k" shows "is_zero_row i (Hermite_of_upt_row_i A k ass res)"
+
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/Common/BinOp.thy
+lemma WTrt_binopI [intro]: "P \<turnstile> T1\<guillemotleft>Eq\<guillemotright>T2 : Boolean" "P \<turnstile> T1\<guillemotleft>NotEq\<guillemotright>T2 : Boolean" "bop = Add \<or> bop = Subtract \<or> bop = Mult \<or> bop = Div \<or> bop = Mod \<or> bop = BinAnd \<or> bop = BinOr \<or> bop = BinXor \<or> bop = ShiftLeft \<or> bop = ShiftRightZeros \<or> bop = ShiftRightSigned \<Longrightarrow> P \<turnstile> Integer\<guillemotleft>bop\<guillemotright>Integer : Integer" "bop = LessThan \<or> bop = LessOrEqual \<or> bop = GreaterThan \<or> bop = GreaterOrEqual \<Longrightarrow> P \<turnstile> Integer\<guillemotleft>bop\<guillemotright>Integer : Boolean" "bop = BinAnd \<or> bop = BinOr \<or> bop = BinXor \<Longrightarrow> P \<turnstile> Boolean\<guillemotleft>bop\<guillemotright>Boolean : Boolean"
+
+/home/haechan.an/afp-2021-02-11/thys/Dirichlet_Series/Dirichlet_Misc.thy
+lemma inj_on_insert': "(\<And>B. B \<in> A \<Longrightarrow> x \<notin> B) \<Longrightarrow> inj_on (insert x) A"
+
+/home/haechan.an/afp-2021-02-11/thys/PLM/TAO_5_MetaSolver.thy
+lemma ImplI[meta_intro]: "([\<phi> in v] \<Longrightarrow> [\<psi> in v]) \<Longrightarrow> ([\<phi> \<^bold>\<rightarrow> \<psi> in v])"
+
+/home/haechan.an/afp-2021-02-11/thys/Stateful_Protocol_Composition_and_Typing/Miscellaneous.thy
+lemma preordered_finite_set_has_maxima: assumes "finite A" "A \<noteq> {}" shows "\<exists>a::'a::{preorder} \<in> A. \<forall>b \<in> A. \<not>(a < b)"
+
+/home/haechan.an/afp-2021-02-11/thys/Dirichlet_Series/Dirichlet_Series.thy
+lemma fds_converges_scale [simp]: fixes z :: "'a :: {banach, nat_power_field, real_normed_field}" assumes c: "c > 0" shows "fds_converges (fds_scale c f) z \<longleftrightarrow> fds_converges f (of_nat c * z)"
+
+/home/haechan.an/afp-2021-02-11/thys/MSO_Regex_Equivalence/Init_Normalization.thy
+lemma wf_inInter[simp]: "\<lbrakk>wf n r; wf n s\<rbrakk> \<Longrightarrow> wf n (inInter r s)"
+
+/home/haechan.an/afp-2021-02-11/thys/Resolution_FOL/Tree.thy
+lemma cutoff_branch': assumes "anybranch T (\<lambda>b. red(ds@b))" shows "anybranch (cutoff red ds T) (\<lambda>b. red(ds@b))"
+
+/home/haechan.an/afp-2021-02-11/thys/Safe_OCL/OCL_Types.thy
+lemma update_element_type_det: "update_element_type \<tau> \<sigma> \<rho>\<^sub>1 \<Longrightarrow> update_element_type \<tau> \<sigma> \<rho>\<^sub>2 \<Longrightarrow> \<rho>\<^sub>1 = \<rho>\<^sub>2"
+
+/home/haechan.an/afp-2021-02-11/thys/Sigma_Commit_Crypto/Rivest.thy
+lemma bind_game_le_inv_q: shows "spmf (rivest_commit.bind_game \<A>) True \<le> 1 / q"
+
+/home/haechan.an/afp-2021-02-11/thys/Nat-Interval-Logic/IL_IntervalOperators.thy
+lemma iT_Mult_iprev: "iprev (n * k) (I \<otimes> k) = (iprev n I) * k"
+
+/home/haechan.an/afp-2021-02-11/thys/Constructive_Cryptography/Converter.thy
+lemma converter_of_callee_parametric [transfer_rule]: includes lifting_syntax shows "((S ===> A ===> rel_gpv'' (rel_prod B S) C R) ===> S ===> rel_converter A B C R) converter_of_callee converter_of_callee"
+
+/home/haechan.an/afp-2021-02-11/thys/Hoare_Time/Quant_Hoare.thy
+lemma thet_WhileFalse: "~ bval b s \<Longrightarrow> \<down>\<^sub>t (WHILE b DO c, s) = 1"
+
+/home/haechan.an/afp-2021-02-11/thys/CRDT/ORSet.thy
+theorem (in orset) convergence: assumes "set (node_deliver_messages xs) = set (node_deliver_messages ys)" and "xs prefix of i" and "ys prefix of j" shows "apply_operations xs = apply_operations ys"
+
+/home/haechan.an/afp-2021-02-11/thys/Coinductive/TLList_CCPO.thy
+lemma cont_comp: "\<lbrakk> mcont luba orda lubb ordb g; cont lubb ordb lubc ordc f \<rbrakk> \<Longrightarrow> cont luba orda lubc ordc (f \<circ> g)"
+
+/home/haechan.an/afp-2021-02-11/thys/Quantales/Quantic_Nuclei_Conuclei.thy
+lemma downset_comp_pres: "\<down> ((x::'a::quantale) \<cdot> y) = (\<down> \<circ> Sup) (\<down>x \<cdot> \<down>y)"
+
+/home/haechan.an/afp-2021-02-11/thys/Budan_Fourier/BF_Misc.thy
+lemma fcompose_0 [simp]: "fcompose 0 q r = 0"
+
+/home/haechan.an/afp-2021-02-11/thys/Pell/Pell.thy
+lemma pell_valuation_fund_sol_ge_2: "pell_valuation fund_sol \<ge> 2"
+
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/Framework/FWCondAction.thy
+lemma cond_action_oks_shr_change: "cond_action_oks (ls, (ts, m), ws, is) t cts \<Longrightarrow> cond_action_oks (ls, (ts, m'), ws, is) t cts"
+
+/home/haechan.an/afp-2021-02-11/thys/Sigma_Commit_Crypto/Xor.thy
+lemma compl_le_swap1: assumes "y \<sqsubseteq> \<^bold>- x" "x \<in> carrier L" "y \<in> carrier L" shows "x \<sqsubseteq> \<^bold>- y"
+
+/home/haechan.an/afp-2021-02-11/thys/Diophantine_Eqns_Lin_Hom/Algorithm.thy
+lemma maxne0_impl_le: "maxne0_impl x a \<le> Max (set (a::nat list))"
+
+/home/haechan.an/afp-2021-02-11/thys/Formula_Derivatives/WS1S_Prelim.thy
+lemma MSB_greater: "\<lbrakk>i < length Is; p |\<in>| Is ! i\<rbrakk> \<Longrightarrow> p < MSB Is"
+
+/home/haechan.an/afp-2021-02-11/thys/Heard_Of/ute/UteProof.thy
+lemma validity_argument: assumes run: "SHORun Ute_M rho HOs SHOs" and comm: "\<forall>r. SHOcommPerRd Ute_M (HOs r) (SHOs r)" and init: "\<forall>p. x ((rho 0) p) = v" and dw: "decide (rho r p) = Some w" and stp: "step r' = Suc 0" shows "card {q. sendMsg Ute_M r' q p (rho r' q) = Vote (Some v)} > E - \<alpha>"
+
+/home/haechan.an/afp-2021-02-11/thys/Network_Security_Policy_Verification/Lib/FiniteListGraph.thy
+lemma delete_edge_set_edges2: "set (edgesL (delete_edge v v' G)) = set (edgesL G) - {(v,v')}"
+
+/home/haechan.an/afp-2021-02-11/thys/Presburger-Automata/Presburger_Automata.thy
+lemma ineq_dfa_accepting: "(l, m) \<in> (succsr (dioph_ineq_succs n ks))\<^sup>* \<Longrightarrow> list_all (is_alph n) bss \<Longrightarrow> dfa_accepting (ineq_dfa n ks l) (dfa_steps (ineq_dfa n ks l) (the (fst (dioph_ineq_dfs n ks l) ! int_encode m)) bss) = (eval_dioph ks (nats_of_boolss n bss) \<le> m)"
+
+/home/haechan.an/afp-2021-02-11/thys/Differential_Game_Logic/Coincidence.thy
+lemma select_nonBV: "x\<notin>BVG(\<alpha>) \<Longrightarrow> selectlike (game_sem I \<alpha> (selectlike X \<omega> {x})) \<omega> {x} = selectlike (game_sem I \<alpha> X) \<omega> {x}"
+
+/home/haechan.an/afp-2021-02-11/thys/Jacobson_Basic_Algebra/Group_Theory.thy
+lemma mem_UnitsI: "\<lbrakk> invertible u; u \<in> M \<rbrakk> \<Longrightarrow> u \<in> Units"
+
+/home/haechan.an/afp-2021-02-11/thys/Transformer_Semantics/Kleisli_Transformers.thy
+lemma ifd_ibb_dual: "Sup_pres \<phi> \<Longrightarrow> fd\<^sup>-\<^sub>\<R> \<phi> = ((\<smile>) \<circ> bb\<^sup>-\<^sub>\<R> \<circ> \<partial>\<^sub>F) \<phi>"
+
+/home/haechan.an/afp-2021-02-11/thys/Attack_Trees/MC.thy
+lemma Suc_less_le: "x < (y - n) \<Longrightarrow> x \<le> (y - (Suc n))"
+
+/home/haechan.an/afp-2021-02-11/thys/Case_Labeling/Examples/Conditionals.thy
+lemma DC_final: assumes "V\<langle>(''g'',inp,[]), ct: a\<rangle>" shows "C\<langle>inp,ct,Suc inp: a\<rangle>"
+
+/home/haechan.an/afp-2021-02-11/thys/Probabilistic_Noninterference/Compositionality.thy
+lemma singlPart_finite[simp]: "finite (singlPart I) = finite I"
+
+/home/haechan.an/afp-2021-02-11/thys/Knuth_Bendix_Order/Subterm_and_Context.thy
+lemma size_simp6: "s \<in> set ss \<Longrightarrow> s \<unrhd> t \<Longrightarrow> size t \<le> size s \<Longrightarrow> size t \<le> Suc (size_list size ss)"
+
+/home/haechan.an/afp-2021-02-11/thys/List_Update/BIT.thy
+lemma t_A_A'_leq: "n < length paid_A' \<Longrightarrow> t_A n \<le> t_A' n"
+
+/home/haechan.an/afp-2021-02-11/thys/Modular_Assembly_Kit_Security/Verification/Basics/BSPTaxonomy.thy
+lemma Trivially_fulfilled_FCD_V_empty: "V\<^bsub>\<V>\<^esub> = {} \<Longrightarrow> FCD \<Gamma> \<V> Tr\<^bsub>ES\<^esub>"
+
+/home/haechan.an/afp-2021-02-11/thys/Flyspeck-Tame/GraphProps.thy
+lemma vertices_conv_Union_edges: "\<V>(f::face) = (\<Union>(a,b)\<in>\<E> f. {a})"
+
+/home/haechan.an/afp-2021-02-11/thys/Binding_Syntax_Theory/QuasiTerms_PickFresh_Alpha.thy
+lemma alphaAbs_weakestEx_imp_strongestAll: assumes GOOD_X: "qGood X" and "alphaAbs_ex_equal_or_qAFresh xs x X xs' x' X'" shows "alphaAbs_all_equal_or_qAFresh xs x X xs' x' X'"
+
+/home/haechan.an/afp-2021-02-11/thys/Physical_Quantities/ISQ_Algebra.thy
+lemma qinverse_weak_cong: assumes "x \<cong>\<^sub>Q y" shows "x\<^sup>-\<^sup>\<one> \<cong>\<^sub>Q y\<^sup>-\<^sup>\<one>"
+
+/home/haechan.an/afp-2021-02-11/thys/Parity_Game/Strategy.thy
+lemma Ptl_0: "ltl P $ 0 = lhd (ltl P)"
+
+/home/haechan.an/afp-2021-02-11/thys/HRB-Slicing/StaticInter/WeakSimulation.thy
+lemma silent_moves_intra_path_obs: assumes "m' \<in> obs_intra m \<lfloor>HRB_slice S\<rfloor>\<^bsub>CFG\<^esub>" and "length s = length (m#msx')" and "\<forall>m \<in> set msx'. return_node m" obtains as' where "S,slice_kind S \<turnstile> (m#msx',s) =as'\<Rightarrow>\<^sub>\<tau> (m'#msx',s)"
+
+/home/haechan.an/afp-2021-02-11/thys/Complex_Geometry/More_Complex.thy
+lemma real_imag_0: assumes "is_real a" "is_imag a" shows "a = 0"
+
+/home/haechan.an/afp-2021-02-11/thys/Markov_Models/Markov_Decision_Process.thy
+lemma arb_actI[simp]: "arb_act s \<in> K s"
+
+/home/haechan.an/afp-2021-02-11/thys/Locally-Nameless-Sigma/Sigma/Sigma.thy
+lemma lc_body: fixes t s p assumes "lc t" and "s \<noteq> p" shows "body (\<sigma>[s,p] t)"
+
+/home/haechan.an/afp-2021-02-11/thys/Pi_Calculus/Strong_Late_Axiomatisation.thy
+lemma validToHnf: fixes P :: pi assumes "valid P" shows "\<exists>Q. uhnf Q \<and> valid Q \<and> Q \<equiv>\<^sub>e P \<and> (depth Q) \<le> (depth P)"
+
+/home/haechan.an/afp-2021-02-11/thys/Factored_Transition_System_Bounding/SystemAbstraction.thy
+lemma DISJ_PROJ_NDEP_IMP_NDEP: fixes PROB vs vs' vs'' assumes "(disjnt vs vs'')" "disjnt vs vs'" "\<not>(dep_var_set (prob_proj PROB (prob_dom PROB - vs)) vs' vs'')" shows "\<not>(dep_var_set PROB vs' vs'')"
+
+/home/haechan.an/afp-2021-02-11/thys/Topological_Semantics/topo_border_algebra.thy
+lemma BI_rel: "Br_1 \<B> \<Longrightarrow> \<B> \<^bold>\<equiv> \<B>\<^sub>I \<I>"
+
+/home/haechan.an/afp-2021-02-11/thys/BytecodeLogicJmlTypes/AssocLists.thy
+lemma AL_update3: "\<lbrakk>(L::('a, 'b) AssList)[a\<mapsto>v]\<down>b = X; a \<noteq> b\<rbrakk> \<Longrightarrow> L\<down>b=X"
+
+/home/haechan.an/afp-2021-02-11/thys/Constructive_Cryptography/Converter_Rewrite.thy
+lemma eq_\<I>_converter_coinduct [consumes 1, case_names eq_\<I>_converter, coinduct pred: eq_\<I>_converter]: assumes "X conv conv'" and "\<And>conv conv' q. \<lbrakk> X conv conv'; q \<in> outs_\<I> \<I> \<rbrakk> \<Longrightarrow> eq_\<I>_gpv (rel_prod (eq_onp (\<lambda>r. r \<in> responses_\<I> \<I> q)) (\<lambda>conv conv'. X conv conv' \<or> \<I>, \<I>' \<turnstile>\<^sub>C conv \<sim> conv')) \<I>' (run_converter conv q) (run_converter conv' q)" shows "\<I>, \<I>' \<turnstile>\<^sub>C conv \<sim> conv'"
+
+/home/haechan.an/afp-2021-02-11/thys/Category/HomFunctors.thy
+lemma (in into_set) homf_preserves_arrows: "Hom(A,_)\<^bsub>\<a>\<^esub> : Ar \<rightarrow> ar Set"
+
+/home/haechan.an/afp-2021-02-11/thys/TESL_Language/Denotational.thy
+lemma TESL_interp_assoc: \<open>\<lbrakk>\<lbrakk> (\<Phi>\<^sub>1 @ \<Phi>\<^sub>2) @ \<Phi>\<^sub>3 \<rbrakk>\<rbrakk>\<^sub>T\<^sub>E\<^sub>S\<^sub>L = \<lbrakk>\<lbrakk> \<Phi>\<^sub>1 @ (\<Phi>\<^sub>2 @ \<Phi>\<^sub>3) \<rbrakk>\<rbrakk>\<^sub>T\<^sub>E\<^sub>S\<^sub>L\<close>
+
+/home/haechan.an/afp-2021-02-11/thys/Factored_Transition_System_Bounding/ActionSeqProcess.thy
+lemma graph_plan_lemma_4: fixes s s' as vs P assumes "(\<forall>a. (ListMem a as \<and> P a) \<longrightarrow> ((fmdom' (snd a) \<inter> vs) = {}))" "sat_precond_as s as" "sat_precond_as s' (filter (\<lambda>a. \<not>(P a)) as)" "(fmrestrict_set vs s = fmrestrict_set vs s')" shows " (fmrestrict_set vs (exec_plan s as) = fmrestrict_set vs (exec_plan s' (filter (\<lambda> a. \<not>(P a)) as))) "
+
+/home/haechan.an/afp-2021-02-11/thys/Finite_Automata_HF/Finite_Automata_HF.thy
+theorem regular_finite: "finite L \<Longrightarrow> regular L"
+
+/home/haechan.an/afp-2021-02-11/thys/MSO_Regex_Equivalence/Formula.thy
+lemma star_Arbitrary_ExceptD: "\<lbrakk>v \<in> star (lang n (Atom (Arbitrary_Except r b))); r < n; i < length v\<rbrakk> \<Longrightarrow> snd (v ! i) ! r = b"
+
+/home/haechan.an/afp-2021-02-11/thys/Refine_Monadic/Refine_Misc.thy
+lemma inf_distribI': fixes f :: "'a::complete_lattice \<Rightarrow> 'b::complete_lattice" assumes B: "\<And>C. f (Sup C) = Sup (f`C)" shows "inf_distrib f"
+
+/home/haechan.an/afp-2021-02-11/thys/Ordered_Resolution_Prover/Abstract_Substitution.thy
+lemma subst_lit_in_negs_is_neg: "L \<cdot>l \<sigma> \<in># negs AA \<Longrightarrow> is_neg L"
+
+/home/haechan.an/afp-2021-02-11/thys/Matrices_for_ODEs/SQ_MTX.thy
+lemma sq_mtx_diag_vec_mult: "(\<d>\<i>\<a>\<g> i. f i) *\<^sub>V s = (\<chi> i. f i * s$i)"
+
+/home/haechan.an/afp-2021-02-11/thys/Statecharts/Contrib.thy
+lemma ran_override [simp]: "(dom A \<inter> dom B) = {} \<Longrightarrow> ran (A ++ B) = (ran A) \<union> (ran B)"
+
+/home/haechan.an/afp-2021-02-11/thys/Probabilistic_While/Fast_Dice_Roll.thy
+lemma fast_dice_roll_alt_conv_while: "fdr_alt v c = map_spmf snd (bind_spmf (fdr_step v c) (loop_spmf.while (\<lambda>(v, c). n \<le> c) (\<lambda>(v, c). fdr_step (v - n) (c - n))))"
+
+/home/haechan.an/afp-2021-02-11/thys/List_Update/List_Factoring.thy
+lemma before_in_index1: fixes l assumes "set l = {x,y}" and "length l = 2" and "x\<noteq>y" shows "(if (x < y in l) then 0 else 1) = index l x"
+
+/home/haechan.an/afp-2021-02-11/thys/Density_Compiler/PDF_Values.thy
+lemma measurable_extract_int_pair[measurable]: "extract_int_pair \<in> measurable (PRODUCT INTEG INTEG) (count_space UNIV \<Otimes>\<^sub>M count_space UNIV)"
+
+/home/haechan.an/afp-2021-02-11/thys/Key_Agreement_Strong_Adversaries/Secrecy.thy
+lemma s0_anyP_observable [iff]: "observable (obs s0) P"
+
+/home/haechan.an/afp-2021-02-11/thys/Polynomials/MPoly_PM.thy
+lemma poly_deg_map_indets_le: "poly_deg (map_indets f p) \<le> poly_deg p"
+
+/home/haechan.an/afp-2021-02-11/thys/Group-Ring-Module/Algebra2.thy
+lemma (in Group) l_i_unique:"\<lbrakk>a \<in> carrier G; b \<in> carrier G; b \<cdot> a = \<one> \<rbrakk> \<Longrightarrow> (\<rho> a) = b "
+
+/home/haechan.an/afp-2021-02-11/thys/Pi_Calculus/Weak_Early_Bisim_Pres.thy
+lemma resPres: fixes P :: pi and Q :: pi and x :: name assumes "P \<approx> Q" shows "<\<nu>x>P \<approx> <\<nu>x>Q"
+
+/home/haechan.an/afp-2021-02-11/thys/Abstract-Hoare-Logics/Proc/PHoareTotal.thy
+lemma CALL_cor: "{(\<lambda>z s. (z=s \<and> body\<down>s) \<and> (s,t) \<in> termi_call_steps, CALL, \<lambda>z s. z -body\<rightarrow> s)} \<turnstile>\<^sub>t {\<lambda>z s. (z=s \<and> body\<down>s) \<and> s = t} body {\<lambda>z s. z -body\<rightarrow> s}"
+
+/home/haechan.an/afp-2021-02-11/thys/AWN/AWN_Invariants.thy
+lemma onllD [dest]: assumes "onll \<Gamma> P ((\<xi>, p), a, (\<xi>', p'))" shows "\<forall>l\<in>labels \<Gamma> p. \<forall>l'\<in>labels \<Gamma> p'. P ((\<xi>, l), a, (\<xi>', l'))"
+
+/home/haechan.an/afp-2021-02-11/thys/Gauss_Jordan/Linear_Maps.thy
+lemma invertible_matrix_mult_right_rank': fixes A::"'a::{field}^'n::{mod_type}^'m::{mod_type}" and Q::"'a::{field}^'n::{mod_type}^'n::{mod_type}" assumes invertible_Q: "invertible Q" and B_eq_PA: "B=A**Q" shows "rank B = rank A"
+
+/home/haechan.an/afp-2021-02-11/thys/BirdKMP/Theory_Of_Lists.thy
+lemma sconcat_strict[simp]: "sconcat\<cdot>\<bottom> = \<bottom>"
+
+/home/haechan.an/afp-2021-02-11/thys/Density_Compiler/Density_Predicates.thy
+lemma has_subprob_densityI: "\<lbrakk>f \<in> borel_measurable N; M = density N f; subprob_space M\<rbrakk> \<Longrightarrow> has_subprob_density M N f"
+
+/home/haechan.an/afp-2021-02-11/thys/JiveDataStoreModel/Isabelle_Store/Location.thy
+lemma isArrLenLoc_simps [simp]: "isArrLenLoc (objLoc cf a) = False" "isArrLenLoc (staticLoc f) = False" "isArrLenLoc (arrLenLoc T a) = True" "isArrLenLoc (arrLoc T a i) = False"
+
+/home/haechan.an/afp-2021-02-11/thys/Skip_Lists/Skip_List.thy
+lemma steps_empty [simp]: "steps {} f l up left = 0"
+
+/home/haechan.an/afp-2021-02-11/thys/Ergodic_Theory/Measure_Preserving_Transformations.thy
+lemma vrestr_image: assumes "x \<in> f--`A" shows "x \<in> space M" "f x \<in> space M" "f x \<in> A"
+
+/home/haechan.an/afp-2021-02-11/thys/Polynomials/MPoly_Type_Class_OAlist.thy
+lemma keys_MP_oalist [code]: "keys (MP_oalist xs) = set (map fst (fst (list_of_oalist_ntm xs)))"
+
+/home/haechan.an/afp-2021-02-11/thys/Vickrey_Clarke_Groves/MiscTools.thy
+lemma lm091: assumes "runiq (P\<inverse>)" shows "(P``((Domain P) - X)) \<inter> (P``X) = {}"
+
+/home/haechan.an/afp-2021-02-11/thys/InfPathElimination/SubExt.thy
+lemma (in wf_sub_rel) extends_imp_wf_sub_rel : assumes "extends g subs sub subs'" shows "wf_sub_rel subs'"
+
+/home/haechan.an/afp-2021-02-11/thys/Incompleteness/SyntaxN.thy
+lemma Contrapos2: "H \<turnstile> (Neg B) IMP (Neg A) \<Longrightarrow> H \<turnstile> A IMP B"
+
+/home/haechan.an/afp-2021-02-11/thys/DataRefinementIBP/Diagram.thy
+lemma grd_dgr_set: "((grd (step D) i)::('a set)) = Union {P . \<exists> j . P = grd (D(i,j))}"
+
+/home/haechan.an/afp-2021-02-11/thys/Group-Ring-Module/Algebra1.thy
+lemma nat_eq_an_eq:"n = m \<Longrightarrow> an n = an m"
+
+/home/haechan.an/afp-2021-02-11/thys/IEEE_Floating_Point/IEEE_Properties.thy
+lemma finite_nan: "is_finite a \<Longrightarrow> \<not> is_nan a"
+
+/home/haechan.an/afp-2021-02-11/thys/RSAPSS/Word.thy
+lemma fast_bv_to_nat_def: "bv_to_nat (\<one> # bs) == numeral (fast_bv_to_nat_helper bs Num.One)"
+
+/home/haechan.an/afp-2021-02-11/thys/Ordered_Resolution_Prover/Abstract_Substitution.thy
+lemma subst_atm_mset_union[simp]: "(AA + BB) \<cdot>am \<sigma> = AA \<cdot>am \<sigma> + BB \<cdot>am \<sigma>"
+
+/home/haechan.an/afp-2021-02-11/thys/Group-Ring-Module/Algebra9.thy
+lemma (in Ring) bilinear_l_lin:"\<lbrakk>R module M1; R module M2; R module N; m1 \<in> carrier M1; m2 \<in> carrier M2; r \<in> carrier R; bilinear_map f R M1 M2 N\<rbrakk> \<Longrightarrow> f (r \<cdot>\<^sub>s\<^bsub>M1\<^esub> m1, m2) = r \<cdot>\<^sub>s\<^bsub>N\<^esub> (f (m1, m2))"
+
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/Framework/FWBisimulation.thy
+lemma ta_bisim_\<epsilon> [simp]: "ta_bisim b \<epsilon> ta' \<longleftrightarrow> ta' = \<epsilon>" "ta_bisim b ta \<epsilon> \<longleftrightarrow> ta = \<epsilon>"
+
+/home/haechan.an/afp-2021-02-11/thys/HereditarilyFinite/Ordinal.thy
+lemma succ_neq_hpair [simp]: "succ k \<noteq> \<langle>x,y\<rangle> "
+
+/home/haechan.an/afp-2021-02-11/thys/Presburger-Automata/Presburger_Automata.thy
+lemma bdd_all_is_node_subsetbdd: assumes "list_all (bdd_all (nfa_is_node A)) (fst A)" and "nfa_is_node A q" shows "bdd_all (nfa_is_node A) (subsetbdd (fst A) q (nfa_emptybdd (length q)))"
+
+/home/haechan.an/afp-2021-02-11/thys/Stable_Matching/Contracts.thy
+lemma CD_on_simps: shows "CD_on ds {} = {}"
+
+/home/haechan.an/afp-2021-02-11/thys/Coinductive/Coinductive_Stream.thy
+lemma scount_eq_0D: "scount P \<omega> = 0 \<Longrightarrow> alw (not P) \<omega>"
+
+/home/haechan.an/afp-2021-02-11/thys/Randomised_Social_Choice/Order_Predicates.thy
+lemma is_weak_rankingI [intro?]: assumes "{} \<notin> set xs" "\<And>i j. i < length xs \<Longrightarrow> j < length xs \<Longrightarrow> i \<noteq> j \<Longrightarrow> xs ! i \<inter> xs ! j = {}" shows "is_weak_ranking xs"
+
+/home/haechan.an/afp-2021-02-11/thys/Statecharts/HA.thy
+lemma SAStates_ChiPlus_ChiRel_trans [rule_format]: "\<lbrakk> (S,U) \<in> (ChiPlus A); (U,T) \<in> (ChiRel A); S \<in> States SA; SA \<in> SAs A \<rbrakk> \<Longrightarrow> T \<notin> States SA"
+
+/home/haechan.an/afp-2021-02-11/thys/Simpl/HoarePartial.thy
+lemma conseq_Kleymann:"\<lbrakk>\<forall>Z. \<Gamma>,\<Theta>\<turnstile>\<^bsub>/F\<^esub> (P' Z) c (Q' Z),(A' Z); \<forall>s \<in> P. (\<exists>Z. s\<in>P' Z \<and> (Q' Z \<subseteq> Q) \<and> (A' Z \<subseteq> A))\<rbrakk> \<Longrightarrow> \<Gamma>,\<Theta>\<turnstile>\<^bsub>/F\<^esub> P c Q,A"
+
+/home/haechan.an/afp-2021-02-11/thys/Symmetric_Polynomials/Symmetric_Polynomials.thy
+lemma mpoly_map_vars_eq_0_iff [simp]: "mpoly_map_vars f p = 0 \<longleftrightarrow> p = 0"
+
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/Framework/FWBisimulation.thy
+lemma FWbisimulation_flip_simps [flip_simps]: "FWbisimulation final2 r2 final1 r1 (\<lambda>t. flip (bisim t)) = FWbisimulation final1 r1 final2 r2 bisim"
+
+/home/haechan.an/afp-2021-02-11/thys/Dependent_SIFUM_Type_Systems/Compositionality.thy
+lemma noread_exists_change_respecting: assumes fin: "finite (X :: 'Var set)" assumes eval: "\<langle> c, mds, mem \<rangle> \<leadsto> \<langle> c', mds', mem' \<rangle>" assumes noread: "\<forall> x \<in> X. doesnt_read_or_modify c x" shows "change_respecting \<langle>c, mds, mem\<rangle> \<langle>c', mds', mem'\<rangle> X"
+
+/home/haechan.an/afp-2021-02-11/thys/UPF_Firewall/FWNormalisation/NormalisationIntegerPortProof.thy
+lemma InDomConc[rule_format]: "p \<noteq> [] \<longrightarrow> x \<in> dom (C (list2FWpolicy (p))) \<longrightarrow> x \<in> dom (C (list2FWpolicy (a#p)))"
+
+/home/haechan.an/afp-2021-02-11/thys/MSO_Regex_Equivalence/Pi_Regular_Set.thy
+lemma conc_pow_comm: shows "A @@ (A ^^ n) = (A ^^ n) @@ A"
+
+/home/haechan.an/afp-2021-02-11/thys/Statecharts/Contrib.thy
+lemma chg_map_new [simp]: "m a = None \<Longrightarrow> chg_map f a m = m"
+
+/home/haechan.an/afp-2021-02-11/thys/Coinductive/TLList.thy
+lemma tnth_code [simp, nitpick_simp, code]: shows tnth_0: "tnth (TCons x xs) 0 = x" and tnth_Suc_TCons: "tnth (TCons x xs) (Suc n) = tnth xs n"
+
+/home/haechan.an/afp-2021-02-11/thys/Psi_Calculi/Weak_Bisim_Pres.thy
+lemma weakBisimResPres: fixes \<Psi> :: 'b and P :: "('a, 'b, 'c) psi" and Q :: "('a, 'b, 'c) psi" and x :: name assumes "\<Psi> \<rhd> P \<approx> Q" and "x \<sharp> \<Psi>" shows "\<Psi> \<rhd> \<lparr>\<nu>x\<rparr>P \<approx> \<lparr>\<nu>x\<rparr>Q"
+
+/home/haechan.an/afp-2021-02-11/thys/Green/Green.thy
+lemma finite_two_chain_vertical_boundary: assumes "finite two_chain" shows "finite (two_chain_vertical_boundary two_chain)"
+
+/home/haechan.an/afp-2021-02-11/thys/Incompleteness/SyntaxN.thy
+lemma rotate7: "insert A7 (insert A1 (insert A2 (insert A3 (insert A4 (insert A5 (insert A6 H)))))) \<turnstile> B \<Longrightarrow> insert A1 (insert A2 (insert A3 (insert A4 (insert A5 (insert A6 (insert A7 H)))))) \<turnstile> B"
+
+/home/haechan.an/afp-2021-02-11/thys/Density_Compiler/PDF_Semantics.thy
+lemma measurable_bernoulli[measurable]: "bernoulli \<in> measurable REAL (subprob_algebra BOOL)"
+
+/home/haechan.an/afp-2021-02-11/thys/Hybrid_Logic/Hybrid_Logic.thy
+lemma rev_nth_on: \<open>p on (ps, i) \<longleftrightarrow> (\<exists>v. ps !. v = Some p) \<or> p = Nom i\<close>
+
+/home/haechan.an/afp-2021-02-11/thys/Prime_Number_Theorem/Prime_Number_Theorem_Library.thy
+lemma conv_abscissa_mult_const_right: "conv_abscissa (f * fds_const c) \<le> conv_abscissa f"
+
+/home/haechan.an/afp-2021-02-11/thys/Syntax_Independent_Logic/Deduction.thy
+lemma prv_softSubst_implies_subst: assumes "x \<in> var" "t \<in> trm" "\<phi> \<in> fmla" and "x \<notin> FvarsT t" and "prv (softSubst \<phi> t x)" shows "prv (subst \<phi> t x)"
+
+/home/haechan.an/afp-2021-02-11/thys/UPF_Firewall/FWNormalisation/NormalisationIntegerPortProof.thy
+lemma iD_isD[rule_format]: "p \<noteq> [] \<longrightarrow> x \<notin> dom (C (list2FWpolicy p)) \<longrightarrow> C (DenyAll \<oplus> list2FWpolicy (insertDenies p)) x = C DenyAll x"
+
+/home/haechan.an/afp-2021-02-11/thys/Winding_Number_Eval/Cauchy_Index_Theorem.thy
+lemma cindexE_linear_comp: assumes "c\<noteq>0" shows "cindexE lb ub (f o (\<lambda>x. c*x+b)) = (if c>0 then cindexE (c*lb+b) (c*ub+b) f else - cindexE (c*ub+b) (c*lb+b) f)"
+
+/home/haechan.an/afp-2021-02-11/thys/Density_Compiler/PDF_Transformations.thy
+lemma distr_convolution_real: assumes "has_density M lborel (f :: (real \<times> real) \<Rightarrow> ennreal)" shows "has_density (distr M borel (case_prod (+))) lborel (\<lambda>z. \<integral>\<^sup>+x. f (x, z - x) \<partial>lborel)" (is "has_density ?M' _ ?f'")
+
+/home/haechan.an/afp-2021-02-11/thys/RSAPSS/Word.thy
+lemma bv_to_nat_helper [simp]: "bv_to_nat (b # bs) = bitval b * 2 ^ length bs + bv_to_nat bs"
+
+/home/haechan.an/afp-2021-02-11/thys/Buildings/Prelim.thy
+lemma fold_fixespointwise: "\<forall>x\<in>set xs. fixespointwise (f x) A \<Longrightarrow> fixespointwise (fold f xs) A"
+
+/home/haechan.an/afp-2021-02-11/thys/Parity_Game/Attractor.thy
+lemma attractor_in_V: "W \<subseteq> V \<Longrightarrow> attractor p W \<subseteq> V"
+
+/home/haechan.an/afp-2021-02-11/thys/Featherweight_OCL/UML_State.thy
+lemma StrictRefEq\<^sub>O\<^sub>b\<^sub>j\<^sub>e\<^sub>c\<^sub>t_defargs: "\<tau> \<Turnstile> (StrictRefEq\<^sub>O\<^sub>b\<^sub>j\<^sub>e\<^sub>c\<^sub>t x (y::('\<AA>,'a::{null,object})val))\<Longrightarrow> (\<tau> \<Turnstile>(\<upsilon> x)) \<and> (\<tau> \<Turnstile>(\<upsilon> y))"
+
+/home/haechan.an/afp-2021-02-11/thys/UpDown_Scheme/Grid.thy
+lemma grid_child_without_parent: assumes grid: "p \<in> grid (child b dir d) ds" (is "p \<in> grid ?c ds") and "d < length b" shows "p \<noteq> b"
+
+/home/haechan.an/afp-2021-02-11/thys/Affine_Arithmetic/Executable_Euclidean_Space.thy
+lemma eucl_le_Basis_list_iff: "(x::'a::executable_euclidean_space) \<le> y \<longleftrightarrow> (\<forall>i<DIM('a). x \<bullet> Basis_list ! i \<le> y \<bullet> Basis_list ! i)"
+
+/home/haechan.an/afp-2021-02-11/thys/List-Infinite/CommonSet/SetInterval2.thy
+lemma mod_eq_div_right_strict_mono_on: " \<lbrakk> 0 < (k::nat); \<forall>x\<in>I. \<forall>y\<in>I. x mod k = y mod k \<rbrakk> \<Longrightarrow> strict_mono_on (\<lambda>x. x div k) I"
+
+/home/haechan.an/afp-2021-02-11/thys/Timed_Automata/DBM_Operations.thy
+lemma canonical_cyc_free: "canonical M n \<Longrightarrow> \<forall>i \<le> n. M i i \<ge> \<one> \<Longrightarrow> cyc_free M n"
+
+/home/haechan.an/afp-2021-02-11/thys/DiscretePricing/Infinite_Coin_Toss_Space.thy
+lemma (in infinite_coin_toss_space) pseudo_proj_True_Suc_False_proj: shows "pseudo_proj_True (Suc n) (pseudo_proj_False n w) = pseudo_proj_False n w"
+
+/home/haechan.an/afp-2021-02-11/thys/PSemigroupsConvolution/Binary_Modalities.thy
+lemma rel_fun_Sup_distl: "(f::'a \<Rightarrow> 'b::proto_quantale) \<star> \<Squnion>G = \<Squnion>{f \<star> g |g. g \<in> G}"
+
+/home/haechan.an/afp-2021-02-11/thys/PLM/TAO_9_PLM.thy
+lemma oth_class_taut_3_b[PLM]: "[(\<phi> \<^bold>& \<psi>) \<^bold>\<equiv> (\<psi> \<^bold>& \<phi>) in v]"
+
+/home/haechan.an/afp-2021-02-11/thys/Regular-Sets/Regular_Set.thy
+lemma Shuffle_eps[simp]: "A \<parallel> {[]} = A" "{[]} \<parallel> B = B"
+
+/home/haechan.an/afp-2021-02-11/thys/Program-Conflict-Analysis/Semantics.thy
+lemma trss_find_return: "\<lbrakk> ((s@r,c),w,(r,c'))\<in>trcl (trss fg); !!wa wb ch. \<lbrakk> w=wa@wb; ((s,c),wa,([],ch))\<in>trcl (trss fg); ((r,ch),wb,(r,c'))\<in>trcl (trss fg) \<rbrakk> \<Longrightarrow> P \<rbrakk> \<Longrightarrow> P" \<comment> \<open>If @{term "s=[]"}, the proposition follows trivially\<close>
+
+/home/haechan.an/afp-2021-02-11/thys/Markov_Models/Discrete_Time_Markov_Chain.thy
+lemma prob_T_split: assumes P[measurable]: "Measurable.pred S P" shows "\<P>(\<omega> in T s. P \<omega>) = (\<integral>\<omega>. \<P>(\<omega>' in T ((s ## \<omega>) !! n). P (stake n \<omega> @- \<omega>')) \<partial>T s)"
+
+/home/haechan.an/afp-2021-02-11/thys/Incompleteness/SyntaxN.thy
+lemma Eq_Eats_I: "H \<turnstile> All i (Var i IN z IFF Var i IN t OR Var i EQ u) \<Longrightarrow> atom i \<sharp> (z,t,u) \<Longrightarrow> H \<turnstile> z EQ Eats t u"
+
+/home/haechan.an/afp-2021-02-11/thys/OpSets/Interleaving.thy
+lemma list_order_insert_ref: assumes "insert_ops (ops @ [(oid, Some ref)])" and "ref \<in> set (interp_ins ops)" shows "list_order (ops @ [(oid, Some ref)]) ref oid"
+
+/home/haechan.an/afp-2021-02-11/thys/Impossible_Geometry/Impossible_Geometry.thy
+lemma upmost_radical_sqrt2: "radicals e \<noteq> {} \<Longrightarrow> \<exists> r \<in> radicals e. \<forall> s \<in> radicals e. r \<notin> radicals s"
+
+/home/haechan.an/afp-2021-02-11/thys/Splay_Tree/Splay_Heap.thy
+lemma mset_partition: "\<lbrakk> bst_wrt (\<le>) t; partition p t = (l',r') \<rbrakk> \<Longrightarrow> mset_tree t = mset_tree l' + mset_tree r'"
+
+/home/haechan.an/afp-2021-02-11/thys/Extended_Finite_State_Machine_Inference/Code_Generation.thy
+lemma [code]: "always_different_outputs_direct_subsumption m1 m2 s s' t = ( if Guards t = [] then recognises_and_visits_both m1 m2 s s' else dirty_always_different_outputs_direct_subsumption m1 m2 s s' t )"
+
+/home/haechan.an/afp-2021-02-11/thys/Coinductive_Languages/Coinductive_Language.thy
+lemma \<oo>_PLUS[simp]: "\<oo> (PLUS xs) = (\<exists>x\<in>set xs. \<oo> x)"
+
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/MM/JMM_Spec.thy
+lemma most_recent_write_for_fun: "\<lbrakk> P,E \<turnstile> ra \<leadsto>mrw wa; P,E \<turnstile> ra \<leadsto>mrw wa' \<rbrakk> \<Longrightarrow> wa = wa'"
+
+/home/haechan.an/afp-2021-02-11/thys/Binding_Syntax_Theory/Well_Sorted_Terms.thy
+theorem wls_fresh_vsubst_E2: assumes "wls s X" and "fresh zs z (X #[y1 // y]_ys)" shows "fresh ys y X \<or> zs \<noteq> ys \<or> z \<noteq> y1"
+
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/Framework/LTS.thy
+lemma silent_move_into_silent_move2: assumes "s -\<tau>\<rightarrow> s'" shows "\<exists>tl. silent_move2 s tl s'"
+
+/home/haechan.an/afp-2021-02-11/thys/Word_Lib/Word_Lemmas.thy
+lemma unatSuc2: fixes n :: "'a :: len word" shows "n + 1 \<noteq> 0 \<Longrightarrow> unat (n + 1) = Suc (unat n)"
+
+/home/haechan.an/afp-2021-02-11/thys/Ordinary_Differential_Equations/IVP/Flow.thy
+lemma eventually_at_snd: assumes "eventually P (at (snd x))" assumes "P (snd x)" shows "eventually (\<lambda>h. P (snd h)) (at x)"
+
+/home/haechan.an/afp-2021-02-11/thys/Group-Ring-Module/Algebra4.thy
+lemma (in Ring) ring_distrib1:"\<lbrakk>x \<in> carrier R; y \<in> carrier R; z \<in> carrier R \<rbrakk> \<Longrightarrow> x \<cdot>\<^sub>r (y \<plusminus> z) = x \<cdot>\<^sub>r y \<plusminus> x \<cdot>\<^sub>r z"
+
+/home/haechan.an/afp-2021-02-11/thys/Nested_Multisets_Ordinals/Hereditary_Multiset.thy
+lemma type_definition_hmultiset: "type_definition Rep_hmultiset Abs_hmultiset {X. no_elem X}"
+
+/home/haechan.an/afp-2021-02-11/thys/BDD/General.thy
+lemma ind_in_higher_take: "\<And>n k. \<lbrakk>n < k; n < length xs\<rbrakk> \<Longrightarrow> xs ! n \<in> set (take k xs)"
+
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/Execute/JVMExec_Execute2.thy
+lemma jvm_state'_of_jvm_state_extRet2JVM [simp]: assumes [simp]: "ins = instrs_of P C M" "xt = ex_table_of P C M" "\<forall>f \<in> set frs. frame'_ok P f" shows "jvm_state'_of_jvm_state P (extRet2JVM n h' stk loc C M pc (map frame_of_frame' frs) va) = extRet2JVM' (drop pc (instrs_of P C M)) ins xt n h' stk loc C M pc frs va"
+
+/home/haechan.an/afp-2021-02-11/thys/ZFC_in_HOL/Kirby.thy
+lemma mult_add_mem_0 [simp]: "a*x \<in> elts (a*y) \<longleftrightarrow> x \<in> elts y \<and> 0 \<in> elts a"
+
+/home/haechan.an/afp-2021-02-11/thys/Dirichlet_Series/Dirichlet_Series_Analysis.thy
+lemma abs_conv_abscissa_PInfI [intro]: "(\<And>s. \<not>fds_converges f s) \<Longrightarrow> abs_conv_abscissa f = \<infinity>"
+
+/home/haechan.an/afp-2021-02-11/thys/Polynomials/MPoly_Type_Class_Ordered.thy
+lemma pps_to_list_nth_lessI: assumes "j < i" and "i < card S" shows "(pps_to_list S) ! i \<prec>\<^sub>t (pps_to_list S) ! j"
+
+/home/haechan.an/afp-2021-02-11/thys/Modal_Logics_for_NTS/S_Transform.thy
+lemma S_transform_Tree_eqvt [eqvt]: "p \<bullet> S_transform_Tree t = S_transform_Tree (p \<bullet> t)"
+
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/Framework/FWLock.thy
+lemma has_lock_may_lock: "has_lock l t \<Longrightarrow> may_lock l t"
+
+/home/haechan.an/afp-2021-02-11/thys/Stone_Relation_Algebras/Relation_Algebras.thy
+lemma pp_arc_expanded: "pp_arc x \<longleftrightarrow> x * top * x\<^sup>T \<le> 1 \<and> x\<^sup>T * top * x \<le> 1 \<and> top * --x * top = top"
+
+/home/haechan.an/afp-2021-02-11/thys/Matrix_Tensor/Matrix_Tensor.thy
+lemma scalar_product_append: "\<forall>xs ys zs ws.(length zs = length ws) \<and>(length xs = length ys) \<and>(length xs = n) \<longrightarrow> (scalar_product (xs@zs) (ys@ws)) = (scalar_product xs ys) +(scalar_product zs ws)"
+
+/home/haechan.an/afp-2021-02-11/thys/Graph_Theory/Kuratowski.thy
+lemma (in pre_digraph) inner_verts_empty[simp]: assumes "length p < 2" shows "inner_verts p = []"
+
+/home/haechan.an/afp-2021-02-11/thys/Coinductive/Coinductive_List.thy
+lemma lfinite_transfer [transfer_rule]: "(llist_all2 A ===> (=)) lfinite lfinite"
+
+/home/haechan.an/afp-2021-02-11/thys/Ordinal_Partitions/Omega_Omega.thy
+lemma nxt_subset_atLeast: "m \<le> n \<Longrightarrow> nxt N n \<subseteq> {m..}"
+
+/home/haechan.an/afp-2021-02-11/thys/Vickrey_Clarke_Groves/Universes.thy
+lemma lm017: "possible_allocations_rel G N \<supseteq> injectionsUniverse \<inter> {a. Domain a \<in> all_partitions G & Range a \<subseteq> N}"
+
+/home/haechan.an/afp-2021-02-11/thys/List-Infinite/CommonSet/SetInterval2.thy
+lemma greaterThan_insert: "insert (n::'a::order) {n<..} = {n..}"
+
+/home/haechan.an/afp-2021-02-11/thys/BNF_Operations/Compose.thy
+theorem Hmap_comp: "Hmap (f1 o g1) (f2 o g2) = Hmap f1 f2 o Hmap g1 g2"
+
+/home/haechan.an/afp-2021-02-11/thys/Category3/Subcategory.thy
+lemma is_embedding_functor: shows "embedding_functor S.comp C S.map"
+
+/home/haechan.an/afp-2021-02-11/thys/Binomial-Heaps/SkewBinomialHeap.thy
+lemma meld_xlate: "bsmap (meld q q') = SkewBinomialHeapStruc.meld (bsmap q) (bsmap q')"
+
+/home/haechan.an/afp-2021-02-11/thys/Complex_Geometry/Circlines.thy
+lemma inf_in_circline_set: "\<infinity>\<^sub>h \<in> circline_set H \<longleftrightarrow> is_line H"
+
+/home/haechan.an/afp-2021-02-11/thys/Kuratowski_Closure_Complement/KuratowskiClosureComplementTheorem.thy
+lemma Rat_closure: shows "closure \<rat> = (UNIV :: real set)"
+
+/home/haechan.an/afp-2021-02-11/thys/Valuation/Valuation1.thy
+lemma (in Corps) Vr_integral:"valuation K v \<Longrightarrow> Idomain (Vr K v)"
+
+/home/haechan.an/afp-2021-02-11/thys/VolpanoSmith/secTypes.thy
+lemma typeableFreevars: assumes "\<Gamma> \<turnstile> e : T" shows "fv e \<subseteq> dom \<Gamma>"
+
+/home/haechan.an/afp-2021-02-11/thys/Probabilistic_Noninterference/Language_Semantics.thy
+lemma WtFT_le_1[simp]: "WtFT cl \<le> 1" (is "?L \<le> 1")
+
+/home/haechan.an/afp-2021-02-11/thys/Modal_Logics_for_NTS/S_Transform.thy
+theorem S_transform_bisimilar_iff: "P \<sim>\<cdot>\<^sub>S Q \<longleftrightarrow> P \<sim>\<cdot> Q"
+
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/Framework/FWThread.thy
+lemma redT_updT'_convert_new_thread_action_eq_None: "redT_updT' ts (convert_new_thread_action f ta) t = None \<longleftrightarrow> redT_updT' ts ta t = None"
+
+/home/haechan.an/afp-2021-02-11/thys/Dirichlet_Series/Dirichlet_Series_Analysis.thy
+lemma abs_conv_abscissa_sum_leI: assumes "\<And>x. x \<in> A \<Longrightarrow> abs_conv_abscissa (f x :: 'a :: dirichlet_series fds) \<le> d" shows "abs_conv_abscissa (sum f A) \<le> d"
+
+/home/haechan.an/afp-2021-02-11/thys/UTP/utp/utp_pred.thy
+lemma false_alt_def: "false = \<guillemotleft>False\<guillemotright>"
+
+/home/haechan.an/afp-2021-02-11/thys/Group-Ring-Module/Algebra6.thy
+lemma (in PolynRg) monomial_P_mod_mod:"\<lbrakk>ideal S I; c \<in> carrier S; p = c \<cdot>\<^sub>r (X^\<^bsup>R d\<^esup>)\<rbrakk> \<Longrightarrow> (c \<in> I) = (P_mod R S X I p)"
+
+/home/haechan.an/afp-2021-02-11/thys/Monomorphic_Monad/Monomorphic_Monad.thy
+lemma run_bind_state [simp]: "run_state (bind_state x f) s = bind (run_state x s) (\<lambda>(a, s'). run_state (f a) s')"
+
+/home/haechan.an/afp-2021-02-11/thys/SenSocialChoice/FSext.thy
+lemma finite_subset_induct' [consumes 2, case_names empty insert]: assumes "finite F" and "F \<subseteq> A" and empty: "P {}" and insert: "\<And>a F. \<lbrakk>finite F; a \<in> A; F \<subseteq> A; a \<notin> F; P F \<rbrakk> \<Longrightarrow> P (insert a F)" shows "P F"
+
+/home/haechan.an/afp-2021-02-11/thys/Word_Lib/Word_Lemmas.thy
+lemma ucast_scast_3: "\<lbrakk> is_down (scast :: 'a word \<Rightarrow> 'c word); is_down (ucast :: 'b word \<Rightarrow> 'c word) \<rbrakk> \<Longrightarrow> (ucast (scast (a :: 'a::len word) :: 'b::len word) :: 'c::len word) = scast a"
+
+/home/haechan.an/afp-2021-02-11/thys/KAT_and_DRA/TwoSorted/KAT2.thy
+lemma hoare_mult [vcg]: "`\<lbrace>p\<rbrace> x \<lbrace>r\<rbrace>` \<Longrightarrow> `\<lbrace>r\<rbrace> y \<lbrace>q\<rbrace>` \<Longrightarrow> `\<lbrace>p\<rbrace> x\<cdot>y \<lbrace>q\<rbrace>`"
+
+/home/haechan.an/afp-2021-02-11/thys/Gaussian_Integers/Gaussian_Integers.thy
+lemma gcd_of_nat_gauss_int: "gcd (of_nat a :: gauss_int) (of_nat b) = of_nat (gcd a b)"
+
+/home/haechan.an/afp-2021-02-11/thys/DiskPaxos/DiskPaxos_Inv2.thy
+theorem HPhase1or2Write_Inv2c: assumes inv: "Inv2c s" and act: "HPhase1or2Write s s' p d" and inv2a: "Inv2a s" shows "Inv2c s'"
+
+/home/haechan.an/afp-2021-02-11/thys/TLA/Sequence.thy
+lemma seq_app_tail: "tail (x ## s) = s"
+
+/home/haechan.an/afp-2021-02-11/thys/BNF_CC/Axiomatised_BNF_CC.thy
+lemma rell_G_compp_Grp: "rell_G L1 L2 = (Grp {x. set1_G x \<subseteq> {(x, y). L1 x y} \<and> set2_G x \<subseteq> {(x, y). L2 x y}} (mapl_G fst fst))\<inverse>\<inverse> OO Grp {x. set1_G x \<subseteq> {(x, y). L1 x y} \<and> set2_G x \<subseteq> {(x, y). L2 x y}} (mapl_G snd snd)"
+
+/home/haechan.an/afp-2021-02-11/thys/Probabilistic_Noninterference/Compositionality.thy
+lemma inj_on_shift: "inj_on (shift cl n) K"
+
+/home/haechan.an/afp-2021-02-11/thys/Refine_Monadic/Refine_Basic.thy
+lemma lhs_step_RES: "\<lbrakk> \<And>x. x\<in>X \<Longrightarrow> RETURN x \<le> m \<rbrakk> \<Longrightarrow> RES X \<le> m"
+
+/home/haechan.an/afp-2021-02-11/thys/Extended_Finite_State_Machines/examples/Drinks_Machine.thy
+lemma possible_steps_0_not_select: "a \<noteq> STR ''select'' \<Longrightarrow> possible_steps drinks 0 <> a b = {||}"
+
+/home/haechan.an/afp-2021-02-11/thys/JiveDataStoreModel/Isabelle/Value.thy
+lemma isByteV_simps [simp]: "isByteV (boolV b) = False" "isByteV (intgV i) = False" "isByteV (shortV s) = False" "isByteV (byteV by) = True" "isByteV (objV C a) = False" "isByteV (arrV T a) = False" "isByteV (nullV) = False"
+
+/home/haechan.an/afp-2021-02-11/thys/Extended_Finite_State_Machines/FSet_Utils.thy
+lemma fprod_member: "x |\<in>| xs \<Longrightarrow> y |\<in>| ys \<Longrightarrow> (x, y) |\<in>| xs |\<times>| ys"
+
+/home/haechan.an/afp-2021-02-11/thys/Simpl/UserGuide.thy
+lemma (in Fac_impl) shows "\<forall>n. \<Gamma>\<turnstile> \<lbrace>\<acute>N = n\<rbrace> \<acute>R :== PROC Fac(\<acute>N) \<lbrace>\<acute>R = fac n\<rbrace>"
+
+/home/haechan.an/afp-2021-02-11/thys/ConcurrentGC/TSO.thy
+lemma (in sys) tso_gc_writes_inv[intro]: "\<lbrace> LSTP tso_writes_inv \<rbrace> sys"
+
+/home/haechan.an/afp-2021-02-11/thys/Differential_Dynamic_Logic/Denotational_Semantics.thy
+lemma agree_UNIV_snd:"\<And>\<nu> \<omega>. Vagree \<nu> \<omega> (Inr ` UNIV) \<Longrightarrow> (snd \<nu>) = (snd \<omega>)"
+
+/home/haechan.an/afp-2021-02-11/thys/Inductive_Inference/Partial_Recursive.thy
+lemma tuple_encode_decode' [simp]: "tuple_encode n (tuple_decode n i) = i"
+
+/home/haechan.an/afp-2021-02-11/thys/Word_Lib/Aligned.thy
+lemma is_aligned_no_overflow: "is_aligned ptr sz \<Longrightarrow> ptr \<le> ptr + 2^sz - 1"
+
+/home/haechan.an/afp-2021-02-11/thys/Nat-Interval-Logic/IL_Interval.thy
+lemma iIN_iFROM_append_union_Suc: " [n\<dots>,d] \<union> [Suc (n + d)\<dots>] = [n\<dots>]"
+
+/home/haechan.an/afp-2021-02-11/thys/CryptoBasedCompositionalProperties/KnowledgeKeysSecrets.thy
+lemma know_composition2: assumes "m \<notin> specKeysSecrets P" and "m \<notin> specKeysSecrets Q" and "know Q m" and "subcomponents PQ = {P,Q}" and "correctCompositionIn PQ" and "correctCompositionKS PQ" shows "know PQ m"
+
+/home/haechan.an/afp-2021-02-11/thys/Network_Security_Policy_Verification/TopoS_Stateful_Policy.thy
+lemma E_state_validD: assumes "(v,v') \<in> flows_state \<T>" shows "v \<in> hosts \<T>" "v' \<in> hosts \<T>"
+
+/home/haechan.an/afp-2021-02-11/thys/Program-Conflict-Analysis/Flowgraph.thy
+lemma (in flowgraph) entry_return_same_proc[simp]: "entry fg p = return fg p' \<Longrightarrow> p=p'"
+
+/home/haechan.an/afp-2021-02-11/thys/Priority_Queue_Braun/Sorting_Braun.thy
+lemma t_list_of_B_log_bound: "braun t \<Longrightarrow> t_list_of_B t \<le> 3 * (nlog2 (size t + 1) + 1) * size t"
+
+/home/haechan.an/afp-2021-02-11/thys/Matrix_Tensor/Matrix_Tensor.thy
+lemma hd_set:assumes "x \<in> set (a#M)" shows "(x = a) \<or> (x\<in>(set M))"
+
+/home/haechan.an/afp-2021-02-11/thys/Automated_Stateful_Protocol_Verification/Term_Implication.thy
+lemma timpl_closure_set_absc_subset_in: defines "absc \<equiv> \<lambda>a. Fun (Abs a) []" assumes A: "timpl_closure_set (absc ` A) TI \<subseteq> absc ` A" and a: "a \<in> A" "(a,b) \<in> TI\<^sup>+" shows "b \<in> A"
+
+/home/haechan.an/afp-2021-02-11/thys/DiscretePricing/Fair_Price.thy
+lemma remove_comp_portfolio: assumes "portfolio pf1" shows "portfolio (qty_rem_comp pf1 x)"
+
+/home/haechan.an/afp-2021-02-11/thys/Smooth_Manifolds/Projective_Space.thy
+lemma saturate_eq: "Proj -` Proj ` X = (\<Union>c\<in>UNIV-{0}. (*\<^sub>R) c ` X)"
+
+/home/haechan.an/afp-2021-02-11/thys/Graph_Theory/Digraph_Isomorphism.thy
+lemma arcs_ends_app_iso_eq: assumes "digraph_isomorphism hom" shows "arcs_ends (app_iso hom G) = (\<lambda>(u,v). (iso_verts hom u, iso_verts hom v)) ` arcs_ends G"
+
+/home/haechan.an/afp-2021-02-11/thys/PseudoHoops/PseudoHoopFilters.thy
+lemma lemma_3_11_i: "H \<in> normalfilters \<Longrightarrow> filterof (H \<union> {x}) = {a . \<exists> n h . h \<in> H \<and> h * x ^ n \<le> a}"
+
+/home/haechan.an/afp-2021-02-11/thys/Octonions/Octonions.thy
+lemma octo_product_alternative_right: "x * (y * y) = (x * y :: octo) * y"
+
+/home/haechan.an/afp-2021-02-11/thys/Attack_Trees/MC.thy
+lemma EF_E[rule_format]: "\<forall> f. x \<in> (EF f) \<longrightarrow> x \<in> (f \<union> EX' (EF f))"
+
+/home/haechan.an/afp-2021-02-11/thys/Separation_Logic_Imperative_HOL/Examples/Array_Map_Impl.thy
+lemma [code]: "iam_lookup k a \<equiv> nth_oo None a k"
+
+/home/haechan.an/afp-2021-02-11/thys/Myhill-Nerode/Non_Regular_Languages.thy
+lemma repeat_Nil [simp]: "repeat n [] = []"
+
+/home/haechan.an/afp-2021-02-11/thys/Word_Lib/Word_Lemmas.thy
+lemma shiftr1_0_or_1:"(x::('a::len) word) >> 1 = 0 \<Longrightarrow> x = 0 \<or> x = 1"
+
+/home/haechan.an/afp-2021-02-11/thys/Refine_Monadic/Refine_Det.thy
+lemma dres_monad1[simp]: "dbind (dRETURN x) f = f x"
+
+/home/haechan.an/afp-2021-02-11/thys/TLA/Sequence.thy
+lemma seqsim_suffix_seqsim: assumes H: "s \<approx> t" shows "nextsuffix s \<approx> nextsuffix t"
+
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/Framework/LTS.thy
+lemma silent_move2_into_silent_move: fixes tl assumes "silent_move2 s tl s'" shows "s -\<tau>\<rightarrow> s'"
+
+/home/haechan.an/afp-2021-02-11/thys/List_Update/RExp_Var.thy
+lemma subst_w2rexp: "lang (subst (w2rexp (xs @ ys)) \<sigma>) = lang (subst (w2rexp xs) \<sigma>) @@ lang (subst (w2rexp ys) \<sigma>)"
+
+/home/haechan.an/afp-2021-02-11/thys/Concurrent_Revisions/Determinacy.thy
+lemma SLC_sym: "\<exists>s\<^sub>3' s\<^sub>3. s\<^sub>3' \<approx> s\<^sub>3 \<and> (revision_step r' s\<^sub>2 s\<^sub>3' \<or> s\<^sub>2 = s\<^sub>3') \<and> (revision_step r s\<^sub>2' s\<^sub>3 \<or> s\<^sub>2' = s\<^sub>3) \<Longrightarrow> \<exists>s\<^sub>3 s\<^sub>3'. s\<^sub>3 \<approx> s\<^sub>3' \<and> (revision_step r s\<^sub>2' s\<^sub>3 \<or> s\<^sub>2' = s\<^sub>3) \<and> (revision_step r' s\<^sub>2 s\<^sub>3' \<or> s\<^sub>2 = s\<^sub>3')"
+
+/home/haechan.an/afp-2021-02-11/thys/Monad_Memo_DP/example/Longest_Common_Subsequence.thy
+lemma lcs\<^sub>a_correct: "lcs xs ys (length xs) (length ys) = lcs\<^sub>a xs ys"
+
+/home/haechan.an/afp-2021-02-11/thys/Coinductive/Coinductive_List.thy
+lemma ltake_eq_LNil_iff: "ltake n xs = LNil \<longleftrightarrow> xs = LNil \<or> n = 0"
+
+/home/haechan.an/afp-2021-02-11/thys/Polynomials/OAlist_Poly_Mapping.thy
+lemma compute_min_key_val_ko_ntm [code]: "min_key_val_ko_ntm ko (xs, ox) = (if ko = ox then hd else min_list_param (\<lambda>x y. (le_of_nat_term_order ko) (fst y) (fst x))) xs"
+
+/home/haechan.an/afp-2021-02-11/thys/Sort_Encodings/T.thy
+lemma wtPB_tPB[simp]: "TE.wtPB tPB"
+
+/home/haechan.an/afp-2021-02-11/thys/Deep_Learning/Tensor.thy
+lemma assumes "length v = prod_list d" shows dims_tensor[simp]: "dims (tensor_from_vec d v) = d" and vec_tensor[simp]: "vec (tensor_from_vec d v) = v"
+
+/home/haechan.an/afp-2021-02-11/thys/Markov_Models/Discrete_Time_Markov_Chain.thy
+lemma in_measurable_T1[measurable (raw)]: "f \<in> measurable S M \<Longrightarrow> f \<in> measurable (T s) M"
+
+/home/haechan.an/afp-2021-02-11/thys/Simpl/HoarePartialProps.thy
+lemma MergeGuardsD: assumes deriv: "\<Gamma>,\<Theta>\<turnstile>\<^bsub>/F\<^esub> P merge_guards c Q,A" shows "\<Gamma>,\<Theta>\<turnstile>\<^bsub>/F\<^esub> P c Q,A"
+
+/home/haechan.an/afp-2021-02-11/thys/FOL-Fitting/FOL_Fitting.thy
+lemma remove_imps: assumes \<open>infinite (- params p)\<close> shows \<open>z' \<turnstile> put_imps p z \<Longrightarrow> rev z @ z' \<turnstile> p\<close>
+
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/MM/Non_Speculative.thy
+lemma w_value_mono: "vs0 adal \<subseteq> w_value P vs0 ob adal"
+
+/home/haechan.an/afp-2021-02-11/thys/Menger/DisjointPaths.thy
+lemma P_hit: "hitting_paths new_last"
+
+/home/haechan.an/afp-2021-02-11/thys/Featherweight_OCL/examples/Employee_Model/Design/Design_UML.thy
+lemma " (\<sigma>\<^sub>1,\<sigma>\<^sub>1') \<Turnstile> (X\<^sub>P\<^sub>e\<^sub>r\<^sub>s\<^sub>o\<^sub>n2 .oclIsMaintained())"
+
+/home/haechan.an/afp-2021-02-11/thys/Well_Quasi_Orders/Almost_Full.thy
+lemma af_trans_extension_imp_wf: assumes subrel: "\<And>x y. P x y \<Longrightarrow> Q x y" and af: "almost_full_on P A" and trans: "transp_on Q A" shows "wfp_on (strict Q) A"
+
+/home/haechan.an/afp-2021-02-11/thys/Consensus_Refined/Refinement.thy
+lemma abs_INV_init_transfer: assumes "PO_refines R Ta Tc" "init Ta \<subseteq> I" shows "init Tc \<subseteq> R `` I"
+
+/home/haechan.an/afp-2021-02-11/thys/DiskPaxos/DiskPaxos_Chosen.thy
+lemma HPhase1or2ReadThen_valueChosen2: assumes act: "HPhase1or2ReadThen s s' q d pp" and asm4: "\<forall>d\<in>D. b \<le> bal(disk s d p) \<and>(\<forall>q.( phase s q = 1 \<and> b \<le>mbal(dblock s q) \<and> hasRead s q d p ) \<longrightarrow> (\<exists>br\<in>blocksRead s q d. b \<le> bal(block br)))" (is "?P s") shows "?P s'"
+
+/home/haechan.an/afp-2021-02-11/thys/Stateful_Protocol_Composition_and_Typing/More_Unification.thy
+lemma sat_ineq_subterm_inj_subst: fixes \<theta> \<I> \<delta>::"('f,'v) subst" assumes \<theta>: "subterm_inj_on \<theta> (subst_domain \<theta>)" "ground (subst_range \<theta>)" "subst_domain \<theta> \<inter> X = {}" "subterms\<^sub>s\<^sub>e\<^sub>t (subst_range \<theta>) \<inter> (subterms s \<union> subterms t) = {}" "(fv s \<union> fv t) - subst_domain \<theta> \<subseteq> X" and tfr: "(\<forall>x \<in> (fv s \<union> fv t) - X. \<exists>c. \<theta> x = Fun c []) \<or> (\<forall>f U. Fun f U \<in> subterms s \<union> subterms t \<longrightarrow> U = [] \<or> (\<exists>u \<in> set U. u \<notin> Var ` X))" and \<I>: "\<forall>\<delta>::('f,'v) subst. subst_domain \<delta> = X \<and> ground (subst_range \<delta>) \<longrightarrow> s \<cdot> \<delta> \<cdot> \<I> \<noteq> t \<cdot> \<delta> \<cdot> \<I>" "(fv s \<union> fv t) - X \<subseteq> subst_domain \<I>" "subst_domain \<I> \<inter> X = {}" "ground (subst_range \<I>)" "subst_domain \<I> = subst_domain \<theta>" and \<delta>: "subst_domain \<delta> = X" "ground (subst_range \<delta>)" shows "s \<cdot> \<delta> \<cdot> \<theta> \<noteq> t \<cdot> \<delta> \<cdot> \<theta>"
+
+/home/haechan.an/afp-2021-02-11/thys/Constructive_Cryptography/Converter.thy
+lemma map_converter_of_callee: "map_converter f g h k (converter_of_callee callee s) = converter_of_callee (map_fun id (map_fun f (map_gpv' (map_prod g id) h k)) callee) s"
+
+/home/haechan.an/afp-2021-02-11/thys/HereditarilyFinite/Ordinal.thy
+lemma Ord_trans2: "\<lbrakk>i2 \<^bold>\<in> i; i \<^bold>\<in> j; j \<^bold>\<in> k; Ord k\<rbrakk> \<Longrightarrow> i2\<^bold>\<in>k"
+
+/home/haechan.an/afp-2021-02-11/thys/PLM/TAO_9_PLM.thy
+lemma ActualConjI[PLM_intro]: "[\<^bold>\<A>\<phi> \<^bold>& \<^bold>\<A>\<psi> in v] \<Longrightarrow> [\<^bold>\<A>(\<phi> \<^bold>& \<psi>) in v]"
+
+/home/haechan.an/afp-2021-02-11/thys/Hybrid_Multi_Lane_Spatial_Logic/NatInt.thy
+lemma un_subset1: "consec i j \<longrightarrow> i \<sqsubseteq> i \<squnion> j"
+
+/home/haechan.an/afp-2021-02-11/thys/Coinductive/Coinductive_Stream.thy
+lemma sconst_conv_of_seq: "sconst a = of_seq (\<lambda>_. a)"
+
+/home/haechan.an/afp-2021-02-11/thys/Network_Security_Policy_Verification/Lib/FiniteGraph.thy
+lemma E_wfD: assumes "(v,v') \<in> E" shows "v \<in> V" "v' \<in> V"
+
+/home/haechan.an/afp-2021-02-11/thys/Security_Protocol_Refinement/Key_establish/m1_nssk.thy
+lemma PO_m1_step6_refines_ri_a0i_running: "{R_a0im1_ri \<inter> UNIV \<times> m1_inv0_fin} (a0i_running [B, A] (Kab, Nb)), (m1_step6 Ra A B Na Nb Kab) {> R_a0im1_ri}"
+
+/home/haechan.an/afp-2021-02-11/thys/Store_Buffer_Reduction/PIMP.thy
+lemma sbh_load_tmps_fresh_prog_step: assumes step: "\<theta>\<turnstile>(s,t) \<rightarrow>\<^sub>s ((s',t'),is')" assumes tmps_le: "\<forall>i \<in> dom \<theta>. i < t" shows "load_tmps is' \<inter> dom \<theta> = {}"
+
+/home/haechan.an/afp-2021-02-11/thys/Finger-Trees/FingerTree.thy
+lemma splitTree_correctE: assumes mono: "\<forall>a b. p a \<longrightarrow> p (a + b)" assumes init_ff: "\<not> p i" assumes sum_tt: "p (i + annot s)" obtains l e a r where "(splitTree p i s) = (l, (e,a), r)" and "(toList s) = (toList l) @ (e,a) # (toList r)" and "\<not> p (i + annot l)" and "p (i + annot l + a)"
+
+/home/haechan.an/afp-2021-02-11/thys/LTL/Disjunctive_Normal_Form.thy
+lemma min_product_comm: "A \<otimes>\<^sub>m B = B \<otimes>\<^sub>m A"
+
+/home/haechan.an/afp-2021-02-11/thys/Stateful_Protocol_Composition_and_Typing/Intruder_Deduction.thy
+lemma wf_trm_subst_rangeD: "wf\<^sub>t\<^sub>r\<^sub>m\<^sub>s (subst_range \<theta>) \<Longrightarrow> wf\<^sub>t\<^sub>r\<^sub>m (\<theta> x)"
+
+/home/haechan.an/afp-2021-02-11/thys/Syntax_Independent_Logic/Deduction.thy
+lemma prv_subst_scnj: assumes "F \<subseteq> fmla" "finite F" "t \<in> trm" "x \<in> var" shows "prv (eqv (subst (scnj F) t x) (scnj ((\<lambda>\<phi>. subst \<phi> t x) ` F)))"
+
+/home/haechan.an/afp-2021-02-11/thys/DiscretePricing/Disc_Cond_Expect.thy
+lemma expl_cond_exp_diff: assumes "integrable M X" and "integrable M Z" shows "\<forall>w\<in> space M. expl_cond_expect M Y (\<lambda>x. X x - Z x) w = expl_cond_expect M Y X w - expl_cond_expect M Y Z w"
+
+/home/haechan.an/afp-2021-02-11/thys/Security_Protocol_Refinement/Key_establish/m3_nssk.thy
+lemma PO_m3_inv3_sesK_compr [iff]: "reach m3 \<subseteq> m3_inv3_sesK_compr"
+
+/home/haechan.an/afp-2021-02-11/thys/Verified_SAT_Based_AI_Planning/STRIPS_Semantics.thy
+lemma effect_to_assignments_i: assumes "as = effect_to_assignments op" shows "as = (map (\<lambda>v. (v, True)) (add_effects_of op) @ map (\<lambda>v. (v, False)) (delete_effects_of op))"
+
+/home/haechan.an/afp-2021-02-11/thys/Lambert_W/Lambert_W.thy
+lemma Lambert_W_nonneg_iff [simp]: "Lambert_W x \<ge> 0 \<longleftrightarrow> x \<ge> 0"
+
+/home/haechan.an/afp-2021-02-11/thys/Markov_Models/Discrete_Time_Markov_Chain.thy
+lemma measurable_D_D: "measurable D D = measurable (stream_space (\<Pi>\<^sub>M s\<in>UNIV. count_space UNIV)) (stream_space (\<Pi>\<^sub>M s\<in>UNIV. count_space UNIV))"
+
+/home/haechan.an/afp-2021-02-11/thys/WebAssembly/Wasm_Interpreter.thy
+lemma[simp]: "es_is_trap es = (es = [Trap])"
+
+/home/haechan.an/afp-2021-02-11/thys/Coinductive/Coinductive_List.thy
+lemma ldropn_lnull: "lnull xs \<Longrightarrow> ldropn n xs = LNil"
+
+/home/haechan.an/afp-2021-02-11/thys/Automatic_Refinement/Lib/Misc.thy
+lemma set_quicksort_by_rel [simp]: "set (quicksort_by_rel R sl xs) = set (xs @ sl)"
+
+/home/haechan.an/afp-2021-02-11/thys/Euler_MacLaurin/Euler_MacLaurin.thy
+lemma integrable_EM_remainder'_int: fixes a b :: int and f :: "real \<Rightarrow> 'a :: banach" assumes "continuous_on {of_int a..of_int b} f" shows "(\<lambda>t. pbernpoly n t *\<^sub>R f t) integrable_on {a..b}"
+
+/home/haechan.an/afp-2021-02-11/thys/Octonions/Octonions.thy
+lemma cnj_numeral [simp]: "cnj (numeral x) = numeral x"
+
+/home/haechan.an/afp-2021-02-11/thys/POPLmark-deBruijn/POPLmarkRecord.thy
+lemma matchs_reorder: "\<turnstile> fps [:] fTs \<Rightarrow> \<Delta> \<Longrightarrow> \<forall>(l, U)\<in>set fTs. \<exists>u. fs\<langle>l\<rangle>\<^sub>? = \<lfloor>u\<rfloor> \<Longrightarrow> \<turnstile> fps [\<rhd>] fs \<Rightarrow> ts \<Longrightarrow> \<turnstile> fps [\<rhd>] map (\<lambda>(l, T). (l, the (fs\<langle>l\<rangle>\<^sub>?))) fTs \<Rightarrow> ts"
+
+/home/haechan.an/afp-2021-02-11/thys/InfPathElimination/SubRel.thy
+lemma fst_of_sp_is_vert : assumes "subpath g v1 es v2 subs" shows "v1 \<in> Graph.vertices g"
+
+/home/haechan.an/afp-2021-02-11/thys/Stable_Matching/Contracts.thy
+lemma mem_Ch_CH: assumes "x \<in> Ch h X" shows "x \<in> CH X"
+
+/home/haechan.an/afp-2021-02-11/thys/ComponentDependencies/DataDependenciesCaseStudy.thy
+lemma correctCompositionDiffLevelsS7opt: "correctCompositionDiffLevels sS7opt"
+
+/home/haechan.an/afp-2021-02-11/thys/Syntax_Independent_Logic/Deduction.thy
+lemma cnj_compat_eqvL: assumes "\<phi>1 \<in> fmla" and "\<phi>2 \<in> fmla" and "\<chi> \<in> fmla" assumes "prv (eqv \<phi>1 \<phi>2)" shows "prv (eqv (cnj \<phi>1 \<chi>) (cnj \<phi>2 \<chi>))"
+
+/home/haechan.an/afp-2021-02-11/thys/Order_Lattice_Props/Order_Lattice_Props.thy
+lemma filtered_nonempty: "filtered X \<Longrightarrow> X \<noteq> {}"
+
+/home/haechan.an/afp-2021-02-11/thys/Approximation_Algorithms/Approx_VC_Hoare.thy
+lemma invar_step: assumes "F \<noteq> {}" "invar C F" shows "invar (C \<union> some F) (F - {e' \<in> F. some F \<inter> e' \<noteq> {}})"
+
+/home/haechan.an/afp-2021-02-11/thys/Dirichlet_Series/Dirichlet_Series.thy
+lemma suminf_fds_zeta_aux: "f 0 = 0 \<Longrightarrow> (\<Sum>n. fds_nth fds_zeta n / f n) = (\<Sum>n. 1 / f n :: 'a :: real_normed_field)"
+
+/home/haechan.an/afp-2021-02-11/thys/PLM/TAO_9_PLM.thy
+lemma id_eq_prop_prop_8_b[PLM]: "[((p::\<o>) \<^bold>= q) \<^bold>\<rightarrow> (q \<^bold>= p) in v]"
+
+/home/haechan.an/afp-2021-02-11/thys/Network_Security_Policy_Verification/vertex_example_simps.thy
+lemma unique_default_example_simp1: "{(e1, e2). e1 = vertex_1 \<and> e2 = vertex_2 \<and> (e1 = vertex_1 \<longrightarrow> e2 \<noteq> vertex_2)} = {}"
+
+/home/haechan.an/afp-2021-02-11/thys/BDD/LevellistProof.thy
+lemma (in Levellist_impl) Levellist_modifies: shows "\<forall>\<sigma>. \<Gamma>\<turnstile>{\<sigma>} \<acute>levellist :== PROC Levellist (\<acute>p, \<acute>m, \<acute>levellist) {t. t may_only_modify_globals \<sigma> in [mark,next]}"
+
+/home/haechan.an/afp-2021-02-11/thys/Category/Cat.thy
+lemma (in category) homE: assumes "A \<in> Ob" and "B \<in> Ob" and "f \<in> Hom A B" shows "Dom f = A" and "Cod f = B"
+
+/home/haechan.an/afp-2021-02-11/thys/Timed_Automata/Closure.thy
+lemma closure_involutive_aux: "U \<subseteq> \<R> \<Longrightarrow> Closure\<^sub>\<alpha> \<Union> U = \<Union> U"
+
+/home/haechan.an/afp-2021-02-11/thys/Elliptic_Curves_Group_Law/Elliptic_Axclass.thy
+lemma add_comm': "nonsingular a b \<Longrightarrow> on_curve a b p\<^sub>1 \<Longrightarrow> on_curve a b p\<^sub>2 \<Longrightarrow> on_curve a b p\<^sub>3 \<Longrightarrow> add a p\<^sub>2 (add a p\<^sub>1 p\<^sub>3) = add a p\<^sub>1 (add a p\<^sub>2 p\<^sub>3)"
+
+/home/haechan.an/afp-2021-02-11/thys/Stateful_Protocol_Composition_and_Typing/More_Unification.thy
+lemma MGU_Var1: assumes "\<not>Var v \<sqsubset> t" shows "MGU (Var(v := t)) (Var v) t"
+
+/home/haechan.an/afp-2021-02-11/thys/LinearQuantifierElim/Thys/Cooper.thy
+theorem cp_thm: assumes nq: "nqfree \<phi>" and u: "\<forall>a\<in>set(Z.atoms\<^sub>0 \<phi>). hd_coeff_is1 a" and d: "\<forall>a\<in>set(Z.atoms\<^sub>0 \<phi>). divisor a dvd d" and dp: "d > 0" shows "(\<exists>x. Z.I \<phi> (x#xs)) = (\<exists>j\<in>{0..d - 1}. Z.I (inf\<^sub>- \<phi>) (j#xs) \<or> (\<exists>(i,ks) \<in> set(lbounds(Z.atoms\<^sub>0 \<phi>)). Z.I \<phi> ((i - \<langle>ks,xs\<rangle> + j) # xs)))" (is "(\<exists>x. ?P (x)) = (\<exists> j\<in> ?D. ?M j \<or> (\<exists>(i,ks)\<in> ?B. ?P (?I i ks + j)))")
+
+/home/haechan.an/afp-2021-02-11/thys/Bernoulli/Bernoulli_FPS.thy
+lemma bernoulli_code [code]: "bernoulli n = (if n = 0 then 1 else if n = 1 then -1/2 else if odd n then 0 else akiyama_tanigawa n 0)"
+
+/home/haechan.an/afp-2021-02-11/thys/Approximation_Algorithms/Approx_BP_Hoare.thy
+lemma L_lower_bound_card: assumes "bp P" shows "card L\<^sub>U \<le> card P"
+
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/Framework/FWInitFinLift.thy
+lemma length_lift_start_obs [simp]: "length (lift_start_obs t obs) = Suc (length obs)"
+
+/home/haechan.an/afp-2021-02-11/thys/Locally-Nameless-Sigma/Sigma/Sigma.thy
+lemma ssubst_option_lem: "\<forall>l\<in>dom f. [z \<rightarrow> u] the(f l) = the (ssubst_option z u (f l))"
+
+/home/haechan.an/afp-2021-02-11/thys/Jinja/Common/TypeRel.thy
+lemma Method_code [code_pred_intro]: "\<lbrakk> P \<turnstile> C sees_methods Mm; Mm M = \<lfloor>((Ts, T, m), D)\<rfloor> \<rbrakk> \<Longrightarrow> P \<turnstile> C sees M: Ts\<rightarrow>T = m in D"
+
+/home/haechan.an/afp-2021-02-11/thys/Automatic_Refinement/Lib/Misc.thy
+lemma dom_const'[simp]: "dom (\<lambda>x. Some (f x)) = UNIV"
+
+/home/haechan.an/afp-2021-02-11/thys/POPLmark-deBruijn/POPLmarkRecord.thy
+lemma subtype_trans: \<comment> \<open>A.3\<close> "\<Gamma> \<turnstile> S <: Q \<Longrightarrow> \<Gamma> \<turnstile> Q <: T \<Longrightarrow> \<Gamma> \<turnstile> S <: T" "\<Delta> @ TVarB Q \<Colon> \<Gamma> \<turnstile> M <: N \<Longrightarrow> \<Gamma> \<turnstile> P <: Q \<Longrightarrow> \<Delta> @ TVarB P \<Colon> \<Gamma> \<turnstile> M <: N"
+
+/home/haechan.an/afp-2021-02-11/thys/ComponentDependencies/DataDependenciesCaseStudy.thy
+lemma correctCompositionDiffLevelsA93: "correctCompositionDiffLevels sA93"
+
+/home/haechan.an/afp-2021-02-11/thys/MSO_Regex_Equivalence/Init_Normalization.thy
+lemma lang_inPlus[simp]: "\<lbrakk>wf n r; wf n s\<rbrakk> \<Longrightarrow> lang n (inPlus r s) = lang n (Plus r s)"
+
+/home/haechan.an/afp-2021-02-11/thys/HyperCTL/Noninterference.thy
+lemma purge_append: "purge G (ucl1 @ ucl2) = purge G ucl1 @ purge G ucl2"
+
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/Compiler/J0.thy
+lemma Red_Suspend_is_call: "\<lbrakk> P,t \<turnstile>0 \<langle>e/exs, h\<rangle> -ta\<rightarrow> \<langle>e'/exs', h'\<rangle>; Suspend w \<in> set \<lbrace>ta\<rbrace>\<^bsub>w\<^esub> \<rbrakk> \<Longrightarrow> is_call e'"
+
+/home/haechan.an/afp-2021-02-11/thys/Polynomials/MPoly_Type_Class_Ordered.thy
+lemma tt_uminus [simp]: "tt (- p) = tt p"
+
+/home/haechan.an/afp-2021-02-11/thys/Coinductive/Examples/Resumption.thy
+lemma Eq_RESUMPTION_implies_ntrunc_equality: "Eq_RESUMPTION r r' \<Longrightarrow> ntrunc k r = ntrunc k r'"
+
+/home/haechan.an/afp-2021-02-11/thys/Stateful_Protocol_Composition_and_Typing/Intruder_Deduction.thy
+lemma closure_is_superset: "decomp_closure M M' \<Longrightarrow> M \<subseteq> M'"
+
+/home/haechan.an/afp-2021-02-11/thys/Incompleteness/SyntaxN.thy
+theorem Imp_I [intro!]: "insert A H \<turnstile> B \<Longrightarrow> H \<turnstile> A IMP B"
+
+/home/haechan.an/afp-2021-02-11/thys/Coinductive/TLList.thy
+lemma thd_tllist_of_llist [simp]: "thd (tllist_of_llist b xs) = lhd xs"
+
+/home/haechan.an/afp-2021-02-11/thys/Ordinary_Differential_Equations/IVP/Reachability_Analysis.thy
+lemma flowsto_to_empty_iff[simp]: "flowsto a t b {} \<longleftrightarrow> a = {}"
+
+/home/haechan.an/afp-2021-02-11/thys/PseudoHoops/PseudoHoopFilters.thy
+lemma lemma_3_15_i: "H \<in> normalfilters \<Longrightarrow> normalfilter (cong H) = H"
+
+/home/haechan.an/afp-2021-02-11/thys/IMO2019/IMO2019_Q4.thy
+lemma k_gt_T: "k > T"
+
+/home/haechan.an/afp-2021-02-11/thys/HereditarilyFinite/OrdArith.thy
+lemma BuildSeq_succ_E: assumes s: "BuildSeq B C s k y" obtains "B y" | m n where "m \<^bold>\<in> k" "n \<^bold>\<in> k" "C y (app s m) (app s n)"
+
+/home/haechan.an/afp-2021-02-11/thys/UPF_Firewall/FWNormalisation/NormalisationGenericProofs.thy
+lemma sortedConcStart[rule_format]: "sorted (a # aa # p) l \<longrightarrow> in_list a l \<longrightarrow> in_list aa l \<longrightarrow> all_in_list p l\<longrightarrow> singleCombinators [a] \<longrightarrow> singleCombinators [aa] \<longrightarrow> singleCombinators p \<longrightarrow> sorted (a#p) l"
+
+/home/haechan.an/afp-2021-02-11/thys/Network_Security_Policy_Verification/Lib/FiniteListGraph.thy
+lemma delete_edge_length: "length (edgesL (delete_edge v v' G)) \<le> length (edgesL G)"
+
+/home/haechan.an/afp-2021-02-11/thys/Decl_Sem_Fun_PL/DenotEqualitiesFSet.thy
+theorem eval_ifz[simp]: assumes e1: "E e1 = E(ENat 0)" shows "E(EIf e1 e2 e3) = E(e3)"
+
+/home/haechan.an/afp-2021-02-11/thys/Laplace_Transform/Existence.thy
+lemma eventually_laplace_integrand_le: "\<forall>\<^sub>F t in at_top. cmod (laplace_integrand s t) \<le> M * exp (- (Re s - c) * t)" if "exponential_order M c f"
+
+/home/haechan.an/afp-2021-02-11/thys/Featherweight_OCL/UML_Logic.thy
+lemma OclAnd_null2[simp]: "\<And>\<tau>. X \<tau> \<noteq> false \<tau> \<Longrightarrow> X \<tau> \<noteq> bot \<tau> \<Longrightarrow> (X and null) \<tau> = null \<tau>"
+
+/home/haechan.an/afp-2021-02-11/thys/Relational_Paths/More_Relation_Algebra.thy
+lemma ss422iv: assumes "is_p_fun y" and "x \<le> y" and "y;1 \<le> x;1" shows "x = y"
+
+/home/haechan.an/afp-2021-02-11/thys/Verified_SAT_Based_AI_Planning/AST_SAS_Plus_Equivalence.thy
+lemma map_add_comm: "(\<And>x. x \<in> dom m1 \<and> x \<in> dom m2 \<Longrightarrow> m1 x = m2 x) \<Longrightarrow> m1 ++ m2 = m2 ++ m1"
+
+/home/haechan.an/afp-2021-02-11/thys/Graph_Theory/Arc_Walk.thy
+lemma (in pre_digraph) awalk_verts_conv': assumes "cas u p v" shows "awalk_verts u p = (if p = [] then [u] else tail G (hd p) # map (head G) p)"
+
+/home/haechan.an/afp-2021-02-11/thys/JiveDataStoreModel/Isabelle/Subtype.thy
+lemma widen_asm: "(a::Javatype) \<le> b \<Longrightarrow> a \<le> b"
+
+/home/haechan.an/afp-2021-02-11/thys/Markov_Models/ex/PCTL.thy
+lemma T_space[simp]: "measure (T s) (space R.S) = 1"
+
+/home/haechan.an/afp-2021-02-11/thys/Generalized_Counting_Sort/Algorithm.thy
+lemma fill_length: "length (fill xs ns index key n mi ma) = n"
+
+/home/haechan.an/afp-2021-02-11/thys/Smooth_Manifolds/Analysis_More.thy
+lemma image_prod: "(\<lambda>(x, y). (f x, g y)) ` (A \<times> B) = f ` A \<times> g ` B"
+
+/home/haechan.an/afp-2021-02-11/thys/Decl_Sem_Fun_PL/ChangeEnv.thy
+lemma env_eq_ext: fixes \<rho>::env assumes rr: "\<rho> \<approx> \<rho>'" shows "((x,v)#\<rho>) \<approx> ((x,v)#\<rho>')"
+
+/home/haechan.an/afp-2021-02-11/thys/Density_Compiler/PDF_Density_Contexts.thy
+lemma density_context_if_dens_det: assumes e: "\<Gamma> \<turnstile> e : BOOL" "randomfree e" "free_vars e \<subseteq> V \<union> V'" shows "density_context V V' \<Gamma> (if_dens_det \<delta> e b)"
+
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/DFA/Err.thy
+lemma closed_err_Union_lift2I: "\<lbrakk> \<forall>A\<in>AS. closed (err A) (lift2 f); AS \<noteq> {}; \<forall>A\<in>AS.\<forall>B\<in>AS. A\<noteq>B \<longrightarrow> (\<forall>a\<in>A.\<forall>b\<in>B. a \<squnion>\<^sub>f b = Err) \<rbrakk> \<Longrightarrow> closed (err(Union AS)) (lift2 f)"
+
+/home/haechan.an/afp-2021-02-11/thys/Affine_Arithmetic/Affine_Approximation.thy
+lemma uminus_aform_uminus_aform[simp]: "uminus_aform (uminus_aform z) = (z::'a::real_vector aform)"
+
+/home/haechan.an/afp-2021-02-11/thys/Buildings/Chamber.thy
+lemma maxsimp_in_opp_half_apartment: assumes "SimplicialComplex.maxsimp Y C" shows "C \<in> \<C>-f\<turnstile>\<C>"
+
+/home/haechan.an/afp-2021-02-11/thys/List-Infinite/ListInf/List2.thy
+lemma zip_eq_Nil: "(zip xs ys = []) = (xs = [] \<or> ys = [])"
+
+/home/haechan.an/afp-2021-02-11/thys/Binding_Syntax_Theory/Iteration.thy
+lemma errMOD_igWlsAbsIsInBar: assumes "igWlsAbsIsInBar MOD" shows "igWlsAbsIsInBar (errMOD MOD)"
+
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/Compiler/J0.thy
+lemma extTA2J0_\<epsilon>: "extTA2J0 P \<epsilon> = \<epsilon>"
+
+/home/haechan.an/afp-2021-02-11/thys/Featherweight_OCL/examples/Employee_Model/Design/Design_UML.thy
+lemma dot\<^sub>P\<^sub>e\<^sub>r\<^sub>s\<^sub>o\<^sub>n\<B>\<O>\<S>\<S>_strict [simp] : "(invalid).boss = invalid"
+
+/home/haechan.an/afp-2021-02-11/thys/AutoFocus-Stream/AF_Stream.thy
+lemma i_shrink_assoc: "f \<div>\<^sub>i a \<div>\<^sub>i b = f \<div>\<^sub>i (a * b)"
+
+/home/haechan.an/afp-2021-02-11/thys/Group-Ring-Module/Algebra8.thy
+lemma (in Module) fsps_chain_boundTr2:"\<And>x. \<lbrakk>R module N; free_generator R M H; f \<in> H \<rightarrow> carrier N; C \<subseteq> fsps R M N f H; \<forall>a\<in>C. \<forall>b\<in>C. fst a \<subseteq> fst b \<or> fst b \<subseteq> fst a; x \<in> (fgs R M (\<Union>{a. \<exists>b. (a, b) \<in> C})); C \<noteq> {}\<rbrakk> \<Longrightarrow> (THE y. y \<in> carrier N \<and> (\<exists>a b. (a, b) \<in> C \<and> x \<in> fgs R M a \<and> y = b x)) \<in> (carrier N) \<and> (\<exists>a1 b1. (a1, b1) \<in> C \<and> x \<in> fgs R M a1 \<and> (THE y. y \<in> carrier N \<and> (\<exists>a b. (a, b) \<in> C \<and> x \<in> fgs R M a \<and> y = b x)) = b1 x)"
+
+/home/haechan.an/afp-2021-02-11/thys/Formula_Derivatives/Presburger_Formula.thy
+lemma nvars_SNOC[Presb_simps]: "#\<^sub>V (SNOC x \<AA>) = #\<^sub>V \<AA>"
+
+/home/haechan.an/afp-2021-02-11/thys/Group-Ring-Module/Algebra3.thy
+lemma inducedHom:"\<lbrakk>Group F; Group G; f \<in> gHom F G\<rbrakk> \<Longrightarrow> (f\<dieresis>\<^bsub>F,G\<^esub>) \<in> gHom (F/(gker\<^bsub>F,G\<^esub> f)) G"
+
+/home/haechan.an/afp-2021-02-11/thys/Ordinal/OrdinalInverse.thy
+lemma ordinal_mono_div: "mono (\<lambda>x. x div y::ordinal)"
+
+/home/haechan.an/afp-2021-02-11/thys/Binding_Syntax_Theory/Equiv_Relation2.thy
+lemma in_quotientP_imp_non_empty: assumes "equivP P \<phi>" and "(P///\<phi>) X" shows "X \<noteq> {}"
+
+/home/haechan.an/afp-2021-02-11/thys/Tarskis_Geometry/Tarski.thy
+theorem th3_7_2: assumes "b \<noteq> c" and "B a b c" and "B b c d" shows "B a b d"
+
+/home/haechan.an/afp-2021-02-11/thys/Ordinary_Differential_Equations/IVP/Cones.thy
+lemma conefield_rightI: assumes ij: "i \<in> Basis" "j \<in> Basis" and ij_neq: "i \<noteq> j" assumes "y \<in> {y1 .. y2}" shows "(i + y *\<^sub>R j) \<in> conefield (i + y1 *\<^sub>R j) (i + y2 *\<^sub>R j)"
+
+/home/haechan.an/afp-2021-02-11/thys/Locally-Nameless-Sigma/Sigma/TypedSigma.thy
+lemma select_preserve_type[simp]: assumes "env \<turnstile> Obj f (Object t) : Object t" and "s \<notin> FV a" and "p \<notin> FV a" and "env\<lparr>s:(Object t)\<rparr>\<lparr>p:param(the(t l2))\<rparr> \<turnstile> (a\<^bsup>[Fvar s,Fvar p]\<^esup>) : return(the(t l2))" and "l1 \<in> dom t" and "l2 \<in> dom t" shows "\<exists>F. finite F \<and> (\<forall>s p. s \<notin> F \<and> p \<notin> F \<and> s \<noteq> p \<longrightarrow> env\<lparr>s:(Object t)\<rparr>\<lparr>p:param(the(t l1))\<rparr> \<turnstile> (the((f(l2 \<mapsto> a)) l1)\<^bsup>[Fvar s,Fvar p]\<^esup>) : return(the(t l1)))"
+
+/home/haechan.an/afp-2021-02-11/thys/Consensus_Refined/HO_Transition_System.thy
+lemma get_msgs_K: "get_msgs snd_f cfg (K (HOs r p)) (K (SHOs r p)) p = get_msgs snd_f cfg (HOs r) (SHOs r) p"
+
+/home/haechan.an/afp-2021-02-11/thys/Group-Ring-Module/Algebra1.thy
+lemma Amax_geTr:"f \<in> {j. j \<le> n} \<rightarrow> Z\<^sub>-\<^sub>\<infinity> \<longrightarrow> (\<forall>j\<in>{j. j \<le> n}. (f j) \<le> Amax n f)"
+
+/home/haechan.an/afp-2021-02-11/thys/TLA/Sequence.thy
+lemma stutstep_notempty_sucnextnat: assumes h1: "\<not> emptyseq (s |\<^sub>s n)" and h2: "stutstep s n" shows "(nextnat (s |\<^sub>s n)) = Suc (nextnat (s |\<^sub>s (Suc n)))"
+
+/home/haechan.an/afp-2021-02-11/thys/Triangle/Triangle.thy
+lemma sides: "dist a1 b1 = dist a2 b2" "dist a1 c1 = dist a2 c2" "dist b1 c1 = dist b2 c2" "dist b1 a1 = dist a2 b2" "dist c1 a1 = dist a2 c2" "dist c1 b1 = dist b2 c2" "dist a1 b1 = dist b2 a2" "dist a1 c1 = dist c2 a2" "dist b1 c1 = dist c2 b2" "dist b1 a1 = dist b2 a2" "dist c1 a1 = dist c2 a2" "dist c1 b1 = dist c2 b2"
+
+/home/haechan.an/afp-2021-02-11/thys/Sort_Encodings/G.thy
+theorem G_soundness: "Model GE_wtFsym GE_wtPsym GE_arOf GE_resOf GE_parOf gPB intT GE_intF GE_intP"
+
+/home/haechan.an/afp-2021-02-11/thys/Priority_Queue_Braun/Priority_Queue_Braun.thy
+lemma size_del_min: assumes "braun t" shows "size(del_min t) = size t - 1"
+
+/home/haechan.an/afp-2021-02-11/thys/Binomial-Heaps/SkewBinomialHeap.thy
+lemma insertList_queue_invar: "queue_invar q \<Longrightarrow> queue_invar (insertList ts q)"
+
+/home/haechan.an/afp-2021-02-11/thys/Tree_Decomposition/TreeDecomposition.thy
+lemma width_V_empty: "V = {} \<Longrightarrow> width = 0"
+
+/home/haechan.an/afp-2021-02-11/thys/Pi_Calculus/Strong_Early_Bisim_Subst_Pres.thy
+lemma matchPres: fixes P :: pi and Q :: pi and a :: name and b :: name assumes "P \<sim>\<^sup>s Q" shows "[a\<frown>b]P \<sim>\<^sup>s [a\<frown>b]Q"
+
+/home/haechan.an/afp-2021-02-11/thys/Fourier/Fourier_Aux2.thy
+lemma integral_sin_Z' [simp]: assumes "n \<in> \<int>" shows "integral\<^sup>L (lebesgue_on {-pi..pi}) (\<lambda>x. sin(n * x)) = 0"
+
+/home/haechan.an/afp-2021-02-11/thys/Polynomials/MPoly_Type_Class_Ordered.thy
+lemma poly_mapping_neqE: assumes "p \<noteq> q" obtains v where "v \<in> keys p \<union> keys q" and "lookup p v \<noteq> lookup q v" and "\<And>u. v \<prec>\<^sub>t u \<Longrightarrow> lookup p u = lookup q u"
+
+/home/haechan.an/afp-2021-02-11/thys/Monomorphic_Monad/Monomorphic_Monad.thy
+lemma monad_writer_writerT [locale_witness]: "monad_writer return_writer bind_writer tell_writer"
+
+/home/haechan.an/afp-2021-02-11/thys/Hybrid_Logic/Hybrid_Logic.thy
+lemma rev_nth_mapi_branch: assumes \<open>branch !. v = Some (ps, a)\<close> shows \<open>(mapi (f v) ps, a) \<in>. mapi_branch f branch\<close>
+
+/home/haechan.an/afp-2021-02-11/thys/Differential_Game_Logic/USubst.thy
+lemma Differentialo_undef: "(Differentialo \<theta> = undeft) = (\<theta>=undeft)"
+
+/home/haechan.an/afp-2021-02-11/thys/Lambda_Free_RPOs/Lambda_Free_Util.thy
+lemma hd_in_set: "length xs \<noteq> 0 \<Longrightarrow> hd xs \<in> set xs"
+
+/home/haechan.an/afp-2021-02-11/thys/HRB-Slicing/Proc/PCFG.thy
+lemma label_incr_simp_rev:"m \<oplus> (j + i) = n \<oplus> i \<Longrightarrow> m \<oplus> j = n"
+
+/home/haechan.an/afp-2021-02-11/thys/Inductive_Inference/LIM_BC.thy
+lemma V_subseteq_R1: "V_bclim i \<subseteq> \<R>"
+
+/home/haechan.an/afp-2021-02-11/thys/Ordered_Resolution_Prover/FO_Ordered_Resolution_Prover.thy
+lemma final_RP: "\<not> ({}, {}, Q) \<leadsto> St"
+
+/home/haechan.an/afp-2021-02-11/thys/Coinductive_Languages/Coinductive_Language.thy
+theorem Times_assoc[simp]: "Times (Times r s) t = Times r (Times s t)"
+
+/home/haechan.an/afp-2021-02-11/thys/TESL_Language/Stuttering.thy
+lemma atomic_sub: assumes \<open>sub \<lless> r\<close> and \<open>sub \<in> \<lbrakk> \<phi> \<rbrakk>\<^sub>T\<^sub>E\<^sub>S\<^sub>L\<close> shows \<open>r \<in> \<lbrakk> \<phi> \<rbrakk>\<^sub>T\<^sub>E\<^sub>S\<^sub>L\<close>
+
+/home/haechan.an/afp-2021-02-11/thys/Hybrid_Multi_Lane_Spatial_Logic/Restriction.thy
+lemma restrict_clm : "restrict v (clm ts) c \<sqsubseteq> clm ts c"
+
+/home/haechan.an/afp-2021-02-11/thys/Closest_Pair_Points/Closest_Pair_Alternative.thy
+theorem closest_pair_dist: assumes "1 < length ps" "distinct ps" "(c\<^sub>0, c\<^sub>1) = closest_pair ps" shows "sparse (dist c\<^sub>0 c\<^sub>1) (set ps)"
+
+/home/haechan.an/afp-2021-02-11/thys/Landau_Symbols/Group_Sort.thy
+lemma sorted_all_equal: "(\<And>x. x \<in> set xs \<Longrightarrow> x = y) \<Longrightarrow> sorted xs"
+
+/home/haechan.an/afp-2021-02-11/thys/Prime_Number_Theorem/Prime_Counting_Functions.thy
+lemma nth_prime_less_iff [simp]: "nth_prime m < nth_prime n \<longleftrightarrow> m < n"
+
+/home/haechan.an/afp-2021-02-11/thys/Group-Ring-Module/Algebra5.thy
+lemma (in Ring) ideal_prod_assocTr0:"\<lbrakk>ideal R A; ideal R B; ideal R C; y \<in> C; z \<in> set_mult R A B\<rbrakk> \<Longrightarrow> z \<cdot>\<^sub>r y \<in> sum_mult R A (B \<diamondsuit>\<^sub>r C)"
+
+/home/haechan.an/afp-2021-02-11/thys/UpDown_Scheme/Grid.thy
+lemma sparsegrid'I[intro]: assumes b: "b \<in> sparsegrid' dm" and p: "p \<in> grid b ds" shows "p \<in> sparsegrid' dm"
+
+/home/haechan.an/afp-2021-02-11/thys/IEEE_Floating_Point/IEEE_Properties.thy
+lemma float_neg_sign1: "sign a = sign (- b) \<longleftrightarrow> sign a \<noteq> sign b"
+
+/home/haechan.an/afp-2021-02-11/thys/CryptHOL/GPV_Expectation.thy
+lemma plossless_gpv_lossless_spmfD: assumes lossless: "plossless_gpv \<I> gpv" and WT: "\<I> \<turnstile>g gpv \<surd>" shows "lossless_spmf (the_gpv gpv)"
+
+/home/haechan.an/afp-2021-02-11/thys/LocalLexing/Ladder.thy
+lemma derivation_ge_LeftDerivationLadder: assumes derivation_ge_d: "derivation_ge D d" assumes ladder: "LeftDerivationLadder \<alpha> D L \<gamma>" assumes ladder_i_0: "ladder_i L 0 \<ge> d" shows "index < length L \<Longrightarrow> ladder_i L index \<ge> d \<and> ladder_j L index \<ge> d"
+
+/home/haechan.an/afp-2021-02-11/thys/Dirichlet_Series/Dirichlet_Series_Analysis.thy
+lemma fds_abs_summable_zeta_iff [simp]: fixes s :: "'a :: {banach, nat_power_normed_field}" shows "fds_abs_converges fds_zeta s \<longleftrightarrow> s \<bullet> 1 > (1 :: real)"
+
+/home/haechan.an/afp-2021-02-11/thys/Inductive_Inference/Universal.thy
+lemma encode_kind_0: "encode_kind (encode Z) = 0"
+
+/home/haechan.an/afp-2021-02-11/thys/POPLmark-deBruijn/POPLmarkRecord.thy
+lemma wfE_weaken: "\<Delta> @ \<Gamma> \<turnstile>\<^sub>w\<^sub>f \<Longrightarrow> \<Gamma> \<turnstile>\<^sub>w\<^sub>f\<^sub>B B \<Longrightarrow> \<up>\<^sub>e (Suc 0) 0 \<Delta> @ B \<Colon> \<Gamma> \<turnstile>\<^sub>w\<^sub>f"
+
+/home/haechan.an/afp-2021-02-11/thys/Concurrent_Ref_Alg/Refinement_Lattice.thy
+lemma Inf_distrib_INF_qual: fixes f :: "'a \<Rightarrow> 'a \<Rightarrow> 'a" assumes qual: "P {d x |x. x \<in> X}" assumes f_Inf_distrib: "\<And>c D. P D \<Longrightarrow> f c (\<Sqinter> D) = \<Sqinter> {f c d | d . d \<in> D }" shows "f c (\<Sqinter>x\<in>X. d x) = (\<Sqinter>x\<in>X. f c (d x))"
+
+/home/haechan.an/afp-2021-02-11/thys/Planarity_Certificates/Planarity/Executable_Permutations.thy
+lemma permutationss_complete: assumes "distincts xss" "distincts yss" "xss \<noteq> []" and "set ` set xss = set ` set yss" shows "set yss \<in> set ` set (permutationss xss)"
+
+/home/haechan.an/afp-2021-02-11/thys/Prim_Dijkstra_Simple/Undirected_Graph.thy
+lemma simple_path_cycle_free_unique: assumes CF: "cycle_free g" assumes P: "path g u p v" "path g u p' v" "simple p" "simple p'" shows "p=p'"
+
+/home/haechan.an/afp-2021-02-11/thys/Tree_Decomposition/TreeDecomposition.thy
+lemma bag_cards_finite: "finite bag_cards"
+
+/home/haechan.an/afp-2021-02-11/thys/HOL-CSP/Ndet.thy
+lemma Rep_Abs_ND: "Rep_process(Abs_process(F P \<union> F Q , D P \<union> D Q)) = (F P \<union> F Q , D P \<union> D Q)"
+
+/home/haechan.an/afp-2021-02-11/thys/Sort_Encodings/Preliminaries.thy
+lemma part12: assumes "infinite V" shows "part12_pred V (part12 V)"
+
+/home/haechan.an/afp-2021-02-11/thys/Noninterference_Concurrent_Composition/ConcurrentComposition.thy
+lemma con_comp_prop_5: "xs \<in> con_comp_divergences P Q p q \<Longrightarrow> xs @ [x] \<in> con_comp_divergences P Q p q"
+
+/home/haechan.an/afp-2021-02-11/thys/Regex_Equivalence/Derivatives_Finite.thy
+lemma ACI_atoms: "ACI r s \<Longrightarrow> atoms r = atoms s"
+
+/home/haechan.an/afp-2021-02-11/thys/Quantales/Quantale_Left_Sided.thy
+lemma Fix_lsu_iff [simp]: "(x \<in> Fix \<nu>\<^sup>\<natural>) = (\<nu>\<^sup>\<natural> x = x)"
+
+/home/haechan.an/afp-2021-02-11/thys/Extended_Finite_State_Machine_Inference/heuristics/Least_Upper_Bound.thy
+lemma guard_subset_eq_outputs_updates_subsumption: "Label t1 = Label t2 \<Longrightarrow> Arity t1 = Arity t2 \<Longrightarrow> Outputs t1 = Outputs t2 \<Longrightarrow> Updates t1 = Updates t2 \<Longrightarrow> set (Guards t2) \<subseteq> set (Guards t1) \<Longrightarrow> subsumes t2 c t1"
+
+/home/haechan.an/afp-2021-02-11/thys/OpSets/Interleaving.thy
+lemma distinct_append_butlast1: assumes "distinct (map fst xs @ map fst ys)" shows "distinct (map fst (butlast xs) @ map fst ys)"
+
+/home/haechan.an/afp-2021-02-11/thys/SequentInvertibility/ModalSequents.thy
+lemma mset_extend: shows "mset (extend S c) = mset S + mset c"
+
+/home/haechan.an/afp-2021-02-11/thys/Program-Conflict-Analysis/Semantics.thy
+lemma atU_add: "atU U c \<Longrightarrow> atU U (c+ce) \<and> atU U (ce+c)"
+
+/home/haechan.an/afp-2021-02-11/thys/Verified_SAT_Based_AI_Planning/SAT_Plan_Base.thy
+lemma encode_problem_parallel_complete_i: fixes \<Pi>::"'a strips_problem" assumes "is_valid_problem_strips \<Pi>" and "(\<Pi>)\<^sub>G \<subseteq>\<^sub>m execute_parallel_plan ((\<Pi>)\<^sub>I) \<pi>" "\<forall>v k. k < length (trace_parallel_plan_strips ((\<Pi>)\<^sub>I) \<pi>) \<longrightarrow> (\<A> (State k (index (strips_problem.variables_of \<Pi>) v)) \<longleftrightarrow> (trace_parallel_plan_strips ((\<Pi>)\<^sub>I) \<pi> ! k) v = Some True) \<and> (\<not>\<A> (State k (index (strips_problem.variables_of \<Pi>) v)) \<longleftrightarrow> ((trace_parallel_plan_strips ((\<Pi>)\<^sub>I) \<pi> ! k) v \<noteq> Some True))" shows "\<A> \<Turnstile> \<Phi>\<^sub>I \<Pi>"
+
+/home/haechan.an/afp-2021-02-11/thys/Refine_Monadic/Refine_Basic.thy
+lemma nres_monad1[simp]: "bind (RETURN x) f = f x"
+
+/home/haechan.an/afp-2021-02-11/thys/SenSocialChoice/Arrow.thy
+lemma sd_exists_witness: assumes has3A: "hasw [x,y,z] A" and Vs: "Is = V1 \<union> V2 \<union> V3 \<and> V1 \<inter> V2 = {} \<and> V1 \<inter> V3 = {} \<and> V2 \<inter> V3 = {}" and Is: "Is \<noteq> {}" obtains P where "profile A Is P" and "\<forall>i \<in> V1. x \<^bsub>(P i)\<^esub>\<prec> y \<and> y \<^bsub>(P i)\<^esub>\<prec> z" and "\<forall>i \<in> V2. z \<^bsub>(P i)\<^esub>\<prec> x \<and> x \<^bsub>(P i)\<^esub>\<prec> y" and "\<forall>i \<in> V3. y \<^bsub>(P i)\<^esub>\<prec> z \<and> z \<^bsub>(P i)\<^esub>\<prec> x"
+
+/home/haechan.an/afp-2021-02-11/thys/Category3/Yoneda.thy
+lemma Cod_map: assumes "C.arr g" and "C.arr f" shows "S.Cod (map (g, f)) = set (C.dom g, C.cod f)"
+
+/home/haechan.an/afp-2021-02-11/thys/Monomorphic_Monad/Monad_Overloading.thy
+lemma run_alt_writerT [simp]: "run_writer (alt m m') = alt (run_writer m) (run_writer m')"
+
+/home/haechan.an/afp-2021-02-11/thys/Completeness/Completeness.thy
+lemma adequacy[simplified sequent_pseq]: "validS fs ==> (sequent (pseq fs)) : deductions CutFreePC"
+
+/home/haechan.an/afp-2021-02-11/thys/Completeness/Completeness.thy
+lemma notTerminalNotSATAxiom: "\<not> terminal subs gamma \<Longrightarrow> \<not> SATAxiom (sequent gamma)"
+
+/home/haechan.an/afp-2021-02-11/thys/Separation_Logic_Imperative_HOL/Run.thy
+lemma "fst (Ref.alloc x h) = Ref (lim h)"
+
+/home/haechan.an/afp-2021-02-11/thys/Security_Protocol_Refinement/Key_establish/m1_ds.thy
+lemma PO_m1_leak_refines_m1a_leak: "{R1a1} (m1a_leak Rs), (m1_leak Rs) {> R1a1}"
+
+/home/haechan.an/afp-2021-02-11/thys/LTL/Rewriting.thy
+lemma mk_finally_atoms: "atoms_ltln (mk_finally \<phi>) \<subseteq> atoms_ltln \<phi>"
+
+/home/haechan.an/afp-2021-02-11/thys/Relation_Algebra/Relation_Algebra.thy
+lemma modular_2_aux': "(y \<cdot> -(z ; x\<^sup>\<smile>)) ; x \<cdot> z = 0"
+
+/home/haechan.an/afp-2021-02-11/thys/HOL-CSP/Process.thy
+lemma less_tail: "s \<noteq> [] \<Longrightarrow> s < t \<Longrightarrow> tl s < tl t"
+
+/home/haechan.an/afp-2021-02-11/thys/LambdaAuth/Semantics.thy
+lemma smallstepV_ps_append: "\<lless> \<pi>, eV \<ggreater> V\<rightarrow> \<lless> \<pi>', eV' \<ggreater> \<longleftrightarrow> \<lless> \<pi> @ X, eV \<ggreater> V\<rightarrow> \<lless> \<pi>' @ X, eV' \<ggreater>" (is "?L \<longleftrightarrow> ?R")
+
+/home/haechan.an/afp-2021-02-11/thys/Affine_Arithmetic/Intersection.thy
+lemma nlex_half_segments_of_aform: "(a, b) \<in> set (half_segments_of_aform X) \<Longrightarrow> lex b a"
+
+/home/haechan.an/afp-2021-02-11/thys/Tarskis_Geometry/Hyperbolic_Tarski.thy
+lemma perp_up_non_degenerate_in_S_at_end: assumes "a \<in> hyp2" and "b \<in> hyp2" and "proj2_incident b l" and "\<not> proj2_incident a l" shows "perp_up a l \<in> S" and "B\<^sub>\<real> (cart2_pt (perp_foot a l)) (cart2_pt a) (cart2_pt (perp_up a l))"
+
+/home/haechan.an/afp-2021-02-11/thys/No_FTL_observers/SpaceTime.thy
+lemma lemTime2Sym: shows "time2 x y = time2 y x"
+
+/home/haechan.an/afp-2021-02-11/thys/CoreC++/WellForm.thy
+lemma assumes subo:"Subobjs P C Cs" and wf:"wf_prog wf_md P" shows path_length:"length Cs \<le> length P"
+
+/home/haechan.an/afp-2021-02-11/thys/Constructive_Cryptography/Converter.thy
+lemma parallel_converter2_comp2_out: "parallel_converter2 conv'' (comp_converter conv conv') = comp_converter (parallel_converter2 id_converter conv) (parallel_converter2 conv'' conv')"
+
+/home/haechan.an/afp-2021-02-11/thys/Statecharts/HA.thy
+lemma SAStates_ChiPlus_ChiRel_NoCycle_1 [rule_format]: "\<lbrakk> (S,U) \<in> ChiPlus A; SA \<in> SAs A \<rbrakk> \<Longrightarrow> (U,T) \<in> (ChiRel A) \<longrightarrow> S \<in> States SA \<longrightarrow> T \<in> States SA \<longrightarrow> (insert S (insert U ({V. (S,V) \<in> ChiPlus A \<and> (V,U) \<in> ChiPlus A}))) \<inter> (ChiRel A `` {U}) \<noteq> {}"
+
+/home/haechan.an/afp-2021-02-11/thys/SequentInvertibility/ModalSequents.thy
+lemma compound_not_in_modal_multi: shows "\<not> (Compound M Ms \<in># N\<cdot>\<Gamma>)"
+
+/home/haechan.an/afp-2021-02-11/thys/AWN/OClosed_Lifting.thy
+lemma oclosed_oreachable_oreachable [elim]: assumes "(\<sigma>, \<zeta>) \<in> oreachable (oclosed (opnet onp p)) (\<lambda>_ _ _. True) U" shows "(\<sigma>, \<zeta>) \<in> oreachable (opnet onp p) (\<lambda>_ _ _. True) U"
+
+/home/haechan.an/afp-2021-02-11/thys/Approximation_Algorithms/Approx_LB_Hoare.thy
+lemma simple_greedy_approximation: "VARS T A i j {True} T := (\<lambda>_. 0); A := (\<lambda>_. {}); j := 0; WHILE j < n INV {inv\<^sub>1 T A j} DO i := min\<^sub>k T m; j := (Suc j); A := A (i := A(i) \<union> {j}); T := T (i := T(i) + t j) OD {lb T A n \<and> (\<forall>T' A'. lb T' A' n \<longrightarrow> makespan T \<le> 2 * makespan T')}"
+
+/home/haechan.an/afp-2021-02-11/thys/Program-Conflict-Analysis/ConsInterleave.thy
+lemma cil_subset_il: "w\<otimes>\<^bsub>\<alpha>\<^esub>w' \<subseteq> w\<otimes>w'"
+
+/home/haechan.an/afp-2021-02-11/thys/Topological_Semantics/topo_frontier_algebra.thy
+lemma CB_rel: "Fr_2 \<F> \<Longrightarrow> \<C> \<^bold>\<equiv> \<C>\<^sub>B \<B>"
+
+/home/haechan.an/afp-2021-02-11/thys/Gauss_Jordan/Linear_Maps.thy
+lemma dim_image_invertible_mat: fixes P::"'a::{field}^'m^'m" assumes inv_P: "invertible P" and sub_W: "vec.subspace W" shows "vec.dim ((\<lambda>x. P *v x)` W) = vec.dim W"
+
+/home/haechan.an/afp-2021-02-11/thys/Category3/Category.thy
+lemma arr_dom [simp]: assumes "arr f" shows "arr (dom f)"
+
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/Framework/LTS.thy
+lemma silent_move_iff: "silent_move = (\<lambda>s s'. (\<exists>tl. trsys s tl s' \<and> \<tau>move s tl s'))"
+
+/home/haechan.an/afp-2021-02-11/thys/Circus/Denotational_Semantics.thy
+lemma Skip_is_action: "(R (true \<turnstile> \<lambda>(A, A'). tr A' = tr A \<and> \<not>wait A' \<and> more A = more A')) \<in> {p. is_CSP_process p}"
+
+/home/haechan.an/afp-2021-02-11/thys/Tarskis_Geometry/Hyperbolic_Tarski.thy
+lemma perp_foot_hyp2: assumes "a \<in> hyp2" and "proj2_incident a l" and "b \<in> hyp2" shows "perp_foot b l \<in> hyp2"
+
+/home/haechan.an/afp-2021-02-11/thys/Stateful_Protocol_Composition_and_Typing/More_Unification.thy
+lemma subst_img_cong: "(\<And>v t. \<theta> v = t \<Longrightarrow> \<delta> v = t) \<Longrightarrow> range_vars \<theta> \<subseteq> range_vars \<delta>"
+
+/home/haechan.an/afp-2021-02-11/thys/Stable_Matching/Bossiness.thy
+lemma Bossy_CH_range: assumes "X \<subseteq> Bossy.CH X'" shows "X \<subseteq> set [d1h1, d1h3, d2h1, d2h3, d3h1, d3h3]"
+
+/home/haechan.an/afp-2021-02-11/thys/Binding_Syntax_Theory/Well_Sorted_Terms.thy
+lemma wls_Op_simp[simp]: assumes "goodInp inp" and "goodBinp binp" shows "wls s (Op delta inp binp) = (stOf delta = s \<and> wlsInp delta inp \<and> wlsBinp delta binp)"
+
+/home/haechan.an/afp-2021-02-11/thys/AutoFocus-Stream/ListSlice.thy
+lemma list_slice2_list_slice_nth: " m < length xs div k \<Longrightarrow> list_slice2 xs k ! m = list_slice xs k ! m"
+
+/home/haechan.an/afp-2021-02-11/thys/Binding_Syntax_Theory/Transition_QuasiTerms_Terms.thy
+lemma asAbs_qSwapAbs_swapAbs: assumes "qGoodAbs qA" shows "asAbs (qA $[[x1 \<and> x2]]_xs) = ((asAbs qA) $[x1 \<and> x2]_xs)"
+
+/home/haechan.an/afp-2021-02-11/thys/FocusStreamsCaseStudies/ListExtras.thy
+lemma Add_Less: assumes "0 < b" shows "(Suc a - b < Suc a) = True"
+
+/home/haechan.an/afp-2021-02-11/thys/Diophantine_Eqns_Lin_Hom/List_Vector.thy
+lemma dotprod_Cons [simp]: "(x # xs) \<bullet> (y # ys) = x * y + xs \<bullet> ys"
+
+/home/haechan.an/afp-2021-02-11/thys/Shadow_SC_DOM/tests/Shadow_DOM_Node_removeChild.thy
+lemma "test (do { doc \<leftarrow> createDocument(''''); s \<leftarrow> doc . createElement(''div''); tmp0 \<leftarrow> s . ownerDocument; assert_equals(tmp0, doc); tmp1 \<leftarrow> Node_removeChild_document . body; assert_throws(NotFoundError, tmp1 . removeChild(s)); tmp2 \<leftarrow> s . ownerDocument; assert_equals(tmp2, doc) }) Node_removeChild_heap"
+
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/J/Expr.thy
+lemma [simp]: "\<lbrakk> size vs = size Vs; size Ts = size Vs \<rbrakk> \<Longrightarrow> fv (blocks Vs Ts vs e) = fv e - set Vs"
+
+/home/haechan.an/afp-2021-02-11/thys/Affine_Arithmetic/Affine_Arithmetic_Auxiliarities.thy
+lemma sum_list_nth_eqI: fixes xs ys::"'a::monoid_add list" shows "length xs = length ys \<Longrightarrow> (\<And>x y. (x, y) \<in> set (zip xs ys) \<Longrightarrow> x = y) \<Longrightarrow> sum_list xs = sum_list ys"
+
+/home/haechan.an/afp-2021-02-11/thys/Binding_Syntax_Theory/QuasiTerms_PickFresh_Alpha.thy
+lemma alphaAbs_qAbs_iff_alphaAbs_ex_equal_or_qFresh: assumes GOOD: "qGood X" shows "(qAbs xs x X $= qAbs xs' x' X') = alphaAbs_ex_equal_or_qFresh xs x X xs' x' X'"
+
+/home/haechan.an/afp-2021-02-11/thys/Binding_Syntax_Theory/Well_Sorted_Terms.thy
+theorem wlsAbs_fresh_cases: assumes "wlsAbs (xs,s) A" and "wlsPar P" and "\<And> x X. \<lbrakk>wls s X; \<And> ys. x \<notin> varsOfS P ys; \<And> s' Y. Y \<in> termsOfS P s' \<Longrightarrow> fresh xs x Y; \<And> us s' B. B \<in> absOfS P (us,s') \<Longrightarrow> freshAbs xs x B; \<And> rho. rho \<in> envsOfS P \<Longrightarrow> freshEnv xs x rho\<rbrakk> \<Longrightarrow> phi (xs,s) (Abs xs x X) P" shows "phi (xs,s) A P"
+
+/home/haechan.an/afp-2021-02-11/thys/List-Infinite/CommonSet/SetInterval2.thy
+lemma wf_less_interval:" wf { (x,y). x \<in> (I::nat set) \<and> y \<in> I \<and> x < y }"
+
+/home/haechan.an/afp-2021-02-11/thys/Syntax_Independent_Logic/Pseudo_Term.thy
+lemma Fvars_instInp_ptrm_1[simp,intro]: assumes \<tau>: "\<tau> \<in> ptrm (Suc 0)" and "t \<in> trm" shows "Fvars (instInp \<tau> t) = insert out (FvarsT t)"
+
+/home/haechan.an/afp-2021-02-11/thys/Group-Ring-Module/Algebra6.thy
+lemma (in PolynRg) erH_rHomTr2:"\<lbrakk>PolynRg A B Y; h \<in> rHom S B\<rbrakk> \<Longrightarrow> (erH R S X A B Y h) (1\<^sub>r) = (1\<^sub>r\<^bsub>A\<^esub>)"
+
+/home/haechan.an/afp-2021-02-11/thys/Modular_Assembly_Kit_Security/Basics/Projection.thy
+lemma projection_split_first: "\<lbrakk> (\<tau> \<upharpoonleft> X) = x # xs \<rbrakk> \<Longrightarrow> \<exists> \<alpha> \<beta>. (\<tau> = \<alpha> @ [x] @ \<beta> \<and> \<alpha> \<upharpoonleft> X = [])"
+
+/home/haechan.an/afp-2021-02-11/thys/SuperCalc/superposition.thy
+lemma irred_terms_and_reduced_subst: assumes "f = (\<lambda>t. (trm_rep t S))" assumes "\<eta> = (map_subst f \<sigma>)" assumes "all_trms_irreducible (subst_set E \<sigma>) f" assumes "I = int_clset S" assumes "equivalent_on \<sigma> \<eta> (vars_of_cl (cl_ecl C)) I" assumes "lower_on \<eta> \<sigma> (vars_of_cl (cl_ecl C))" assumes "E = (trms_ecl C)" assumes "\<forall>x \<in> S. \<forall>y. (y \<in> trms_ecl x \<longrightarrow> dom_trm y (cl_ecl x))" assumes "C \<in> S" assumes "fo_interpretation I" shows "all_trms_irreducible (subst_set E \<eta> ) f"
+
+/home/haechan.an/afp-2021-02-11/thys/Category2/NatTrans.thy
+lemma NTCompDefinedI: "\<lbrakk>NatTrans \<eta>1 ; NatTrans \<eta>2 ; NTCatDom \<eta>2 = NTCatDom \<eta>1 ; NTCatCod \<eta>2 = NTCatCod \<eta>1 ; NTCod \<eta>1 = NTDom \<eta>2\<rbrakk> \<Longrightarrow> \<eta>1 \<approx>>\<bullet> \<eta>2"
+
+/home/haechan.an/afp-2021-02-11/thys/Free-Groups/FreeGroups.thy
+lemma inv_fg_closure2: "l \<in> lists (UNIV \<times> gens) \<Longrightarrow> inv_fg l \<in> lists (UNIV \<times> gens)"
+
+/home/haechan.an/afp-2021-02-11/thys/Statecharts/HAOps.thy
+lemma PseudoHA_HAStates [simp]: "HAStates (PseudoHA SA D) = (States SA)"
+
+/home/haechan.an/afp-2021-02-11/thys/Planarity_Certificates/Verification/AutoCorres_Misc.thy
+lemma ovalidNF_owhile_inv[wp]: assumes "\<And>r s. ovalidNF (\<lambda>s'. I r s' \<and> C r s' \<and> s' = s) (B r) (\<lambda>r' s'. I r' s' \<and> (r', r) \<in> R)" and "wf R" and "\<And>r s. I r s \<Longrightarrow> \<not> C r s \<Longrightarrow> Q r s" shows "ovalidNF (I r) (owhile_inv C B r I R) Q"
+
+/home/haechan.an/afp-2021-02-11/thys/UTP/utp/utp_pred_laws.thy
+lemma not_all_not: "\<not> (\<forall> x \<bullet> \<not> P) = (\<exists> x \<bullet> P)"
+
+/home/haechan.an/afp-2021-02-11/thys/Inductive_Inference/Standard_Results.thy
+lemma swap_P2: assumes "f \<in> \<P>\<^sup>2" shows "(\<lambda>x y. f y x) \<in> \<P>\<^sup>2"
+
+/home/haechan.an/afp-2021-02-11/thys/Auto2_Imperative_HOL/Imperative/Quicksort_Impl.thy
+theorem quicksort_sorts_basic [hoare_triple]: "<a \<mapsto>\<^sub>a xs> quicksort_all a <\<lambda>_. a \<mapsto>\<^sub>a sort xs>"
+
+/home/haechan.an/afp-2021-02-11/thys/Source_Coding_Theorem/Source_Coding_Theorem.thy
+lemma entropy_rw: "\<H>(X) = -(\<Sum>i \<in> L. fi i * log b (fi i))"
+
+/home/haechan.an/afp-2021-02-11/thys/PLM/TAO_9_PLM.thy
+lemma oa_contingent_6[PLM]: "[(O!\<^sup>-) \<^bold>\<noteq> (A!\<^sup>-) in v]"
+
+/home/haechan.an/afp-2021-02-11/thys/Polynomials/MPoly_Type_Class_Ordered.thy
+lemma dgrad_p_set_closed_uminus: assumes "p \<in> dgrad_p_set d m" shows "-p \<in> dgrad_p_set d m"
+
+/home/haechan.an/afp-2021-02-11/thys/SATSolverVerification/KrsticGoel.thy
+lemma applicableBackjumpCharacterization: fixes stateA::State shows "applicableBackjump stateA = (\<exists> l level. getConflictFlag stateA = True \<and> isBackjumpLevel level l (getC stateA) (getM stateA) )" (is "?lhs = ?rhs")
+
+/home/haechan.an/afp-2021-02-11/thys/Tarskis_Geometry/Hyperbolic_Tarski.thy
+lemma K2_isometry_cosh_dist: assumes "a \<in> hyp2" and "b \<in> hyp2" and "is_K2_isometry J" shows "cosh_dist (apply_cltn2 a J) (apply_cltn2 b J) = cosh_dist a b"
+
+/home/haechan.an/afp-2021-02-11/thys/DynamicArchitectures/Dynamic_Architecture_Calculus.thy
+lemma conjE[elim!]: assumes "eval cid t t' n (\<gamma> \<and>\<^sup>b \<gamma>')" shows "eval cid t t' n \<gamma> \<and> eval cid t t' n \<gamma>'"
+
+/home/haechan.an/afp-2021-02-11/thys/HOL-CSP/Process.thy
+lemma is_process2: "is_process P \<Longrightarrow> \<forall> s X. (s,X) \<in> FAILURES P \<longrightarrow> front_tickFree s "
+
+/home/haechan.an/afp-2021-02-11/thys/Landau_Symbols/Landau_More.thy
+lemma smallo_const_inverse [simp]: "filterlim f at_top F \<Longrightarrow> F \<noteq> bot \<Longrightarrow> (\<lambda>_. c :: real) \<in> o[F](\<lambda>x. inverse (f x)) \<longleftrightarrow> c = 0"
+
+/home/haechan.an/afp-2021-02-11/thys/Security_Protocol_Refinement/Key_establish/m1_kerberos.thy
+lemma PO_m1_leak_refines_ir_a0ii_skip: "{R_a0iim1_ir} Id, (m1_leak Rs A B Na Ts) {> R_a0iim1_ir}"
+
+/home/haechan.an/afp-2021-02-11/thys/Ordinary_Differential_Equations/IVP/Flow.thy
+lemma varexivl_eq_exivl: assumes "t \<in> existence_ivl0 x0" shows "var.existence_ivl x0 t a = existence_ivl0 x0"
+
+/home/haechan.an/afp-2021-02-11/thys/DiscretePricing/Infinite_Coin_Toss_Space.thy
+lemma stoch_proc_filt_space: shows "space (stoch_proc_filt M X N n) = space M"
+
+/home/haechan.an/afp-2021-02-11/thys/Tree_Decomposition/Graph.thy
+lemma path_tl: "path xs \<Longrightarrow> path (tl xs)"
+
+/home/haechan.an/afp-2021-02-11/thys/Nested_Multisets_Ordinals/Multiset_More.thy
+lemma mem_Times_mset_iff: "x \<in># A \<times># B \<longleftrightarrow> fst x \<in># A \<and> snd x \<in># B"
+
+/home/haechan.an/afp-2021-02-11/thys/Separation_Algebra/Separation_Algebra_Alt.thy
+lemma add2_comm: "a ++ b = b ++ a"
+
+/home/haechan.an/afp-2021-02-11/thys/Stable_Matching/Contracts.thy
+lemma stable: shows "StableNoDecomp.stable X \<longleftrightarrow> X = {Xd1, Xd2} \<or> X = {Xd1', Xd2'}" (*<*) (is "?lhs = ?rhs")
+
+/home/haechan.an/afp-2021-02-11/thys/Extended_Finite_State_Machine_Inference/heuristics/Group_By.thy
+lemma group_by_drop_foldr: "drop x l = foldr (@) (group_by f (drop x l)) []"
+
+/home/haechan.an/afp-2021-02-11/thys/Factored_Transition_System_Bounding/RelUtils.thy
+lemma REFL_TC_CONJ: fixes R R' :: "'a \<Rightarrow> 'a \<Rightarrow> bool" and P x y assumes "reflexive R'" "\<forall>x y. P x \<and> P y \<longrightarrow> (R' x y \<longrightarrow> R x y)" "\<not>(R\<^sup>+\<^sup>+ x y)" shows "(\<not>(R'\<^sup>+\<^sup>+ x y) \<or> (\<exists>z. \<not>P z \<and> (R')\<^sup>+\<^sup>+ x z \<and> (R')\<^sup>+\<^sup>+ z y))"
+
+/home/haechan.an/afp-2021-02-11/thys/Poincare_Disc/Poincare_Lines.thy
+lemma conjugate_preserve_poincare_collinear_iff [simp]: shows "poincare_collinear (conjugate ` A) \<longleftrightarrow> poincare_collinear A"
+
+/home/haechan.an/afp-2021-02-11/thys/Markov_Models/Markov_Decision_Process.thy
+lemma state_cont[simp]: "state (cont cfg s) = s"
+
+/home/haechan.an/afp-2021-02-11/thys/FileRefinement/FileRefinement.thy
+lemma writeExtendCorrect: "[| nextFreeBlockInvariant cfile1; unallocatedBlocksInvariant cfile1; lastBlockInvariant cfile1; ~ index < fileSize cfile1; Some cfile2 = cfWrite cfile1 index value |] ==> Some (abstFn cfile2) = afWrite (abstFn cfile1) index value"
+
+/home/haechan.an/afp-2021-02-11/thys/UTP/utp/utp_pred_laws.thy
+lemma one_point: assumes "mwb_lens x" "x \<sharp> v" shows "(\<exists> x \<bullet> P \<and> var x =\<^sub>u v) = P\<lbrakk>v/x\<rbrakk>"
+
+/home/haechan.an/afp-2021-02-11/thys/Flyspeck-Tame/EnumeratorProps.thy
+lemma enumerator_bound2: "ls \<in> set (enumerator m nmax) \<Longrightarrow> 1 < nmax \<Longrightarrow> x \<in> set (butlast ls) \<Longrightarrow> x < nmax - Suc 0"
+
+/home/haechan.an/afp-2021-02-11/thys/Lambda_Free_RPOs/Lambda_Free_Term.thy
+lemma ground_hd_in_ground_heads: "ground s \<Longrightarrow> sym (head s) \<in> ground_heads (head s)"
+
+/home/haechan.an/afp-2021-02-11/thys/HereditarilyFinite/HF.thy
+lemma hballE [elim]: "\<forall>x\<^bold>\<in>A. P x \<Longrightarrow> (P x \<Longrightarrow> Q) \<Longrightarrow> (x \<^bold>\<notin> A \<Longrightarrow> Q) \<Longrightarrow> Q"
+
+/home/haechan.an/afp-2021-02-11/thys/LambdaAuth/Semantics.thy
+lemma judge_weak_subst[intro]: assumes "\<Gamma>(a $$:= \<tau>') \<turnstile>\<^sub>W e : \<tau>" "{$$} \<turnstile>\<^sub>W e' : \<tau>'" shows "\<Gamma> \<turnstile>\<^sub>W e[e' / a] : \<tau>"
+
+/home/haechan.an/afp-2021-02-11/thys/Tarskis_Geometry/Hyperbolic_Tarski.thy
+lemma S_intersections_endpoints_in_S: assumes "a \<noteq> 0" and "b \<noteq> 0" and "proj2_abs a \<noteq> proj2_abs b" (is "?pa \<noteq> ?pb") and "proj2_abs a \<in> hyp2" and "proj2_abs b \<in> hyp2 \<union> S" shows "(S_intersection1 a b = endpoint_in_S ?pa ?pb \<and> S_intersection2 a b = endpoint_in_S ?pb ?pa) \<or> (S_intersection2 a b = endpoint_in_S ?pa ?pb \<and> S_intersection1 a b = endpoint_in_S ?pb ?pa)" (is "(?pp = ?pr \<and> ?pq = ?ps) \<or> (?pq = ?pr \<and> ?pp = ?ps)")
+
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/Compiler/Execs.thy
+lemma BinOp_\<tau>ExecrI1: "\<tau>Exec_mover ci P t e1 h s s' \<Longrightarrow> \<tau>Exec_mover ci P t (e1 \<guillemotleft>bop\<guillemotright> e2) h s s'"
+
+/home/haechan.an/afp-2021-02-11/thys/ADS_Functor/Merkle_Interface.thy
+lemma transp: "transp bo"
+
+/home/haechan.an/afp-2021-02-11/thys/Chandy_Lamport/Distributed_System.thy
+lemma no_msgs_change_if_no_channel: assumes "c \<turnstile> ev \<mapsto> c'" and "channel i = None" shows "msgs c i = msgs c' i"
+
+/home/haechan.an/afp-2021-02-11/thys/Allen_Calculus/allen.thy
+lemma cfif:"f^-1 O f \<subseteq> e \<union> f^-1 \<union> f"
+
+/home/haechan.an/afp-2021-02-11/thys/Ordinal_Partitions/Library_Additions.thy
+lemma enum_0_eq_Inf: fixes N :: "nat set" assumes "infinite N" shows "enum N 0 = Inf N"
+
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/Framework/FWLocking.thy
+lemma may_acquire_allI [intro]: "\<And>ln. (\<And>l. ln $ l > 0 \<Longrightarrow> may_lock (ls $ l) t) \<Longrightarrow> may_acquire_all ls t ln"
+
+/home/haechan.an/afp-2021-02-11/thys/Sturm_Sequences/Sturm_Theorem.thy
+theorem (in sturm_seq) count_roots_between: assumes [simp]: "p \<noteq> 0" "a \<le> b" shows "sign_changes ps a - sign_changes ps b = card {x. x > a \<and> x \<le> b \<and> poly p x = 0}"
+
+/home/haechan.an/afp-2021-02-11/thys/Stone_Relation_Algebras/Relation_Algebras.thy
+lemma inf_vector_comp: "(x \<sqinter> y * top) * z = y * top \<sqinter> x * z"
+
+/home/haechan.an/afp-2021-02-11/thys/Modular_Assembly_Kit_Security/Verification/Basics/BSPTaxonomy.thy
+lemma BSI_implies_BSIA: "BSI \<V> Tr\<^bsub>ES\<^esub> \<Longrightarrow> BSIA \<rho> \<V> Tr\<^bsub>ES\<^esub>"
+
+/home/haechan.an/afp-2021-02-11/thys/Regular-Sets/Regular_Set.thy
+lemma shuffle_Un_distrib: shows "A \<parallel> (B \<union> C) = A \<parallel> B \<union> A \<parallel> C" and "A \<parallel> (B \<union> C) = A \<parallel> B \<union> A \<parallel> C"
+
+/home/haechan.an/afp-2021-02-11/thys/DataRefinementIBP/Hoare.thy
+lemma post_top [simp]: "post_fun p p = \<top>"
+
+/home/haechan.an/afp-2021-02-11/thys/Abortable_Linearizable_Modules/IOA.thy
+lemma append_exec_frags_is_exec_frag: fixes e e' A as assumes "is_exec_frag_of A e" and "last_state e = fst e'" and "is_exec_frag_of A e'" shows "is_exec_frag_of A (append_exec e e')"
+
+/home/haechan.an/afp-2021-02-11/thys/Binding_Syntax_Theory/Well_Sorted_Terms.thy
+theorem wls_Abs_subst_Var_fresh[simp]: assumes "wls s X" and "fresh xs x' X" shows "Abs xs x' (subst xs (Var xs x') x X) = Abs xs x X"
+
+/home/haechan.an/afp-2021-02-11/thys/GraphMarkingIBP/StackMark.thy
+theorem (in graph) final [simp]: "DataRefinement ({.Loop.} o Q5_a) R2_a R1_a Q5'_a"
+
+/home/haechan.an/afp-2021-02-11/thys/ComponentDependencies/DataDependenciesCaseStudy.thy
+lemma OUTfromVCorrect1_data16: "OUTfromVCorrect1 data16"
+
+/home/haechan.an/afp-2021-02-11/thys/Markov_Models/ex/PCTL.thy
+lemma pvalid_sets[measurable]: "Measurable.pred R.S (pvalid F)"
+
+/home/haechan.an/afp-2021-02-11/thys/Featherweight_OCL/basic_types/UML_Void.thy
+lemma "\<upsilon>(null::('\<AA>)Void) = true"
+
+/home/haechan.an/afp-2021-02-11/thys/Matrices_for_ODEs/MTX_Flows.thy
+lemma picard_lindeloef_sq_mtx_affine: assumes "continuous_on T A" and "continuous_on T B" and "t\<^sub>0 \<in> T" "is_interval T" "open T" and "open S" shows "picard_lindeloef (\<lambda>t s. A t *\<^sub>V s + B t) T S t\<^sub>0"
+
+/home/haechan.an/afp-2021-02-11/thys/Group-Ring-Module/Algebra5.thy
+lemma (in TwoRings) i_contract_ideal:"\<lbrakk>f \<in> rHom R R'; ideal R' J \<rbrakk> \<Longrightarrow> ideal R (i_contract f R R' J)"
+
+/home/haechan.an/afp-2021-02-11/thys/Polynomials/MPoly_Type_Class_OAlist.thy
+lemma keys_shift_map_keys_subset: "keys (MP_oalist (shift_map_keys t ((*) c) xs)) \<subseteq> ((\<oplus>) t) ` keys (MP_oalist xs)" (is "?l \<subseteq> ?r")
+
+/home/haechan.an/afp-2021-02-11/thys/Hybrid_Multi_Lane_Spatial_Logic/NatInt.thy
+lemma card_seq:" \<forall>i .|i| = x \<longrightarrow> (Rep_nat_int i = {} \<or> (\<exists>n. Rep_nat_int i = {n..n+(x-1)}))"
+
+/home/haechan.an/afp-2021-02-11/thys/Higher_Order_Terms/Term_Class.thy
+lemma matchs_alt_def: assumes "length ps = length vs" shows "matchs ps vs = map_option (foldl (++\<^sub>f) fmempty) (those (map2 match ps vs))"
+
+/home/haechan.an/afp-2021-02-11/thys/Monomorphic_Monad/Monomorphic_Monad.thy
+lemma run_return_nondet [simp]: "run_nondet (return_nondet x) = return (single x)"
+
+/home/haechan.an/afp-2021-02-11/thys/Stateful_Protocol_Composition_and_Typing/Stateful_Strands.thy
+lemma var_subterm_ik\<^sub>s\<^sub>s\<^sub>t_is_fv\<^sub>s\<^sub>s\<^sub>t: assumes "Var x \<in> subterms\<^sub>s\<^sub>e\<^sub>t (ik\<^sub>s\<^sub>s\<^sub>t A)" shows "x \<in> fv\<^sub>s\<^sub>s\<^sub>t A"
+
+/home/haechan.an/afp-2021-02-11/thys/Coinductive/Coinductive_List.thy
+lemma lnth_lconcat_ltake: assumes "enat w < llength (lconcat (ltake (enat n) xss))" shows "lnth (lconcat (ltake (enat n) xss)) w = lnth (lconcat xss) w"
+
+/home/haechan.an/afp-2021-02-11/thys/Knot_Theory/Tangle_Algebra.thy
+lemma Nil_left_tensor:"xs \<otimes> (basic ([])) = xs"
+
+/home/haechan.an/afp-2021-02-11/thys/Complex_Geometry/More_Complex.thy
+lemma Complex_scale4: shows "c \<noteq> 0 \<Longrightarrow> Complex (a / c) (b / c) = Complex a b / cor c"
+
+/home/haechan.an/afp-2021-02-11/thys/Simpl/Language.thy
+lemma strip_idem: "strip F (strip F \<Gamma>) = strip F \<Gamma>"
+
+/home/haechan.an/afp-2021-02-11/thys/Special_Function_Bounds/Exp_Bounds.thy
+lemma exp_lower_taylor_3_cubed: fixes x::real shows "(1 + x/3 + (1/2)*(x/3)^2 + (1/6)*(x/3)^3 + (1/24)*(x/3)^4 + (1/120)*(x/3)^5)^3 \<le> exp x"
+
+/home/haechan.an/afp-2021-02-11/thys/List-Infinite/ListInf/List2.thy
+lemma nths_take_eq: " \<lbrakk> finite I; Max I < n \<rbrakk> \<Longrightarrow> nths (xs \<down> n) I = nths xs I"
+
+/home/haechan.an/afp-2021-02-11/thys/Resolution_FOL/TermsAndLiterals.thy
+theorem hlit_of_flit_flit_of_hlit [simp]: "hlit_of_flit (flit_of_hlit l) = l"
+
+/home/haechan.an/afp-2021-02-11/thys/Markov_Models/ex/PCTL.thy
+theorem Sat_sound: "Sat F \<noteq> None \<Longrightarrow> Sat F = Some (svalid F)"
+
+/home/haechan.an/afp-2021-02-11/thys/Core_SC_DOM/common/monads/CharacterDataMonad.thy
+lemma type_wf_preserved: assumes "writes SW setter h h'" assumes "h \<turnstile> setter \<rightarrow>\<^sub>h h'" assumes "\<And>h h' w. w \<in> SW \<Longrightarrow> h \<turnstile> w \<rightarrow>\<^sub>h h' \<Longrightarrow> \<forall>object_ptr. preserved (get_M\<^sub>O\<^sub>b\<^sub>j\<^sub>e\<^sub>c\<^sub>t object_ptr RObject.nothing) h h'" assumes "\<And>h h' w. w \<in> SW \<Longrightarrow> h \<turnstile> w \<rightarrow>\<^sub>h h' \<Longrightarrow> \<forall>node_ptr. preserved (get_M\<^sub>N\<^sub>o\<^sub>d\<^sub>e node_ptr RNode.nothing) h h'" assumes "\<And>h h' w. w \<in> SW \<Longrightarrow> h \<turnstile> w \<rightarrow>\<^sub>h h' \<Longrightarrow> \<forall>element_ptr. preserved (get_M\<^sub>E\<^sub>l\<^sub>e\<^sub>m\<^sub>e\<^sub>n\<^sub>t element_ptr RElement.nothing) h h'" assumes "\<And>h h' w. w \<in> SW \<Longrightarrow> h \<turnstile> w \<rightarrow>\<^sub>h h' \<Longrightarrow> \<forall>character_data_ptr. preserved (get_M\<^sub>C\<^sub>h\<^sub>a\<^sub>r\<^sub>a\<^sub>c\<^sub>t\<^sub>e\<^sub>r\<^sub>D\<^sub>a\<^sub>t\<^sub>a character_data_ptr RCharacterData.nothing) h h'" shows "type_wf h = type_wf h'"
+
+/home/haechan.an/afp-2021-02-11/thys/Transformer_Semantics/Powerset_Monad.thy
+lemma f2r_leq: "(f \<le> g) = (\<R> f \<subseteq> \<R> g)"
+
+/home/haechan.an/afp-2021-02-11/thys/Noninterference_Sequential_Composition/Propaedeutics.thy
+lemma ipurge_tr_del_traces [rule_format]: assumes S: "secure P I D" and A: "\<forall>v \<in> sinks I D u ys. \<forall>z \<in> set zs. (v, D z) \<notin> I" and B: "xs @ ipurge_tr I D u ys @ zs \<in> traces P" and C: "xs @ ys \<in> traces P" shows "xs @ ys @ zs \<in> traces P"
+
+/home/haechan.an/afp-2021-02-11/thys/Hoare_Time/QuantK_VCG.thy
+lemma mydiv_cancel3: "0 < k \<Longrightarrow> i \<le> k * mydiv i k"
+
+/home/haechan.an/afp-2021-02-11/thys/Splay_Tree/Splay_Map.thy
+lemma splay_map_of_inorder: "splay x t = Node l a r \<Longrightarrow> sorted1(inorder t) \<Longrightarrow> map_of (inorder t) x = (if x = fst a then Some(snd a) else None)"
+
+/home/haechan.an/afp-2021-02-11/thys/Psi_Calculi/Chain.thy
+lemma subsetClosed'[simp]: fixes p :: "name prm" and xvec :: "name list" and P :: "'a::fs_name" shows "(set (p \<bullet> xvec) \<subseteq> supp (p \<bullet> P)) = (set xvec \<subseteq> supp P)"
+
+/home/haechan.an/afp-2021-02-11/thys/Binomial-Heaps/SkewBinomialHeap.thy
+lemma findMin_correct': assumes I: "elem_invar x" shows "findMin' x \<in># elem_to_mset x" "\<forall>y\<in>set_mset (elem_to_mset x). snd (findMin' x) \<le> snd y"
+
+/home/haechan.an/afp-2021-02-11/thys/Refine_Monadic/Generic/RefineG_Recursion.thy
+lemma trimono_alt: "trimono B \<longleftrightarrow> (\<forall>ord\<in>fun_ord`triords. monotone ord ord B)"
+
+/home/haechan.an/afp-2021-02-11/thys/BNF_CC/DDS.thy
+lemma map_dds_comp: "map_dds f g (map_dds f' g' S) = map_dds (f' \<circ> f) (g \<circ> g') S"
+
+/home/haechan.an/afp-2021-02-11/thys/Robinson_Arithmetic/Robinson_Arithmetic.thy
+lemma fls_E [intro!]: "insert fls H \<turnstile> A"
+
+/home/haechan.an/afp-2021-02-11/thys/Landau_Symbols/Landau_Real_Products.thy
+lemma eventually_nonneg_mult' [eventually_nonzero_simps]: assumes "eventually_nonneg F (\<lambda>x. -f x)" "eventually_nonneg F (\<lambda>x. - g x)" shows "eventually_nonneg F (\<lambda>x. f x * g x)"
+
+/home/haechan.an/afp-2021-02-11/thys/Ordinal/OrdinalInduct.thy
+lemma f_make_mono_less: "\<forall>n. f n < oLimit f \<Longrightarrow> f (make_mono f n) < f (make_mono f (Suc n))"
+
+/home/haechan.an/afp-2021-02-11/thys/Separation_Logic_Imperative_HOL/Examples/Array_Map_Impl.thy
+lemma iam_lookup_abs1: "k<length l \<Longrightarrow> iam_of_list l k = l!k"
+
+/home/haechan.an/afp-2021-02-11/thys/Category3/SetCategory.thy
+lemma terminal_char3: assumes "\<exists>!x. \<guillemotleft>x : unity \<rightarrow> a\<guillemotright>" shows "terminal a"
+
+/home/haechan.an/afp-2021-02-11/thys/Word_Lib/Word_Lemmas.thy
+lemma scast_ucast_1: "\<lbrakk> is_down (ucast :: 'a word \<Rightarrow> 'b word); is_down (ucast :: 'b word \<Rightarrow> 'c word) \<rbrakk> \<Longrightarrow> (scast (ucast (a :: 'a::len word) :: 'b::len word) :: 'c::len word) = ucast a"
+
+/home/haechan.an/afp-2021-02-11/thys/Abstract-Rewriting/Abstract_Rewriting.thy
+lemma first_step: assumes C: "C = A \<union> B" and steps: "(x, y) \<in> C\<^sup>*" and Bstep: "(y, z) \<in> B" shows "\<exists>y. (x, y) \<in> A\<^sup>* O B"
+
+/home/haechan.an/afp-2021-02-11/thys/Coinductive/Coinductive_List.thy
+lemma wlog_linorder_le [consumes 0, case_names le symmetry]: assumes le: "\<And>a b :: 'a :: linorder. a \<le> b \<Longrightarrow> P a b" and sym: "P b a \<Longrightarrow> P a b" shows "P a b"
+
+/home/haechan.an/afp-2021-02-11/thys/Jacobson_Basic_Algebra/Group_Theory.thy
+lemma translation_exist: "f \<in> translation ` M \<Longrightarrow> \<exists>a \<in> M. f = (a)\<^sub>L"
+
+/home/haechan.an/afp-2021-02-11/thys/Tycon/Writer_Transformer.thy
+lemma runWriterT_bindWT [simp]: "runWriterT\<cdot>(bindWT\<cdot>m\<cdot>k) = bind\<cdot>(runWriterT\<cdot>m)\<cdot> (\<Lambda>(Writer\<cdot>w\<cdot>x). bind\<cdot>(runWriterT\<cdot>(k\<cdot>x))\<cdot>(\<Lambda>(Writer\<cdot>w'\<cdot>y). return\<cdot>(Writer\<cdot>(mappend\<cdot>w\<cdot>w')\<cdot>y)))"
+
+/home/haechan.an/afp-2021-02-11/thys/Timed_Automata/Paths_Cycles.thy
+lemma successive_end_3: "successive P (xs @ [x]) \<Longrightarrow> \<not> P x \<Longrightarrow> P y \<Longrightarrow> \<not> P z \<Longrightarrow> successive P (xs @ [x,y,z])"
+
+/home/haechan.an/afp-2021-02-11/thys/Fourier/Fourier.thy
+lemma sqrt_pi_ge1: "sqrt pi \<ge> 1"
+
+/home/haechan.an/afp-2021-02-11/thys/Propositional_Proof_Systems/Consistency.thy
+lemma pcp_lim_in: assumes c: "pcp C" and el: "S \<in> C" and sc: "subset_closed C" and fc: "finite_character C" shows "pcp_lim C S \<in> C" (is "?cl \<in> C")
+
+/home/haechan.an/afp-2021-02-11/thys/Constructive_Cryptography/Converter.thy
+lemma assumes "rel_converter (A OO A') B C (R OO R') conv conv'" and A: "left_unique A" "right_total A" and A': "right_unique A'" "left_total A'" and R: "left_unique R" "right_total R" and R': "right_unique R'" "left_total R'" shows rel_witness_converter1: "rel_converter A (\<lambda>b (b', c). b = b' \<and> B b' c) (\<lambda>c (c', d). c = c' \<and> C c' d) R conv (rel_witness_converter A A' B C R R' (conv, conv'))" (is "?thesis1") and rel_witness_converter2: "rel_converter A' (\<lambda>(b, c') c. c = c' \<and> B b c') (\<lambda>(c, d') d. d = d' \<and> C c d') R' (rel_witness_converter A A' B C R R' (conv, conv')) conv'" (is "?thesis2")
+
+/home/haechan.an/afp-2021-02-11/thys/Clean/src/Seq_MonadSE.thy
+lemma mbind'_unit [simp]: "mbind' [] f = (result [])"
+
+/home/haechan.an/afp-2021-02-11/thys/Selection_Heap_Sort/RemoveMax.thy
+lemma sorted_ssort': assumes "inv l" "sorted sl \<and> (\<forall> x \<in> set l. (\<forall> y \<in> List.set sl. x \<le> y))" shows "sorted (ssort' l sl)"
+
+/home/haechan.an/afp-2021-02-11/thys/KAD/Domain_Semiring.thy
+lemma fdia_zero [simp]: "|x\<rangle> 0 = 0"
+
+/home/haechan.an/afp-2021-02-11/thys/CryptHOL/Misc_CryptHOL.thy
+lemma mcont2mcont_set_option [THEN lfp.mcont2mcont, cont_intro, simp]: shows mcont_set_option: "mcont (flat_lub None) option_ord Union (\<subseteq>) set_option"
+
+/home/haechan.an/afp-2021-02-11/thys/List_Update/Move_to_Front.thy
+lemma mtf20[simp]: "mtf2 0 x xs = xs"
+
+/home/haechan.an/afp-2021-02-11/thys/Lambda_Free_EPO/Embeddings.thy
+lemma no_position_replicate_num_args: "\<not> position_of t (replicate (num_args t) Left @ [d])"
+
+/home/haechan.an/afp-2021-02-11/thys/Transformer_Semantics/Kleisli_Transformers.thy
+lemma fbd_zero_pres2 [simp]: "bd\<^sub>\<F> f {} = {}"
+
+/home/haechan.an/afp-2021-02-11/thys/Planarity_Certificates/Verification/Check_Planarity_Verification.thy
+lemma (in -) funpow_dist1_less_f: assumes "b \<in> orbit f a" "a \<in> orbit f a" "a \<noteq> b" shows "funpow_dist1 f a b < funpow_dist1 f a (f b)"
+
+/home/haechan.an/afp-2021-02-11/thys/Call_Arity/ArityEtaExpansion.thy
+lemma subst_Aeta_expand: "(Aeta_expand n e)[x::=y] = Aeta_expand n e[x::=y]"
+
+/home/haechan.an/afp-2021-02-11/thys/CryptoBasedCompositionalProperties/KnowledgeKeysSecrets.thy
+lemma knows_decomposition_1_k: assumes "kKS a \<notin> specKeysSecrets P" and "kKS a \<notin> specKeysSecrets Q" and "subcomponents PQ = {P, Q}" and "knows PQ [kE a]" and "correctCompositionIn PQ" and "correctCompositionLoc PQ" shows "knows P [kE a] \<or> knows Q [kE a]"
+
+/home/haechan.an/afp-2021-02-11/thys/Stateful_Protocol_Composition_and_Typing/More_Unification.thy
+lemma mgu_subst_range_vars: assumes "mgu s t = Some \<sigma>" shows "range_vars \<sigma> \<subseteq> vars_term s \<union> vars_term t"
+
+/home/haechan.an/afp-2021-02-11/thys/TLA/PreFormulas.thy
+lemma prefD[dest]: "|~ A \<Longrightarrow> w \<Turnstile> A"
+
+/home/haechan.an/afp-2021-02-11/thys/Optics/Lens_Laws.thy
+lemma put_is_create: "put \<sigma> v = create v"
+
+/home/haechan.an/afp-2021-02-11/thys/Buildings/Chamber.thy
+lemma restrict_endo: assumes "ChamberSubcomplex Y" "f\<turnstile>Y \<subseteq> Y" shows "ChamberComplexEndomorphism Y (restrict1 f (\<Union>Y))"
+
+/home/haechan.an/afp-2021-02-11/thys/Circus/CSP_Processes.thy
+lemma t_or_f_a: "P(a, b) \<Longrightarrow> ((P(a, b\<lparr>ok := True\<rparr>)) \<or> (P(a, b\<lparr>ok := False\<rparr>)))"
+
+/home/haechan.an/afp-2021-02-11/thys/Inductive_Inference/CONS_LIM.thy
+lemma r_prefixes_aux: "eval r_prefixes_aux [j, v, i] \<down>= e_snoc v (if eval r_s [e_snoc v 0] = eval r_s [v] then 1 else 0)"
+
+/home/haechan.an/afp-2021-02-11/thys/Ordinary_Differential_Equations/Library/Vector_Derivative_On.thy
+lemma has_vderiv_on_union: assumes "(f has_vderiv_on g) (s \<union> closure s \<inter> closure t)" assumes "(f has_vderiv_on g) (t \<union> closure s \<inter> closure t)" shows "(f has_vderiv_on g) (s \<union> t)"
+
+/home/haechan.an/afp-2021-02-11/thys/Stateful_Protocol_Composition_and_Typing/Stateful_Strands.thy
+lemma fv\<^sub>s\<^sub>s\<^sub>t_append[simp]: "fv\<^sub>s\<^sub>s\<^sub>t (A@B) = fv\<^sub>s\<^sub>s\<^sub>t A \<union> fv\<^sub>s\<^sub>s\<^sub>t B"
+
+/home/haechan.an/afp-2021-02-11/thys/JinjaThreads/Compiler/ListIndex.thy
+lemma index_size_conv[simp]: "(index xs x = size xs) = (x \<notin> set xs)"
+
+/home/haechan.an/afp-2021-02-11/thys/Group-Ring-Module/Algebra3.thy
+lemma (in Group) ex_W_cmpserTr0m:"\<forall>f. w_cmpser G m f \<longrightarrow> (\<exists>g. (W_cmpser G (card (f `{i. i \<le> m}) - 1) g \<and> g `{i. i \<le> (card (f `{i. i \<le> m}) - 1)} = f `{i. i \<le> m}))"
+
+/home/haechan.an/afp-2021-02-11/thys/Sort_Encodings/G.thy
+lemma countable_GE_wtPsym: "countable (Collect GE_wtPsym)" (is "countable ?K")
+
+/home/haechan.an/afp-2021-02-11/thys/UPF_Firewall/FWNormalisation/NormalisationGenericProofs.thy
+lemma WP1n_DA_notinSet[rule_format]: "wellformed_policy1_strong p \<longrightarrow> DenyAll \<notin> set (tl p)"
+
+/home/haechan.an/afp-2021-02-11/thys/Randomised_Social_Choice/Preference_Profiles.thy
+lemma not_in_dom': "i \<notin> dom \<Longrightarrow> R i = (\<lambda>_ _. False)"
+
+/home/haechan.an/afp-2021-02-11/thys/Safe_OCL/OCL_Basic_Types.thy
+lemma sup_least_basic_type: "\<tau> \<le> \<rho> \<Longrightarrow> \<sigma> \<le> \<rho> \<Longrightarrow> \<tau> \<squnion> \<sigma> \<le> \<rho>" for \<tau> \<sigma> \<rho> :: "'a basic_type"
+
+/home/haechan.an/afp-2021-02-11/thys/Affine_Arithmetic/Counterclockwise_2D_Strict.thy
+lemma coll_scale_pair: "coll 0 (a, b) (c, d) \<Longrightarrow> (a, b) \<noteq> 0 \<Longrightarrow> (\<exists>x. (c, d) = x *\<^sub>R (a, b))"
+
+/home/haechan.an/afp-2021-02-11/thys/Buildings/Algebra.thy
+lemma pair_relator_halflist2_conv_rev_pair_relator_halflist: "pair_relator_halflist2 s t = rev (pair_relator_halflist t s)"
+
+/home/haechan.an/afp-2021-02-11/thys/Group-Ring-Module/Algebra3.thy
+lemma Suc_rtos_mod_r_1:"\<lbrakk>0 < r; 0 < s; i \<le> r * s - Suc 0; Suc (rtos r s i) < r * s; i mod s = s - Suc 0; i div s < r - Suc 0\<rbrakk> \<Longrightarrow> Suc (rtos r s i) mod r = Suc (i div s)"
+
+/home/haechan.an/afp-2021-02-11/thys/Incompleteness/SyntaxN.thy
+lemma thin3: "insert A1 (insert A2 H) \<turnstile> B \<Longrightarrow> insert A1 (insert A2 (insert A3 H)) \<turnstile> B"
+
+/home/haechan.an/afp-2021-02-11/thys/Sort_Encodings/Mcalc.thy
+theorem monot: monot
+
+/home/haechan.an/afp-2021-02-11/thys/CoreC++/TypeSafe.thy
+theorem assumes wf:"wwf_prog P" shows red_preserves_hconf: "P,E \<turnstile> \<langle>e,(h,l)\<rangle> \<rightarrow> \<langle>e',(h',l')\<rangle> \<Longrightarrow> (\<And>T. \<lbrakk> P,E,h \<turnstile> e : T; P \<turnstile> h \<surd> \<rbrakk> \<Longrightarrow> P \<turnstile> h' \<surd>)" and reds_preserves_hconf: "P,E \<turnstile> \<langle>es,(h,l)\<rangle> [\<rightarrow>] \<langle>es',(h',l')\<rangle> \<Longrightarrow> (\<And>Ts. \<lbrakk> P,E,h \<turnstile> es [:] Ts; P \<turnstile> h \<surd> \<rbrakk> \<Longrightarrow> P \<turnstile> h' \<surd>)"
+
+/home/haechan.an/afp-2021-02-11/thys/Topological_Semantics/topo_negation_fixedpoints.thy
+lemma "Fr_2 \<F> \<Longrightarrow> \<forall>A. Cl(A) \<longrightarrow> DNE\<^sup>A \<^bold>\<not>\<^sup>I"
+
+/home/haechan.an/afp-2021-02-11/thys/Valuation/Valuation1.thy
+lemma (in Corps) field_frac2:"\<lbrakk>x \<in> carrier K; x \<noteq> \<zero>\<rbrakk> \<Longrightarrow> x = (1\<^sub>r) \<cdot>\<^sub>r ((x\<^bsup>\<hyphen>K\<^esup>)\<^bsup>\<hyphen>K\<^esup>)"
+
+/home/haechan.an/afp-2021-02-11/thys/Smooth_Manifolds/Cotangent_Space.thy
+lemma dual_space_eq: "dual_space S = {E. linear_fun_on S E} \<inter> {E. extensional0 S E}"
+
+/home/haechan.an/afp-2021-02-11/thys/WebAssembly/Wasm_Properties.thy
+lemma store_local_label_empty: assumes "i < length (s_inst \<S>)" "store_typing s \<S>" shows "label ((s_inst \<S>)!i) = []" "local ((s_inst \<S>)!i) = []"
+
+/home/haechan.an/afp-2021-02-11/thys/Extended_Finite_State_Machines/examples/Drinks_Machine_2.thy
+lemma drinks2_end: "possible_steps drinks2 3 r a b = {||}"
+
+/home/haechan.an/afp-2021-02-11/thys/Heard_Of/otr/OneThirdRuleProof.thy
+lemma A1: assumes run:"HORun OTR_M rho HOs" and dec: "decide (rho (Suc n) p) = Some v" and chg: "decide (rho (Suc n) p) \<noteq> decide (rho n p)" (is "decide ?st' \<noteq> decide ?st") shows "(2*N) div 3 < card { q . x (rho n q) = v }"
+
+/home/haechan.an/afp-2021-02-11/thys/Monomorphic_Monad/Monomorphic_Monad.thy
+lemma alt_env_parametric [transfer_rule]: "((M ===> M ===> M) ===> rel_envT R M ===> rel_envT R M ===> rel_envT R M) alt_env alt_env"
+
+/home/haechan.an/afp-2021-02-11/thys/Inductive_Inference/Partial_Recursive.thy
+lemma r_dummy_append: assumes "recfn (length xs) f" and "length ys = n" shows "eval (r_dummy n f) (xs @ ys) = eval f xs"
+
+/home/haechan.an/afp-2021-02-11/thys/Binding_Syntax_Theory/QuasiTerms_PickFresh_Alpha.thy
+lemma qFresh_imp_ex_qAFresh1: assumes "qGood X" and "qFresh zs z X" shows "\<exists> X'. qGood X' \<and> X #= X' \<and> qAFresh zs z X'"
+
+/home/haechan.an/afp-2021-02-11/thys/Simpl/ex/ProcParExSP.thy
+lemma (in Max_impl) Max_spec4: shows "\<forall>n m leq. \<Gamma>\<turnstile> (\<lbrace>\<acute>n=n \<and> \<acute>m=m\<rbrace> \<inter> \<lbrace>\<forall>\<tau>. \<Gamma>\<turnstile> {\<tau>} \<acute>r :== PROC \<acute>compare(\<acute>i,\<acute>j) \<lbrace>\<acute>r = (leq \<^bsup>\<tau>\<^esup>i \<^bsup>\<tau>\<^esup>j)\<rbrace>\<rbrace>) \<acute>k :== PROC Max(\<acute>compare,\<acute>n,\<acute>m) \<lbrace>\<acute>k = mx leq n m\<rbrace>"
+
+/home/haechan.an/afp-2021-02-11/thys/Word_Lib/Word_Lemmas.thy
+lemma shift_then_mask_eq_shift_low_bits: "x \<le> mask (low_bits + high_bits) \<Longrightarrow> (x >> low_bits) && mask high_bits = x >> low_bits"
+
+/home/haechan.an/afp-2021-02-11/thys/Dirichlet_Series/Dirichlet_Series.thy
+lemma fds_deriv_of_int [simp]: "fds_deriv (of_int n) = 0"
+
+/home/haechan.an/afp-2021-02-11/thys/Inductive_Inference/Partial_Recursive.thy
+lemma r_append_zeros_prim [simp]: "prim_recfn 2 r_append_zeros"
+
+/home/haechan.an/afp-2021-02-11/thys/Smith_Normal_Form/SNF_Uniqueness.thy
+lemma diagonal_imp_submatrix_element_not0: assumes dA: "diagonal_mat A" and A_carrier: "A \<in> carrier_mat n m" and Ik: "card I = k" and Jk: "card J = k" and I: "I \<subseteq> {0..<n}" and J: "J \<subseteq> {0..<m}" and b: "b < k" and ex_not0: "\<exists>i. i<k \<and> submatrix A I J $$ (i, b) \<noteq> 0" shows "\<exists>!i. i<k \<and> submatrix A I J $$ (i, b) \<noteq> 0"
+
+/home/haechan.an/afp-2021-02-11/thys/Simpl/HeapList.thy
+theorem notin_List_update[simp]: "\<And>p. q \<notin> set ps \<Longrightarrow> List p (h(q := y)) ps = List p h ps"
+
+/home/haechan.an/afp-2021-02-11/thys/Word_Lib/Word_Lemmas.thy
+lemma toEnum_of_ucast: "LENGTH('b) \<le> LENGTH('a) \<Longrightarrow> (toEnum (unat (b::'b :: len word))::'a :: len word) = of_nat (unat b)"
+
+/home/haechan.an/afp-2021-02-11/thys/Laplace_Transform/Piecewise_Continuous.thy
+lemma piecewise_continuous_on_congI: "piecewise_continuous_on a b I g" if "piecewise_continuous_on a b I f" and eq: "\<And>x. x \<in> {a .. b} - I \<Longrightarrow> g x = f x"
+
+/home/haechan.an/afp-2021-02-11/thys/Polynomials/MPoly_Type_Class_Ordered.thy
+lemma keys_higher: "keys (higher p v) = {u\<in>keys p. v \<prec>\<^sub>t u}"
+
+/home/haechan.an/afp-2021-02-11/thys/Coinductive/Coinductive_Stream.thy
+lemma smap_stream_of_llist [simp]: shows "smap f (stream_of_llist xs) = stream_of_llist (lmap f xs)"
+
+/home/haechan.an/afp-2021-02-11/thys/Word_Lib/Word_Lemmas.thy
+lemma word_sdiv_div1 [simp]: "(a :: ('a::len) word) sdiv 1 = a"
+
+/home/haechan.an/afp-2021-02-11/thys/Group-Ring-Module/Algebra3.thy
+lemma r_unit_gHom:"\<lbrakk>Group F; Group G; f \<in> gHom F G \<rbrakk> \<Longrightarrow> f \<circ>\<^bsub>F\<^esub> (I\<^bsub>F\<^esub>) = f"
+

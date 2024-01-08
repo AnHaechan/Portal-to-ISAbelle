@@ -1,0 +1,2 @@
+/home/haechan.an/afp-2021-02-11/thys/ComponentDependencies/DataDependenciesCaseStudy.thy
+lemma correctCompositionDiffLevelsA93: "correctCompositionDiffLevels sA93"

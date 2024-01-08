@@ -1,0 +1,2 @@
+/home/haechan.an/afp-2021-02-11/thys/Robinson_Arithmetic/Robinson_Arithmetic.thy
+lemma fls_E [intro!]: "insert fls H \<turnstile> A"

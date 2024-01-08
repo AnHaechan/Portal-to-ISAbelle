@@ -1,0 +1,2 @@
+/home/haechan.an/afp-2021-02-11/thys/DataRefinementIBP/Hoare.thy
+lemma post_top [simp]: "post_fun p p = \<top>"
