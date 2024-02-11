@@ -44,6 +44,16 @@ PISA can also be used to extract proof corpus. We extracted the datasets in our 
     sbt compile
     ```
 
+3. **Configure Isabelle**
+
+    Go back to home directory first and download isabelle2021
+    ```shell
+    cd ~
+    wget https://isabelle.in.tum.de/website-Isabelle2021/dist/Isabelle2021_linux.tar.gz
+    tar -xzf Isabelle2021_linux.tar.gz
+    alias isabelle=~/Isabelle2021/bin/isabelle
+    ``` 
+
 ## Extracting test theorems
 The universal test theorems contains 3000 theorems with their file paths and names. The first 600 of them are packaged as "quick" theorems if you have no patience testing all 3000 out.
 ```shell
